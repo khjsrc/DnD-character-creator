@@ -1,0 +1,2441 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- tags="optional" for some of bard's features and probably for other classes as well -->
+<characterClasses>
+  <class name="barbarian" ID="1">
+    <description>...soon the flames will fade, and only barbarian will remain...</description>
+    <proficiencies>
+      <armor>light armor, medium armor, shields</armor>
+      <weapons>simple weapons, martial weapons</weapons>
+      <tools>none</tools>
+      <savingThrows>Strength, Constitution</savingThrows>
+      <startingSkills amount="2">Animal Handling, Athletics, Intimidation, Nature, Perception, Survival</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. a greataxe or any martial melee weapon
+2. two handaxes or any simple weapon
+3. explorer's pack and four javelins
+Alternatively, you may start with 2d4*10 gp to buy your own equipment.</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>12 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d12(or 7) + your Constitution modifier per Barbarian level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Rage">In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.
+While raging, you gain the following benefits if you aren't wearing heavy armor:
+
+    - You have advantage on Strength checks and Strength saving throws.
+    - When you make a melee weapon attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you level.
+    - You have resistance to bludgeoning, piercing, and slashing damage.
+
+If you are able to cast spells, you can't cast them or concentrate on them while raging.
+
+Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.
+
+Once you have raged the maximum number of times for your barbarian level, you must finish a long rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th.</feature>
+        <feature name="Unarmored Defence">While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Danger Sense">At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated.</feature>
+        <feature name="Reckless Attack">Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Primal Path">At 3rd level, you choose a path that shapes the nature of your rage from the list of available paths. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Extra Attack">Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</feature>
+        <feature name="Fast Movement">Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor.</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Path Feature">At 6th level, you gain a feature from your Primal Path.</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Feral Instinct">By 7th level, your instincts are so honed that you have advantage on initiative rolls.
+
+Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM uses the optional Feats, you can instead take a feat.</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Brutal Critical (1 dice)">Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.
+
+This increases to two additional dice at 13th level and three additional dice at 17th level.</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Path Feature">At 10th level, you gain a feature from your Primal Path.</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Relentless Rage">Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.
+
+Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM uses the optional Feats, you can instead take a feat.</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Brutal Critical (2 dice)">At 13th level, you can roll two additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.
+
+This increases to three additional dice at 17th level.</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Path Feature">At 14th level, you gain a feature from your Primal Path.</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Persistent Rage">Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM uses the optional Feats, you can instead take a feat.</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Brutal Critical (3 dice)">At 17th level, you can roll three additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Indomitable Might">Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM uses the optional Feats, you can instead take a feat.</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Primal Champion">At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="Path of the Ancestral Guardian">
+      	<description>Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger in the world as mighty spirits, who can guide and protect the living. When a barbarian who follows this path rages, the barbarian contacts the spirit world and calls on these guardian spirits for aid.
+
+Barbarians who draw on their ancestral guardians can better fight to protect their tribes and their allies. In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors' deeds. These tattoos tell sagas of victories against terrible monsters and other fearsome rivals.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Ancestral Protection">Starting when you choose this path at 3rd level, spectral warriors appear when you enter your rage. While you're raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack. The effect on the target ends early if your rage ends.</archetypeFeature>
+          <archetypeFeature level="6" name="Spirit Shield">Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by 2d6.
+
+When you reach certain levels in this class, you can reduce the damage by more: by 3d6 at 10th level and by 4d6 at 14th level.</archetypeFeature>
+          <archetypeFeature level="10" name="Consult the Spirits">At 10th level, you gain the ability to consult with your ancestral spirits. When you do so, you cast the augury or clairvoyance spell, without using a spell slot or material components. Rather than creating a spherical sensor, this use of clairvoyance invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for these spells.
+
+After you cast either spell in this way, you can't use this feature again until you finish a short or long rest.</archetypeFeature>
+          <archetypeFeature level="14" name="Vengeful Ancestors">At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Battlerager">
+      	<description>Known as Kuldjargh (literally "axe idiot") in Dwarvish, battleragers are dwarf followers of the gods of war and take the Path of the Battlerager. They specialize in wearing bulky, spiked armor and throwing themselves into combat, striking with their body itself and giving themselves over to the fury of battle.
+
+Restriction - Dwarves Only
+Only dwarves can follow the Path of the Battlerager. The battlerager fills a particular niche in dwarven society and culture.
+
+Your DM can lift this restriction to better suit the campaign. The restriction exists for the Forgotten Realms. It might not apply to your DM's setting or your DM's version of the Realms.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Battlerager Armor">When you choose this path at 3rd level, you gain the ability to use spiked armor as a weapon.
+
+While you are wearing spiked armor and are raging, you can use a bonus action to make one melee weapon attack with your armor spikes at a target within 5 feet of you. If the attack hits, the spikes deal 1d4 piercing damage. You use your Strength modifier for the attack and damage rolls.
+
+Additionally, when you use the Attack action to grapple a creature, the target takes 3 piercing damage if your grapple check succeeds.</archetypeFeature>
+          <archetypeFeature level="6" name="Reckless Abandon">Beginning at 6th level, when you use Reckless Attack while raging, you also gain temporary hit points equal to your Constitution modifier (minimum of 1). They vanish if any of them are left when your rage ends.</archetypeFeature>
+          <archetypeFeature level="10" name="Battlerager Charge">Beginning at 10th level, you can take the Dash action as a bonus action while you are raging.</archetypeFeature>
+          <archetypeFeature level="14" name="Spiked Retribution">Starting at 14th level, when a creature within 5 feet of you hits you with a melee attack, the attacker takes 3 piercing damage if you are raging, aren't incapacitated, and are wearing spiked armor.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Beast">
+      	<description>Barbarians who walk the Path of the Beast draw their rage from a bestial spark burning within their souls. That beast bursts forth in the throes of rage, physically transforming the barbarian.
+
+Such a barbarian might be inhabited by a primal spirit or be descended from shape-shifters. You can choose the origin of your feral might or determine it by rolling on the Origin of the Beast table.
+Origins:
+1. One of your parents is a lycanthrope, and you've inherited some of their curse.
+2. You are descended from an archdruid and inherited the ability to partially change shape.
+3. A fey spirit gifted you with the ability to adopt different bestial aspects.
+4. An ancient animal spirit dwells within you, allowing you to walk this path.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Form of the Beast">When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.
+
+You choose the weapon's form each time you rage:
+
+    Bite. Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.
+
+    Claws. Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.
+
+    Tail. You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.</archetypeFeature>
+          <archetypeFeature level="6" name="Bestial Soul">The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+
+You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish your next short or long rest:
+
+    · You gain a swimming speed equal to your walking speed, and you can breathe underwater.
+    · You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+    · When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn.</archetypeFeature>
+          <archetypeFeature level="10" name="Infectious Fury">When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):
+
+    · The target must use its reaction to make a melee attack against another creature of your choice that you can see.
+    · The target takes 2d12 psychic damage.
+
+You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</archetypeFeature>
+          <archetypeFeature level="14" name="Call the Hunt">The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature).
+
+You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled.
+
+You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Berserker">
+      	<description>For some barbarians, rage is a means to an end—that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Frenzy">Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion.</archetypeFeature>
+          <archetypeFeature level="6" name="Mindless Rage">Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</archetypeFeature>
+          <archetypeFeature level="10" name="Intimidating Presence">Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.
+
+If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours.</archetypeFeature>
+          <archetypeFeature level="14" name="Retaliation">Starting at 14th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Storm Herald">
+      	<description>All barbarians harbor a fury within. Their rage grants them superior strength, durability, and speed. Barbarians who follow the Path of the Storm Herald learn to transform that rage into a mantle of primal magic, which swirls around them. When in a fury, a barbarian of this path taps into the forces of nature to create powerful magical effects.
+
+Storm heralds are typically elite champions who train alongside druids, rangers, and others sworn to protect nature. Other storm heralds hone their craft in lodges in regions wracked by storms, in the frozen reaches at the world's end, or deep in the hottest deserts.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Storm Aura">Starting at 3rd level, you emanate a stormy, magical aura while you rage. The aura extends 10 feet from you in every direction, but not through total cover.
+
+Your aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura's effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.
+
+If your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.
+
+Desert.
+When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.
+
+Sea.
+When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes 1d6 lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to 2d6 at 10th level, 3d6 at 15th level, and 4d6 at 20th level.
+
+Tundra.
+When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.</archetypeFeature>
+          <archetypeFeature level="6" name="Storm Soul">At 6th level, the storm grants you benefits even when your aura isn't active. The benefits are based on the environment you chose for your Storm Aura.
+
+Desert. You gain resistance to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire.
+Sea. You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 30 feet.
+Tundra. You gain resistance to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube.</archetypeFeature>
+          <archetypeFeature level="10" name="Shielding Storm">At 10th level, you learn to use your mastery of the storm to protect others. Each creature of your choice has the damage resistance you gained from the Storm Soul feature while the creature is in your Storm Aura.</archetypeFeature>
+          <archetypeFeature level="14" name="Raging Storm">At 14th level, the power of the storm you channel grows mightier, lashing out at your foes. The effect is based on the environment you chose for your Storm Aura.
+
+Desert. Immediately after a creature in your aura hits you with an attack, you can use your reaction to force that creature to make a Dexterity saving throw. On a failed save, the creature takes fire damage equal to half your barbarian level.
+Sea. When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked prone, as if struck by a wave.
+Tundra. Whenever the effect of your Storm Aura is activated, you can choose one creature you can see in the aura. That creature must succeed on a Strength saving throw, or its speed is reduced to 0 until the start of your next turn, as magical frost covers it.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Totem Warrior">
+      	<description>The Path of the Totem Warrior is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your barbarian rage.
+
+Most barbarian tribes consider a totem animal to be kin to a particular clan. In such cases, it is unusual for an individual to have more than one totem animal spirit, though exceptions exist.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Spirit Seeker">Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the beast sense and speak with animals spells, but only as rituals, as described in chapter 10.</archetypeFeature>
+          <archetypeFeature level="3" name="Totem Spirit">At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object—an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones of the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thick-skinned, or if your totem is the eagle, your eyes turn bright yellow.
+
+Your totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.
+Bear. While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.
+
+Eagle. While you're raging and aren't wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.
+
+Elk. While you're raging and aren't wearing heavy armor, your walking speed increases by 15 feet. The spirit of the elk makes you extraordinarily swift.
+
+Tiger. While raging, you can add 10 feet to your long jump distance and 3 feet to your high jump distance. The spirit of the tiger empowers your leaps.
+
+Wolf. While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters.</archetypeFeature>
+          <archetypeFeature level="6" name="Aspect of the Beast">At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one.
+Bear. You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.
+
+Eagle. You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom (Perception) checks.
+
+Elk. Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 60 feet of you and you're not incapacitated. The elk spirit helps you roam far and fast.
+
+Tiger. You gain proficiency in two skills from the following list: Athletics, Acrobatics, Stealth, and Survival. The cat spirit hones your survival instincts.
+
+Wolf. You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace.</archetypeFeature>
+          <archetypeFeature level="10" name="Spirit Walker">At 10th level, you can cast the commune with nature spell, but only as a ritual. When you do so, a spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek.</archetypeFeature>
+          <archetypeFeature level="14" name="Totemic Attunement">At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one.
+Bear. While you're raging, any creature within 5 feet of you that's hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can't see or hear you or if it can't be frightened.
+
+Eagle. While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft.
+
+Elk. While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked prone and take bludgeoning damage equal to 1d12 + your Strength modifier.
+
+Tiger. While you're raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it.
+
+Wolf. While you're raging, you can use a bonus action on your turn to knock a Large or smaller creature prone when you hit it with melee weapon attack.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Wild Magic">
+      	<description>Many places in the multiverse abound with beauty, intense emotion, and rampant magic; the Feywild, the Upper Planes, and other realms of supernatural power radiate with such forces and can profoundly influence people. As folk of deep feeling, barbarians are especially susceptible to these wild influences, with some barbarians being transformed by the magic. These magic-suffused barbarians walk the Path of Wild Magic. Elf, tiefling, aasimar, and genasi barbarians often seek this path, eager to manifest the otherworldly magic of their ancestors.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Magic Awareness">As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.
+
+You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</archetypeFeature>
+          <archetypeFeature level="3" name="Wild Surge">The magical energy roiling inside you sometimes erupts from you. When you enter your rage, roll on the Wild Magic table to determine the magical effect produced.
+If the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.
+1. Shadowy tendrils lash around you. Each creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take 1d12 necrotic damage. You also gain 1d12 temporary hit points.
+2. You teleport up to 30 feet to an unoccupied space you can see. Until your rage ends, you can use this effect again on each of your turns as a bonus action.
+3. An intangible spirit, which looks like a flumph or a pixie (your choice), appears within 5 feet of one creature of your choice that you can see within 30 feet of you. At the end of the current turn, the spirit explodes, and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 1d6 force damage. Until your rage ends, you can use this effect again, summoning another spirit, on each of your turns as a bonus action.
+4. Magic infuses one weapon of your choice that you are holding. Until your rage ends, the weapon's damage type changes to force, and it gains the light and thrown properties, with a normal range of 20 feet and a long range of 60 feet. If the weapon leaves your hand, the weapon reappears in your hand at the end of the current turn.
+5. Whenever a creature hits you with an attack roll before your rage ends, that creature takes 1d6 force damage, as magic lashes out in retribution.
+6. Until your rage ends, you are surrounded by multi colored, protective lights. You gain a +1 bonus to AC, and while within 10 feet of you, your allies gain the same bonus.
+7. Flowers and vines temporarily grow around you. Until your rage ends, the ground within 15 feet of you is difficult terrain for your enemies.
+8. A bolt of light shoots from your chest. Another creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take 1d6 radiant damage and be blinded until the start of your next turn. Until your rage ends, you can use this effect again on each of your turns as a bonus action.</archetypeFeature>
+          <archetypeFeature level="6" name="Bolstering Magic">You can harness your wild magic to bolster yourself or a companion. As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:
+
+    · For 10 minutes, the creature can roll a d3 whenever making an attack roll or an ability check and add the number rolled to the d20 roll.
+    · Roll a d3. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature's choice). Once a creature receives this benefit, that creature can't receive it again until after a long rest.
+
+You can take this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</archetypeFeature>
+          <archetypeFeature level="10" name="Unstable Backlash">When you are imperiled during your rage, the magic within you can lash out; immediately after you take damage or fail a saving throw while raging, you can use your reaction to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect.</archetypeFeature>
+          <archetypeFeature level="14" name="Controlled Surge">Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Zealot">
+      	<description>Some deities inspire their followers to pitch themselves into a ferocious battle fury. These barbarians are zealots—warriors who channel their rage into powerful displays of divine power.
+
+A variety of gods across the worlds of D&amp;D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Divine Fury">Starting when you choose this path at 3rd level, you can channel divine fury into your weapon strikes. While you're raging, the first creature you hit on each of your turns with a weapon attack takes extra damage equal to 1d6 + half your barbarian level. The extra damage is necrotic or radiant; you choose the type of damage when you gain this feature.</archetypeFeature>
+          <archetypeFeature level="3" name="Warrior of the Gods">At 3rd level, your soul is marked for endless battle. If a spell, such as raise dead, has the sole effect of restoring you to life (but not undeath), the caster doesn't need material components to cast the spell on you.</archetypeFeature>
+          <archetypeFeature level="6" name="Fanatical Focus">Starting at 6th level, the divine power that fuels your rage can protect you. If you fail a saving throw while you're raging, you can reroll it, and you must use the new roll. You can use this ability only once per rage.</archetypeFeature>
+          <archetypeFeature level="10" name="Zealous Presence">At 10th level, you learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain advantage on attack rolls and saving throws until the start of your next turn.
+
+Once you use this feature, you can't use it again until you finish a long rest.</archetypeFeature>
+          <archetypeFeature level="14" name="Rage beyond Death">Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows.
+
+While you're raging, having 0 hit points doesn't knock you unconscious. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends, and you die then only if you still have 0 hit points.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+  <class name="bard" ID="2">
+    <description>...soon the flames will fade, and only bard will remain...</description>
+    <proficiencies>
+      <armor>light armor</armor>
+      <weapons>simple weapons, hand crossbows, longswords, rapiers, shortswords</weapons>
+      <tools>three musical instruments of your choice</tools>
+      <savingThrows>Dexterity, Charisma</savingThrows>
+      <startingSkills amount="3">Athletics, Acrobatics, Sleight of Hand, Stealth, Arcana, History, Investigation, Nature, Religion, Animal Handling, Insight, Medicine, Perception, Survival, Deception, Intimidation, Performance, Persuasion</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. a rapier or a longsword or any simple weapon
+2. a diplomat's pack or an entertainer's pack
+3. a lute or any other musical instrument
+Leather armor and a dagger.
+Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
+</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>8 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d8(or 5) + your Constitution modifier per bard level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Bardic Inspiration">You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.
+
+Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.
+
+You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.
+
+Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.</feature>
+        <feature name="Spellcasting">You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations. See chapter 10 for the general rules of spellcasting and chapter 11 for the bard spell list.
+
+***Cantrips***
+You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, learning a 3rd cantrip at 4th level and a 4th at 10th level.
+
+***Spell Slots***
+The Bard table shows how many spell slots you have to cast your bard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+
+For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot.
+
+***Spells Known of 1st Level and Higher***
+You know four 1st-level spells of your choice from the bard spell list.
+
+You learn an additional bard spell of your choice at each level except 12th, 16th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.
+
+Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots.
+
+
+***Spellcasting Ability***
+Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.
+
+**Spell save DC** = 8 + your proficiency bonus + your Charisma modifier
+**Spell attack modifier** = your proficiency bonus + your Charisma modifier
+
+***Ritual Casting***
+You can cast any bard spell you know as a ritual if that spell has the ritual tag.
+
+***Spellcasting Focus***
+You can use a musical instrument as a spellcasting focus for your bard spells.</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Jack of all Trades">Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</feature>
+        <feature name="Song of Rest (d6)">Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures regains an extra 1d6 hit points.
+
+The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.</feature>
+        <feature name="Magical Inspiration" tags="optional">If a creature has a Bardic Inspiration die from you and casts a spell that restores hit points or deals damage, the creature can roll that die and choose a target affected by the spell. Add the number rolled as a bonus to the hit points regained or the damage dealt. The Bardic Inspiration die is then lost.</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Bard College">At 3rd level, you delve into the advanced techniques of a bard college of your choice from the list of available colleges. Your choice grants you features at 3rd level and again at 6th and 14th level.</feature>
+        <feature name="Expertise">At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
+
+At 10th level, you can choose another two skill proficiencies to gain this benefit.</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+        <feature name="Bardic Versatility" tags="optional">Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing a change in focus as you use your skills and magic:
+
+    **·** Replace one of the skills you chose for the Expertise feature with one of your other skill proficiencies that isn't benefiting from Expertise.
+    **·** Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the bard spell list.</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Bardic Inspiration (d8)">At 5th level, your Bardic Inspiration die changes to a d8.</feature>
+        <feature name="Font of Inspiration">Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Countercharm">At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required).</feature>
+        <feature name="Bard College feature">At 6th level, you gain a feature from your Bard College.</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="">You get nothing at this level.</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Song of Rest (d8)">At 9th level, the extra hit points gained from Song of Rest increases to 1d8.</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Bardic Inspiration (d10)">At 10th level, your Bardic Inspiration die changes to a d10.</feature>
+        <feature name="Expertise">At 10th level, you can choose another two skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</feature>
+        <feature name="Magical Secrets">By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.
+
+The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.
+
+You learn two additional spells from any classes at 14th level and again at 18th level.</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="">You get nothing at this level.</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Song of Rest (d10)">At 13th level, the extra hit points gained from Song of Rest increases to 1d10.</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Magical Secrets">placeholder</feature>
+        <feature name="Bard College feature">At 14th level, you gain a feature from your Bard College.</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Bardic Inspiration (d12)">At 15th level, your Bardic Inspiration die changes to a d12.</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Song of Rest (d12)">At 17th level, the extra hit points gained from Song of Rest increases to 1d12.</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Magical Secrets">At 18th level, choose two additional spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.
+
+The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Superior Inspiration">At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="College of Creation">
+      	<description>Bards believe the cosmos is a work of art-the creation of the first dragons and gods. That creative work included harmonies that continue to resound through existence today, a power known as the Song of Creation. The bards of the College of Creation draw on that primeval song through dance, music, and poetry, and their teachers share this lesson:
+
+"Before the sun and the moon, there was the Song, and its music awoke the first dawn. Its melodies so delighted the stones and trees that some of them gained a voice of their own. And now they sing too. Learn the Song, students, and you too can teach the mountains to sing and dance."
+
+Dwarves and gnomes often encourage their bards to become students of the Song of Creation. And among dragonborn, the Song of Creation is revered, for legends portray Bahamut and Tiamat-the greatest of dragons-as two of the song's first singers.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Mote of Potential">Whenever you give a creature a Bardic Inspiration die, you can utter a note from the Song of Creation to create a Tiny mote of potential, which orbits within 5 feet of that creature. The mote is intangible and invulnerable, and it lasts until the Bardic Inspiration die is lost. The mote looks like a musical note, a star, a flower, or another symbol of art or life that you choose.
+
+When the creature uses the Bardic Inspiration die, the mote provides an additional effect based on whether the die benefits an ability check, an attack roll, or a saving throw, as detailed below:
+
+    **Ability Check.** When the creature rolls the Bardic Inspiration die to add it to an ability check, the creature can roll the Bardic Inspiration die again and choose which roll to use, as the mote pops and emits colorful, harmless sparks for a moment.
+
+    **Attack Roll.** Immediately after the creature rolls the Bardic Inspiration die to add it to an attack roll against a target, the mote thunderously shatters. The target and each creature of your choice that you can see within 5 feet of it must succeed on a Constitution saving throw against your spell save DC or take thunder damage equal to the number rolled on the Bardic Inspiration die.
+
+    **Saving Throw.** Immediately after the creature rolls the Bardic Inspiration die and adds it to a saving throw, the mote vanishes with the sound of soft music, causing the creature to gain temporary hit points equal to the number rolled on the Bardic Inspiration die plus your Charisma modifier (minimum of 1 temporary hit point).</archetypeFeature>
+          <archetypeFeature level="3" name="Performance of Creation">As an action, you can channel the magic of the Song of Creation to create one nonmagical item of your choice in an unoccupied space within 10 feet of you. The item must appear on a surface or in a liquid that can support it. The gp value of the item can't be more than 20 times your bard level, and the item must be Medium or smaller. The item glimmers softly, and a creature can faintly hear music when touching it. The created item disappears after a number of hours equal to your proficiency bonus. For examples of items you can create, see the equipment chapter of the Player's Handbook.
+
+Once you create an item with this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 2nd level or higher to use this feature again. You can have only one item created by this feature at a time; if you use this action and already have an item from this feature, the first one immediately vanishes.
+
+The size of the item you can create with this feature increases by one size category when you reach 6th level (Large) and 14th level (Huge).</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">As an action, you can target a Large or smaller nonmagical item you can see within 30 feet of you and animate it. The animate item uses the Dancing Item stat block, which uses your proficiency bonus (PB). The item is friendly to you and your companions and obeys your commands. It lives for 1 hour, until it is reduced to 0 hit points, or until you die.
+
+In combat, the item shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the item can take any action of its choice, not just Dodge.
+
+When you use your Bardic Inspiration feature, you can command the item as part of the same bonus action you use for Bardic Inspiration.
+
+Once you animate an item with this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use this feature again. You can have only one item animated by this feature at a time; if you use this action and already have a dancing item from this feature, the first one immediately becomes inanimate.</archetypeFeature>
+          <archetypeFeature level="14" name="featureName">When you use your Performance of Creation feature, you can create more than one item at once. The number of items equals your Charisma modifier (minimum of two items). If you create an item that would exceed that number, you choose which of the previously created items disappears. Only one of these items can be of the maximum size you can create; the rest must be Small or Tiny.
+
+You are no longer limited by gp value when creating items with Performance of Creation.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>Adherents of the College of Eloquence master the art of oratory. Persuasion is regarded as a high art, and a well-reasoned, well-spoken argument often proves more persuasive than facts. These bards wield a blend of logic and theatrical wordplay, winning over skeptics and detractors with logical arguments and plucking at heartstrings to appeal to the emotions of audiences.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Silver Tongue">You are a master at saying the right thing at the right time. When you make a Charisma (Persuasion) or Charisma (Deception) check, you can treat a d20 roll of 9 or lower as a 10.</archetypeFeature>
+          <archetypeFeature level="3" name="Unsettling Words">You can spin words laced with magic that unsettle a creature and cause it to doubt itself. As a bonus action, you can expend one use of your Bardic Inspiration and choose one creature you can see within 60 feet of you. Roll the Bardic Inspiration die. The creature must subtract the number rolled from the next saving throw it makes before the start of your next turn.</archetypeFeature>
+          <archetypeFeature level="6" name="Unfailing Inspiration">Your inspiring words are so persuasive that others feel driven to succeed. When a creature adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll fails, the creature can keep the Bardic Inspiration die.</archetypeFeature>
+          <archetypeFeature level="6" name="Universal Speech">You have gained the ability to make your speech intelligible to any creature. As an action, choose one or more creatures within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). The chosen creatures can magically understand you, regardless of the language you speak, for 1 hour.
+
+Once you use this feature, you can't use it again until you finish a long rest, unless you expend a spell slot to use it again.</archetypeFeature>
+          <archetypeFeature level="14" name="Infectious Inspiration">When you successfully inspire someone, the power of your eloquence can now spread to someone else. When a creature within 60 feet of you adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll succeeds, you can use your reaction to encourage a different creature (other than yourself) that can hear you within 60 feet of you, giving it a Bardic Inspiration die without expending any of your Bardic Inspiration uses.
+
+You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="College of Glamour">
+      	<description>The College of Glamour is the home of bards who mastered their craft in the vibrant realm of the Feywild or under the tutelage of someone who dwelled there. Tutored by satyrs, eladrin, and other fey, these bards learn to use their magic to delight and captivate others.
+
+The bards of this college are regarded with a mixture of awe and fear. Their performances are the stuff of legend. These bards are so eloquent that a speech or song that one of them performs can cause captors to release the bard unharmed and can lull a furious dragon into complacency. The same magic that allows them to quell beasts can also bend minds. Villainous bards of this college can leech off a community for weeks, misusing their magic to turn their hosts into thralls. Heroic bards of this college instead use this power to gladden the downtrodden and undermine oppressors.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Mantle of Inspiration">When you join the College of Glamour at 3rd level, you gain the ability to weave a song of fey magic that imbues your allies with vigor and speed.
+
+As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and that can see you within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its reaction to move up to its speed, without provoking opportunity attacks.
+
+The number of temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 10th level, and 14 at 15th level.</archetypeFeature>
+          <archetypeFeature level="3" name="Enthralling Performance">Starting at 3rd level, you can charge your performance with seductive, fey magic.
+
+If you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of humanoids within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell save DC or be charmed by you. While charmed in this way, the target idolizes you, it speaks glowingly of you to anyone who talks to it, and it hinders anyone who opposes you, although it avoids violence unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of its allies.
+
+If a target succeeds on its saving throw, the target has no hint that you tried to charm it.
+
+Once you use this feature, you can't use it again until you finish a short or long rest.</archetypeFeature>
+          <archetypeFeature level="6" name="Mantle of Majesty">At 6th level, you gain the ability to cloak yourself in a fey magic that makes others want to serve you. As a bonus action, you cast command, without expending a spell slot, and you take on an appearance of unearthly beauty for 1 minute or until your concentration ends (as if you were concentrating on a spell). During this time, you can cast command as a bonus action on each of your turns, without expending a spell slot.
+
+Any creature charmed by you automatically fails its saving throw against the command you cast with this feature.
+
+Once you use this feature, you can't use it again until you finish a long rest.</archetypeFeature>
+          <archetypeFeature level="14" name="Unbreakable Majesty">At 14th level, your appearance permanently gains an otherworldly aspect that makes you look more lovely and fierce.
+
+In addition, as a bonus action, you can assume a magically majestic presence for 1 minute or until you are incapacitated. For the duration, whenever any creature tries to attack you for the first time on a turn, the attacker must make a Charisma saving throw against your spell save DC. On a failed save, it can't attack you on this turn, and it must choose a new target for its attack or the attack is wasted. On a successful save, it can attack you on this turn, but it has disadvantage on any saving throw it makes against your spells on your next turn.
+
+Once you assume this majestic presence, you can't do so again until you finish a short or long rest.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="College of Lore">
+      	<description>Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king.
+
+The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic.
+
+The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Bonus Proficiencies">When you join the College of Lore at 3rd level, you gain proficiency with three skills of your choice.</archetypeFeature>
+          <archetypeFeature level="3" name="Cutting Words">Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being charmed.</archetypeFeature>
+          <archetypeFeature level="6" name="Additional Magical Secrets">At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know.</archetypeFeature>
+          <archetypeFeature level="14" name="Peerless Skill">Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the DM tells you whether you succeed or fail.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="College of Swords">
+      	<description>Bards of the College of Swords are called blades, and they entertain through daring feats of weapon prowess. Blades perform stunts such as sword swallowing, knife throwing and juggling, and mock combats. Though they use their weapons to entertain, they are also highly trained and skilled warriors in their own right.
+
+Their talent with weapons inspires many blades to lead double lives. One blade might use a circus troupe as cover for nefarious deeds such as assassination, robbery, and blackmail. Other blades strike at the wicked, bringing justice to bear against the cruel and powerful. Most troupes are happy to accept a blade's talent for the excitement it adds to a performance, but few entertainers fully trust a blade in their ranks.
+
+Blades who abandon their lives as entertainers have often run into trouble that makes maintaining their secret activities impossible. A blade caught stealing or engaging in vigilante justice is too great a liability for most troupes. With their weapon skills and magic, these blades either take up work as enforcers for thieves' guilds or strike out on their own as adventurers.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Bonus Proficiencies">When you join the College of Swords at 3rd level, you gain proficiency with medium armor and the scimitar.
+
+If you're proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells.</archetypeFeature>
+          <archetypeFeature level="3" name="Fighting Style">At 3rd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if something in the game lets you choose again.
+**Dueling.** When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
+**Two-Weapon Fighting.** When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</archetypeFeature>
+          <archetypeFeature level="3" name="Blade Flourish">At 3rd level, you learn to perform impressive displays of martial prowess and speed.
+
+Whenever you take the Attack action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice. You can use only one Blade Flourish option per turn.
+
+**Defensive Flourish.** You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You also add the number rolled to your AC until the start of your next turn.
+**Mobile Flourish.** You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can also push the target up to 5 feet away from you, plus a number of feet equal to the number you roll on that die. You can then immediately use your reaction to move up to your walking speed to an unoccupied space within 5 feet of the target.
+**Slashing Flourish.** You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit and to any other creature of your choice that you can see within 5 feet of you. The damage equals the number you roll on the Bardic Inspiration die.</archetypeFeature>
+          <archetypeFeature level="6" name="Extra Attack">Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</archetypeFeature>
+          <archetypeFeature level="14" name="Master's Flourish">Starting at 14th level, whenever you use a Blade Flourish option, you can roll a d6 and use it instead of expending a Bardic Inspiration die.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="College of Valor">
+      	<description>Bards of the College of Valor are daring skalds whose tales keep alive the memory of the great heroes of the past, and thereby inspire a new generation of heroes. These bards gather in mead halls or around great bonfires to sing the deeds of the mighty, both past and present. They travel the land to witness great events firsthand and to ensure that the memory of those events doesn't pass from the world. With their songs, they inspire others to reach the same heights of accomplishment as the heroes of old.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Bonus Proficiencies">When you join the College of Valor at 3rd level, you gain proficiency with medium armor, shields, and martial weapons.</archetypeFeature>
+          <archetypeFeature level="3" name="Combat Inspiration">Also at 3rd level, you learn to inspire others in battle. A creature that has a Bardic Inspiration die from you can roll that die and add the number rolled to a weapon damage roll it just made. Alternatively, when an attack roll is made against the creature, it can use its reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses.</archetypeFeature>
+          <archetypeFeature level="6" name="Extra Attack">Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</archetypeFeature>
+          <archetypeFeature level="14" name="Battle Magic">At 14th level, you have mastered the art of weaving spellcasting and weapon use into a single harmonious act. When you use your action to cast a bard spell, you can make one weapon attack as a bonus action.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="College of Whispers">
+      	<description>Most folk are happy to welcome a bard into their midst. Bards of the College of Whispers use this to their advantage. They appear to be like other bards, sharing news, singing songs, and telling tales to the audiences they gather. In truth, the College of Whispers teaches its students that they are wolves among sheep. These bards use their knowledge and magic to uncover secrets and turn them against others through extortion and threats.
+
+Many other bards hate the College of Whispers, viewing it as a parasite that uses a bard's reputation to acquire wealth and power. For this reason, members of this college rarely reveal their true nature. They typically claim to follow some other college, or they keep their actual calling secret in order to infiltrate and exploit royal courts and other settings of power.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Psychic Blades">When you join the College of Whispers at 3rd level, you gain the ability to make your weapon attacks magically toxic to a creature's mind.
+
+When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an extra 2d6 psychic damage to that target. You can do so only once per round on your turn.
+
+The psychic damage increases when you reach certain levels in this class, increasing to 3d6 at 5th level, 5d6 at 10th level, and 8d6 at 15th level.</archetypeFeature>
+          <archetypeFeature level="3" name="Words of Terror">At 3rd level, you learn to infuse innocent-seeming words with an insidious magic that can inspire terror.
+
+If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia in its mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you or another creature of your choice. The target is frightened in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged.
+
+If the target succeeds on its saving throw, the target has no hint that you tried to frighten it.
+
+Once you use this feature, you can't use it again until you finish a short or long rest.</archetypeFeature>
+          <archetypeFeature level="6" name="Mantle of Whispers">At 6th level, you gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or you finish a long rest.
+
+You can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy and alive. This disguise lasts for 1 hour or until you end it as a bonus action.
+
+While you're in the disguise, you gain access to all information that the humanoid would freely share with a casual acquaintance. Such information includes general details on its background and personal life, but doesn't include secrets. The information is enough that you can pass yourself off as the person by drawing on its memories.
+
+Another creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) check. You gain a +5 bonus to your check.
+
+Once you capture a shadow with this feature, you can't capture another one with it until you finish a short or long rest.</archetypeFeature>
+          <archetypeFeature level="14" name="Shadow Lore">At 14th level, you gain the ability to weave dark magic into your words and tap into a creature's deepest fears.
+
+As an action, you magically whisper a phrase that only one creature of your choice within 30 feet of you can hear. The target must make a Wisdom saving throw against your spell save DC. It automatically succeeds if it doesn't share a language with you or if it can't hear you. On a successful saving throw, your whisper sounds like unintelligible mumbling and has no effect.
+
+On a failed saving throw, the target is charmed by you for the next 8 hours or until you or your allies attack it, damage it, or force it to make a saving throw. It interprets the whispers as a description of its most mortifying secret. You gain no knowledge of this secret, but the target is convinced you know it.
+
+The charmed creature obeys your commands for fear that you will reveal its secret. It won't risk its life for you or fight for you, unless it was already inclined to do so. It grants you favors and gifts it would offer to a close friend.
+
+When the effect ends, the creature has no understanding of why it held you in such fear.
+
+Once you use this feature, you can't use it again until you finish a long rest.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+  <class name="cleric" ID="3">
+    <description>...soon the flames will fade, and only cleric will remain...</description>
+    <proficiencies>
+      <armor>light armor, medium armor, shields</armor>
+      <weapons>simple weapons</weapons>
+      <tools>none</tools>
+      <savingThrows>Wisdom, Charisma</savingThrows>
+      <startingSkills amount="2">History, Insight, Medicine, Persuasion, Religion</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. a mace or a warhammer (if proficient)
+2. scale mail or leather armor or chain mail (if proficient)
+3. a light crossbow and 20 bolts or any simple weapon
+4. a priest's pack or an explorer's pack
+5. a shield and a holy symbol
+Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
+</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>8 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d8(or 5) + your Constitution modifier per cleric level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Spellcasting">As a conduit for divine power, you can cast cleric spells. See chapter 10 for the general rules of spellcasting and chapter 11 for a selection of cleric spells.
+
+***Cantrips***
+At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table.
+
+***Preparing and Casting Spells***
+The Cleric table shows how many spell slots you have to cast your cleric spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+
+You prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.
+
+For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.
+
+You can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.
+
+
+***Spellcasting Ability***
+Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.
+
+**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
+**Spell attack modifier** = your proficiency bonus + your Wisdom modifier
+
+***Ritual Casting***
+You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared.
+
+***Spellcasting Focus***
+You can use a holy symbol as a spellcasting focus for your cleric spells.</feature>
+        <feature name="Divine Domain">Choose one domain related to your deity from the list of available domains. Each domain is detailed in their own feature, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.
+
+***Domain Spells***
+Each domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.
+
+If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you.</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Channel Divinity (1/rest)">At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.
+
+When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.
+
+Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.
+
+Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.
+
+***Turn Undead***
+As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.
+
+A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</feature>
+        <feature name="Channel Divinity: Harness Divine Power" tags="optional">You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 2nd level, once; 6th level, twice; and 18th level, thrice. You regain all expended uses when you finish a long rest.</feature>
+        <feature name="Divine Domain feature">At 2nd level, you gain a feature from your Divine Domain.</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="">You get nothing at this level.</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+        <feature name="Cantrip Versatility" tags="optional">Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the cleric spell list.</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Destroy Undead (CR 1/2)">Starting at 5th level, when an undead of CR 1/2 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Channel Divinity (2/rest)">Beginning at 6th level, you can use your Channel Divinity twice between rests.</feature>
+        <feature name="Divine Domain feature">At 6nd level, you gain a feature from your Divine Domain.</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="">You get nothing at this level.</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+        <feature name="Destroy Undead (CR 1)">Starting at 8th level, when an undead of CR 1 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</feature>
+        <feature name="Divine Domain feature">At 8nd level, you gain a feature from your Divine Domain.</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="">You get nothing at this level.</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Divine Intervention">Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.
+
+Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.
+
+At 20th level, your call for intervention succeeds automatically, no roll required.</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Destroy Undead (CR 2)">Starting at 11th level, when an undead of CR 2 or lower or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="">You get nothing at this level.</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Destroy Undead (CR 3)">Starting at 14th level, when an undead of CR 3 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="">You get nothing at this level.</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Destroy Undead (CR 4)">Starting at 17th level, when an undead of CR 4 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</feature>
+        <feature name="Divine Domain feature">At 17nd level, you gain a feature from your Divine Domain.</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Channel Divinity (3/rest)">Beginning at 18th level, you can use your Channel Divinity three times between rests.</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Divine Intervention Improvement">At 20th level, your call for intervention succeeds automatically, no roll required.</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="Arcana Domain">
+      	<description>Magic is an energy that suffuses the multiverse and that fuels both destruction and creation. Gods of the Arcana domain know the secrets and potential of magic intimately. For some of these gods, magical knowledge is a great responsibility that comes with a special understanding of the nature of reality. Other gods of Arcana see magic as pure power, to be used as its wielder sees fit.
+
+The gods of this domain are often associated with knowledge, as learning and arcane power tend to go hand-in-hand. In the Realms, deities of this domain include Azuth and Mystra, as well as Corellon Larethian of the elven pantheon. In other worlds, this domain includes Hecate, Math Mathonwy, and Isis; the triple moon gods of Solinari, Lunitari, and Nuitari of Krynn; and Boccob, Vecna, and WeeJas of Greyhawk.
+
+At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.
+**Arcana Domain Spells**
+Cleric Level	Spells
+1st				detect magic, magic missile
+3rd				magic weapon, Nystul's magic aura
+5th				dispel magic, magic circle
+7th				arcane eye, Leomund's secret chest
+9th				planar binding, teleportation circle</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="placeholder Domain">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="2" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="6" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="8" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="17" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+  <class name="druid" ID="4">
+    <description>...soon the flames will fade, and only druid will remain...</description>
+    <proficiencies>
+      <armor>placeholder</armor>
+      <weapons>placeholder</weapons>
+      <tools>placeholder</tools>
+      <savingThrows>placeholder</savingThrows>
+      <startingSkills amount="2">placeholder</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. 
+2. 
+3. 
+</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>6-12 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d6-12(or x) + your Constitution modifier per druid level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+  <class name="fighter" ID="5">
+    <description>...soon the flames will fade, and only fighter will remain...</description>
+    <proficiencies>
+      <armor>placeholder</armor>
+      <weapons>placeholder</weapons>
+      <tools>placeholder</tools>
+      <savingThrows>placeholder</savingThrows>
+      <startingSkills amount="2">placeholder</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. 
+2. 
+3. 
+</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>6-12 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d6-12(or x) + your Constitution modifier per fighter level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+  <class name="monk" ID="6">
+    <description>...soon the flames will fade, and only monk will remain...</description>
+    <proficiencies>
+      <armor>placeholder</armor>
+      <weapons>placeholder</weapons>
+      <tools>placeholder</tools>
+      <savingThrows>placeholder</savingThrows>
+      <startingSkills amount="2">placeholder</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. 
+2. 
+3. 
+</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>6-12 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d6-12(or x) + your Constitution modifier per monk level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+  <class name="paladin" ID="7">
+    <description>...soon the flames will fade, and only paladin will remain...</description>
+    <proficiencies>
+      <armor>placeholder</armor>
+      <weapons>placeholder</weapons>
+      <tools>placeholder</tools>
+      <savingThrows>placeholder</savingThrows>
+      <startingSkills amount="2">placeholder</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. 
+2. 
+3. 
+</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>6-12 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d6-12(or x) + your Constitution modifier per paladin level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+  <class name="ranger" ID="8">
+    <description>...soon the flames will fade, and only ranger will remain...</description>
+    <proficiencies>
+      <armor>placeholder</armor>
+      <weapons>placeholder</weapons>
+      <tools>placeholder</tools>
+      <savingThrows>placeholder</savingThrows>
+      <startingSkills amount="2">placeholder</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. 
+2. 
+3. 
+</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>6-12 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d6-12(or x) + your Constitution modifier per ranger level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+  <class name="rogue" ID="9">
+    <description>...soon the flames will fade, and only rogue will remain...</description>
+    <proficiencies>
+      <armor>light armor</armor>
+      <weapons>simple weapons, hand crossbows, longswords, rapiers, shortswords</weapons>
+      <tools>thieves' tools</tools>
+      <savingThrows>Dexterity, Intelligence</savingThrows>
+      <startingSkills amount="4">Acrpbatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, Stealth</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. a rapier or a shortsword.
+2. a shortbow and quiver of 20 arrows or a shortsword.
+3. a burglar's pack or a dungeoneer's pack or an explorer's pack.
+Leather armor, two daggers, and thieves' tools.
+Alternatively, you may start with 4d4 * 10 gp to buy your own equipment.
+</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>8 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d8(or 5) + your Constitution modifier per rogue level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Expertise">At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
+
+At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</feature>
+        <feature name="Sneak Attack">Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+
+You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.
+
+The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.</feature>
+        <feature name="Thieves' Cant">During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.
+
+In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Cunning Action">Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Roguish Archetype">At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities from the list of available archetypes. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Uncanny Dodge">Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Expertise">At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain the benefit of Expertise.</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Evasion">Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Roguish Archetype Feature">At 9th level, you gain a feature granted by your Roguish Archetype.</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 10th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Reliable Talent">By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Roguish Archetype Feature">At 13th level, you gain a feature granted by your Roguish Archetype.</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Blindsense">Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Slippery Mind">By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Roguish Archetype Feature">At 17th level, you gain a feature granted by your Roguish Archetype.</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Elusive">Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="Stroke of Luck">At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.
+
+Once you use this feature, you can't use it again until you finish a short or long rest.</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="Arcane Trickster">
+      	<description>Some rogues enhance their fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion. These rogues include pickpockets and burglars, but also pranksters, mischief-makers, and a significant number of adventurers.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Spellcasting">When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.
+***Cantrips.*** You learn three cantrips: mage hand and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 10th level.
+***Spell Slots.*** The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+
+For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.
+
+
+***Spells Known of 1st-Level and Higher.***
+
+You know three 1st-level wizard spells of your choice, two of which you must choose from the enchantment and illusion spells on the wizard spell list.
+
+The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.
+
+The spells you learn at 8th, 14th, and 20th level can come from any school of magic.
+
+Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.
+
+***Spellcasting Ability.***
+
+Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.
+
+**Spell save DC** = 8 + your proficiency bonus + your Intelligence modifier
+**Spell attack modifier** = your proficiency bonus + your Intelligence modifier</archetypeFeature>
+          <archetypeFeature level="3" name="Mage Hand Lagerdemain">Starting at 3rd level, when you cast mage hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it:
+
+    ­­**·** You can stow one object the hand is holding in a container worn or carried by another creature.
+    **·** You can retrieve an object in a container worn or carried by another creature.
+    **·** You can use thieves' tools to pick locks and disarm traps at range.
+
+You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check.
+
+In addition, you can use the bonus action granted by your Cunning Action to control the hand.</archetypeFeature>
+          <archetypeFeature level="9" name="Magical Ambush">Starting at 9th level, if you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it makes against the spell this turn.</archetypeFeature>
+          <archetypeFeature level="13" name="Versatile Trickster">At 13th level, you gain the ability to distract targets with your mage hand. As a bonus action on your turn, you can designate a creature within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of the turn.</archetypeFeature>
+          <archetypeFeature level="17" name="Spell Thief">At 17th level, you gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.
+
+Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can use your reaction to force the creature to make a saving throw with its spellcasting ability modifier. The DC equals your spell save DC. On a failed save, you negate the spell's effect against you, and you steal the knowledge of the spell if it is at least 1st level and of a level you can cast (it doesn't need to be a wizard spell). For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can't cast that spell until the 8 hours have passed.
+
+Once you use this feature, you can't use it again until you finish a long rest.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Assassin">
+      	<description>You focus your training on the grim art of death. Those who adhere to this archetype are diverse - hired killers, spies, bounty hunters, and even specially anointed priests trained to exterminate the enemies of their deity. Stealth, poison, and disguise help you eliminate your foes with deadly efficiency.
+
+Your archetype grants you features at 3rd level and then again at 9th, 13th, and 17th level.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Assassinate">Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</archetypeFeature>
+          <archetypeFeature level="3" name="Bonus Proficiencies">When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and the poisoner's kit.</archetypeFeature>
+          <archetypeFeature level="9" name="Infiltration Expertise">Starting at 9th level, you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official-looking certification to establish yourself as a member of a trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants.
+
+Thereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious reason not to.</archetypeFeature>
+          <archetypeFeature level="13" name="Impostor">At 13th level, you gain the ability to unerringly mimic another person's speech, writing, and behavior. You must spend at least three hours studying these three components of the person's behavior, listening to speech, examining handwriting, and observing mannerism.
+
+Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) check you make to avoid detection.</archetypeFeature>
+          <archetypeFeature level="17" name="Death Strike">Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is surprised, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Inquisitive">
+      	<description>As an archetypal Inquisitive, you excel at rooting out secrets and unraveling mysteries. You rely on your sharp eye for detail, but also on your finely honed ability to read the words and deeds of other creatures to determine their true intent. You excel at defeating creatures that hide among and prey upon ordinary folk, and your mastery of lore and your keen deductions make you well equipped to expose and end hidden evils.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Ear for Deceit">When you choose this archetype at 3rd level, you develop a talent for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8.</archetypeFeature>
+          <archetypeFeature level="3" name="Eye for Detail">Starting at 3rd level, you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues.</archetypeFeature>
+          <archetypeFeature level="3" name="Insightful Fighting">At 3rd level, you gain the ability to decipher an opponent's tactics and develop a counter to them. As a bonus action, you can make a Wisdom (Insight) check against a creature you can see that isn't incapacitated, contested by the target's Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have disadvantage on it.
+
+This benefit lasts for 1 minute or until you successfully use this feature against a different target.</archetypeFeature>
+          <archetypeFeature level="9" name="Steady Eye">Starting at 9th level, you have advantage on any Wisdom (Perception) or Intelligence (Investigation) check if you move no more than half your speed on the same turn.</archetypeFeature>
+          <archetypeFeature level="13" name="Unerring Eye">Beginning at 13th level, your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30 feet of you, provided you aren't blinded or deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature.
+
+You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</archetypeFeature>
+          <archetypeFeature level="17" name="Eye for Weakness">At 17th level, you learn to exploit a creature's weaknesses by carefully studying its tactics and movement. While your Insightful Fighting feature applies to a creature, your Sneak Attack damage against that creature increases by 3d6.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Mastermind">
+      	<description>Your focus is on people and on the influence and secrets they have. Many spies, courtiers, and schemers follow this archetype, leading lives of intrigue. Words are your weapons as often as knives or poison, and secrets and favors are some of your favorite treasures.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Master of Intrigue">When you choose this archetype at 3rd level, you gain proficiency with the disguise Kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice.
+
+Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, enabling you to pass yourself off as a native speaker of a particular land, provided that you know the language.</archetypeFeature>
+          <archetypeFeature level="3" name="Master of Tactics">Starting at 3rd level, you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you.</archetypeFeature>
+          <archetypeFeature level="9" name="Insightful Manipulator">Starting at 9th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:
+
+    **·** Intelligence score
+    **·** Wisdom score
+    **·** Charisma score
+    **·** Class levels (if any)
+
+At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any.</archetypeFeature>
+          <archetypeFeature level="13" name="Misdirection">Beginning at 13th level, you can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use your reaction to have the attack target that creature instead of you.</archetypeFeature>
+          <archetypeFeature level="17" name="Soul of Deceit">Starting at 17th level, your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by succeeding on a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.
+
+Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so choose, and you can't be compelled to tell the truth by magic.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Phantom">
+      	<description>Many rogues walk a fine line between life and death, risking their own lives and taking the lives of others. While adventuring on that line, some rogues discover a mystical connection to death itself. These rogues take knowledge from the dead and become immersed in negative energy, eventually becoming like ghosts. Thieves' guilds value them as highly effective information gatherers and spies.
+
+Many shadar-kai of the Shadowfell are masters of these macabre techniques, and some are willing to teach this path. In places like Thay in the Forgotten Realms and Karrnath in Eberron, where many necromancers practice their craft, a Phantom can become a wizard's confidant and right hand. In temples of gods of death, the Phantom might work as an agent to track down those who try to cheat death and to recover knowledge that might otherwise be lost to the grave.
+
+How did you discover this grim power? Did you sleep in a graveyard and awaken to your new abilities? Or did you cultivate them in a temple or thieves' guild dedicated to a deity of death?</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Whispers of the Dead">Echoes of those who have died cling to you. Whenever you finish a short or long rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge with you. You lose this proficiency when you use this feature to choose a different proficiency that you lack.</archetypeFeature>
+          <archetypeFeature level="3" name="Wails from the Grave">As you nudge someone closer to the grave, you can channel the power of death to harm someone else as well. Immediately after you deal your Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), and the second creature takes necrotic damage equal to the roll's total, as wails of the dead sound around them for a moment.
+
+You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</archetypeFeature>
+          <archetypeFeature level="9" name="Tokens of the Departed">When a life ends in your presence, you're able to snatch a token from the departing soul, a sliver of its life essence that takes physical form: as a reaction when a creature you can see dies within 30 feet of you, you can open your free hand and cause a Tiny trinket to appear there, a soul trinket. The DM determines the trinket's form or has you roll on the Trinkets table in the Player's Handbook to generate it. You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum.
+
+You can use soul trinkets in the following ways:
+
+    **·** While a soul trinket is on your person, you have advantage on death saving throws and Constitution saving throws, for your vitality is enhanced by the life essence within the object.
+    **·** When you deal Sneak Attack damage on your turn, you can destroy one of your soul trinkets that's on your person and then immediately use Wails from the Grave, without expending a use of that feature.
+    **·** As an action, you can destroy one of your soul trinkets, no matter where it's located. When you do so, you can ask the spirit associated with the trinket one question. The spirit appears to you and answers in a language it knew in life. It's under no obligation to be truthful, and it answers as concisely as possible, eager to be free. The spirit knows only what it knew in life, as determined by the DM.</archetypeFeature>
+          <archetypeFeature level="13" name="Ghost Walk">You can phase partially into the realm of the dead, becoming like a ghost. As a bonus action, you assume a spectral form. While in this form, you have a flying speed of 10 feet, you can hover, and attack rolls have disadvantage against you. You can also move through creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or an object.
+
+You stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a long rest or destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk.</archetypeFeature>
+          <archetypeFeature level="17" name="Death's Friend">Your association with death has become so close that you gain the following benefits:
+
+    **·** When you use your Wails from the Grave, you can deal the necrotic damage to both the first and the second creature.
+    **·** At the end of a long rest, a soul trinket appears in your hand if you don't have any soul trinkets, as the spirits of the dead are drawn to you.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Scout">
+      	<description>You are skilled in stealth and surviving far from the streets of a city, allowing you to scout ahead of your companions during expeditions. Rogues who embrace this archetype are at home in the wilderness and among barbarians and rangers, and many Scouts serve as the eyes and ears of war bands. Ambusher, spy, bounty hunter—these are just a few of the roles that Scouts assume as they range the world.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Skirmisher">Starting at 3rd level, you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn't provoke opportunity attacks.</archetypeFeature>
+          <archetypeFeature level="3" name="Survivalist">When you choose this archetype at 3rd level, you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</archetypeFeature>
+          <archetypeFeature level="9" name="Superior Mobility">At 9th level, your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well.</archetypeFeature>
+          <archetypeFeature level="13" name="Ambush Master">Starting at 13th level, you excel at leading ambushes and acting first in a fight.
+
+You have advantage on initiative rolls. In addition, the first creature you hit during the first round of a combat becomes easier for you and others to strike; attack rolls against that target have advantage until the start of your next turn.</archetypeFeature>
+          <archetypeFeature level="17" name="Sudden Strike">Starting at 17th level, you can strike with deadly speed. If you take the Attack action on your turn, you can make one additional attack as a bonus action. This attack can benefit from your Sneak Attack even if you have already used it this turn, but you can't use your Sneak Attack against the same target more than once in a turn.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Soulknife">
+      	<description>Most assassins strike with physical weapons, and many burglars and spies use thieves' tools to infiltrate secure locations. In contrast, a Soulknife strikes and infiltrates with the mind, cutting through barriers both physical and psychic. These rogues discover psionic power within themselves and channel it to do their roguish work. They find easy employment as members of thieves' guilds, though they are often mistrusted by rogues who are leery of anyone using strange mind powers to conduct their business. Most governments would also be happy to employ a Soulknife as a spy.
+
+Amid the trees of ancient forests on the Material Plane and in the Feywild, some wood elves walk the path of the Soulknife, serving as silent, lethal guardians of their woods. In the endless war among the gith, a githzerai is encouraged to become a Soulknife when stealth is required against the githyanki foe.
+
+As a Soulknife, your psionic abilities might have haunted you since you were a child, only revealing their full potential as you experienced the stress of adventure. Or you might have sought out a reclusive order of psychic adepts and spent years learning how to manifest your power.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Psionic Power">You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.
+
+Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.
+
+When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (d10), and 17th level (d12).
+
+
+The powers below use your Psionic Energy dice.
+***Psi-Bolstered Knack.*** When your nonpsionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds.
+***Psychic Whispers.*** You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other.
+
+The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die.</archetypeFeature>
+          <archetypeFeature level="3" name="Psychic Blades">You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage.
+
+After you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.</archetypeFeature>
+          <archetypeFeature level="9" name="Soul Blades">Your Psychic Blades are now an expression of your psi-suffused soul, giving you these powers that use your Psionic Energy dice:
+***Homing Strikes.*** If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die.
+***Psychic Teleportation.*** As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes.</archetypeFeature>
+          <archetypeFeature level="13" name="Psychic Veil">You can weave a veil of psychic static to mask yourself. As an action, you can magically become invisible, along with anything you are wearing or carrying, for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.
+
+Once you use this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to use this feature again.</archetypeFeature>
+          <archetypeFeature level="17" name="Rend Mind">You can sweep your Psychic Blades directly through a creature's mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier). If the save fails, the target is stunned for 1 minute. The stunned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+Once you use this feature, you can't do so again until you finish a long rest, unless you expend three Psionic Energy dice to use it again.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Swashbuckler">
+      	<description>You focus your training on the art of the blade, relying on speed, elegance, and charm in equal parts. While some warriors are brutes clad in heavy armor, your method of fighting looks almost like a performance. Duelists and pirates typically belong to this archetype.
+
+A Swashbuckler excels in single combat, and can fight with two weapons while safely darting away from an opponent.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Fancy Footwork">When you choose this archetype at 3rd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn.</archetypeFeature>
+          <archetypeFeature level="3" name="Rakish Audacity">Starting at 3rd level, your confidence propels you into battle. You can give yourself a bonus to your initiative rolls equal to your Charisma modifier.
+
+You also gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use your Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll. All the other rules for Sneak Attack still apply to you.</archetypeFeature>
+          <archetypeFeature level="9" name="Panache">At 9th level, your charm becomes extraordinarily beguiling. As an action, you can make a Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language.
+
+If you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you. This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart.
+
+If you succeed on the check and the creature isn't hostile to you, it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.</archetypeFeature>
+          <archetypeFeature level="13" name="Elegant Maneuver">Starting at 13th level, you can use a bonus action on your turn to gain advantage on the next Dexterity (Acrobatics) or Strength (Athletics) check you make during the same turn.</archetypeFeature>
+          <archetypeFeature level="17" name="Master Duelist">Beginning at 17th level, your mastery of the blade lets you turn failure into success in combat. If you miss with an attack roll, you can roll it again with advantage. Once you do so, you can't use this feature again until you finish a short or long rest.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Thief">
+      	<description>You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Fast Hands">Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open a lock, or take the Use an Object action.</archetypeFeature>
+          <archetypeFeature level="3" name="Second-Story Work">When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.
+
+In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.</archetypeFeature>
+          <archetypeFeature level="9" name="Supreme Sneak">Starting at 9th level, you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.</archetypeFeature>
+          <archetypeFeature level="13" name="Use Magic Device">By 13th level, you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items.</archetypeFeature>
+          <archetypeFeature level="17" name="Thief's Reflexes">When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can't use this feature when you are surprised.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+  <class name="sorcerer" ID="10">
+    <description>...soon the flames will fade, and only sorcerer will remain...</description>
+    <proficiencies>
+      <armor>placeholder</armor>
+      <weapons>placeholder</weapons>
+      <tools>placeholder</tools>
+      <savingThrows>placeholder</savingThrows>
+      <startingSkills amount="2">placeholder</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. 
+2. 
+3. 
+</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>6-12 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d6-12(or x) + your Constitution modifier per sorcerer level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+  <class name="warlock" ID="11">
+    <description>...soon the flames will fade, and only warlock will remain...</description>
+    <proficiencies>
+      <armor>placeholder</armor>
+      <weapons>placeholder</weapons>
+      <tools>placeholder</tools>
+      <savingThrows>placeholder</savingThrows>
+      <startingSkills amount="2">placeholder</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. 
+2. 
+3. 
+</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>6-12 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d6-12(or x) + your Constitution modifier per warlock level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+  <class name="wizard" ID="12">
+    <description>...soon the flames will fade, and only wizard will remain...</description>
+    <proficiencies>
+      <armor>placeholder</armor>
+      <weapons>placeholder</weapons>
+      <tools>placeholder</tools>
+      <savingThrows>placeholder</savingThrows>
+      <startingSkills amount="2">placeholder</startingSkills>
+    </proficiencies>
+    <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
+1. 
+2. 
+3. 
+</startingEquipment>
+    <hitPointsRules>
+	  <hitDice>1d8</hitDice>
+      <initialHP>6-12 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d6-12(or x) + your Constitution modifier per wizard level after 1st</higherLevelsHP>
+    </hitPointsRules>
+    <levelsBreakdown>
+      <level number="1">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="2">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="3">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="4">
+        <proficiencyBonus>+2</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="5">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="6">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="7">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="8">
+        <proficiencyBonus>+3</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="9">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="10">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="11">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="12">
+        <proficiencyBonus>+4</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="13">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="14">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="15">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="16">
+        <proficiencyBonus>+5</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="17">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="18">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="19">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+      <level number="20">
+        <proficiencyBonus>+6</proficiencyBonus>
+        <feature name="placeholder">placeholder</feature>
+      </level>
+    </levelsBreakdown>
+    <archetypes>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Path of the Ape">
+      	<description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+    </archetypes>
+  </class>
+</characterClasses>
