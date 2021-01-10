@@ -7,21 +7,21 @@
       <alignment>Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil (represented by Bahamut and Tiamat, respectively). Most dragonborn are good, but those who side with Tiamat can be terrible villains.</alignment>
       <size brief="Medium">Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.</size>
       <speed brief="30">Your base walking speed is 30 feet.</speed>
-      <language>You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.</language>
+      <language brief="Common, Draconic" amount="2">You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.</language>
       <uniqueTraits>
         <trait name="Draconic Ancestry">You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.
 
 Dragon	DamageType	Breath Weapon
-Black	Acid		5 by 30 ft. line (Dex. save)
-Blue	Lightning	5 by 30 ft. line (Dex. save)
-Brass	Fire		5 by 30 ft. line (Dex. save)
-Bronze	Lightning	5 by 30 ft. line (Dex. save)
-Copper	Acid		5 by 30 ft. line (Dex. save)
-Gold	Fire		15 ft. cone (Dex. save)
-Green 	Poison		15 ft. cone (Con. save)
-Red 	Fire		15 ft. cone (Dex. save)
-Silver	Cold		15 ft. cone (Con. save)
-White	Cold		15 ft. cone (Con. save)
+Black	  Acid		    5 by 30 ft. line (Dex. save)
+Blue    Lightning	  5 by 30 ft. line (Dex. save)
+Brass	  Fire		    5 by 30 ft. line (Dex. save)
+Bronze	Lightning	  5 by 30 ft. line (Dex. save)
+Copper	Acid		    5 by 30 ft. line (Dex. save)
+Gold	  Fire		    15 ft. cone (Dex. save)
+Green 	Poison		  15 ft. cone (Con. save)
+Red 	  Fire		    15 ft. cone (Dex. save)
+Silver	Cold		    15 ft. cone (Con. save)
+White	  Cold		    15 ft. cone (Con. save)
         </trait>
         <trait name="Breath Weapon">You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.
 When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.
@@ -37,52 +37,6 @@ After you use your breath weapon, you can't use it again until you complete a sh
       <wisdom>+0</wisdom>
       <charisma>+1</charisma>
     </abilityScores>
-    <!-- <subrace raceName="high elf">
-      <subraceInfo>
-        <description>Your subrace is this bad.</description>
-        <uniqueTraits>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-        </uniqueTraits>
-      </subraceInfo>
-      <abilityScores>
-        <strength>+0</strength>
-        <dexterity>+0</dexterity>
-        <constitution>+0</constitution>
-        <intelligence>+0</intelligence>
-        <wisdom>+0</wisdom>
-        <charisma>+0</charisma>
-      </abilityScores>
-    </subrace>
-    <subrace raceName="high elf">
-      <subraceInfo>
-        <description>Your subrace is this bad.</description>
-        <uniqueTraits>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-        </uniqueTraits>
-      </subraceInfo>
-      <abilityScores>
-        <strength>+0</strength>
-        <dexterity>+0</dexterity>
-        <constitution>+0</constitution>
-        <intelligence>+0</intelligence>
-        <wisdom>+0</wisdom>
-        <charisma>+0</charisma>
-      </abilityScores>
-    </subrace> -->
   </race>
   <race raceName="dwarf" source="PHB">
     <raceInfo>
@@ -91,7 +45,7 @@ After you use your breath weapon, you can't use it again until you complete a sh
       <alignment>Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend to-ward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order.</alignment>
       <size brief="Medium">Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.</size>
       <speed brief="25">Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor.</speed>
-      <language>You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.</language>
+      <language brief="Common, Dwarvish" amount="2">You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.</language>
       <uniqueTraits>
         <trait name="Darkvision">Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</trait>
         <trait name="Dwarven Resilience">You have advantage on saving throws against poison, and you have resistance against poison damage.</trait>
@@ -148,7 +102,7 @@ After you use your breath weapon, you can't use it again until you complete a sh
       <alignment>Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others’ freedom as well as their own, and they are more often good than not.</alignment>
       <size brief="Medium">Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium.</size>
       <speed brief="30">Your base walking speed is 30 feet.</speed>
-      <language>You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.</language>
+      <language brief="Common, Elvish" amount="2">You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.</language>
       <uniqueTraits>
         <trait name="Darkvision">Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</trait>
         <trait name="Keen Senses">You have proficiency in the Perception skill.</trait>
@@ -229,7 +183,7 @@ After you use your breath weapon, you can't use it again until you complete a sh
       <alignment>Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-hearted, and even the tricksters among them are more playful than vicious.</alignment>
       <size brief="Small">Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small.</size>
       <speed brief="25">Your base walking speed is 25 feet.</speed>
-      <language>You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.</language>
+      <language brief="Common, Gnomish" amount="2">You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.</language>
       <uniqueTraits>
         <trait name="Darkvision">Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</trait>
         <trait name="Gnome Cunning">You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.</trait>
@@ -295,7 +249,8 @@ When opened, this music box plays a single song at a moderate volume. The box st
       <alignment>Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers. They chafe at rules, resent others' demands, and sometimes prove unreliable, or at least unpredictable.</alignment>
       <size brief="Medium">Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium.</size>
       <speed brief="30">Your base walking speed is 30 feet.</speed>
-      <language>You can speak, read, and write Common, Elvish, and one extra language of your choice.</language>
+      <!-- Fuck the "one extra language", come up with a workaround -->
+      <language brief="Common, Elvish" amount="3">You can speak, read, and write Common, Elvish, and one extra language of your choice.</language>
       <uniqueTraits>
         <trait name="Darkvision">Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</trait>
         <trait name="Fey Ancestry">You have advantage on saving throws against being charmed, and magic can't put you to sleep.</trait>
@@ -310,52 +265,6 @@ When opened, this music box plays a single song at a moderate volume. The box st
       <wisdom>+0</wisdom>
       <charisma>+2</charisma>
     </abilityScores>
-    <!-- <subrace raceName="high elf">
-      <subraceInfo>
-        <description>Your subrace is this bad.</description>
-        <uniqueTraits>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-        </uniqueTraits>
-      </subraceInfo>
-      <abilityScores>
-        <strength>+0</strength>
-        <dexterity>+0</dexterity>
-        <constitution>+0</constitution>
-        <intelligence>+0</intelligence>
-        <wisdom>+0</wisdom>
-        <charisma>+0</charisma>
-      </abilityScores>
-    </subrace>
-    <subrace raceName="high elf">
-      <subraceInfo>
-        <description>Your subrace is this bad.</description>
-        <uniqueTraits>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-        </uniqueTraits>
-      </subraceInfo>
-      <abilityScores>
-        <strength>+0</strength>
-        <dexterity>+0</dexterity>
-        <constitution>+0</constitution>
-        <intelligence>+0</intelligence>
-        <wisdom>+0</wisdom>
-        <charisma>+0</charisma>
-      </abilityScores>
-    </subrace> -->
   </race>
   <race raceName="halfling" source="PHB">
     <raceInfo>
@@ -364,7 +273,7 @@ When opened, this music box plays a single song at a moderate volume. The box st
       <alignment>Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways.</alignment>
       <size brief="Small">Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.</size>
       <speed brief="25">Your base walking speed is 25 feet.</speed>
-      <language>You can speak, read, and write Common and Halfling. The Halfling language isn’t secret, but halflings are loath to share it with others. They write very little, so they don’t have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.</language>
+      <language brief="Common, Halfling" amount="2">You can speak, read, and write Common and Halfling. The Halfling language isn’t secret, but halflings are loath to share it with others. They write very little, so they don’t have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.</language>
       <uniqueTraits>
         <trait name="Lucky">When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</trait>
         <trait name="Brave">You have advantage on saving throws against being frightened.</trait>
@@ -420,7 +329,7 @@ When opened, this music box plays a single song at a moderate volume. The box st
       <alignment>Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-orcs raised among orcs and willing to live out their lives among them are usually evil.</alignment>
       <size brief="Medium">Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium.</size>
       <speed brief="30">Your base walking speed is 30 feet.</speed>
-      <language>You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.</language>
+      <language brief="Common, Orc" amount="2">You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.</language>
       <uniqueTraits>
         <trait name="Darkvision">Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</trait>
         <trait name="Menacing">You gain proficiency in the Intimidation skill.</trait>
@@ -436,52 +345,6 @@ When opened, this music box plays a single song at a moderate volume. The box st
       <wisdom>+0</wisdom>
       <charisma>+0</charisma>
     </abilityScores>
-    <!-- <subrace raceName="high elf">
-      <subraceInfo>
-        <description>Your subrace is this bad.</description>
-        <uniqueTraits>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-        </uniqueTraits>
-      </subraceInfo>
-      <abilityScores>
-        <strength>+0</strength>
-        <dexterity>+0</dexterity>
-        <constitution>+0</constitution>
-        <intelligence>+0</intelligence>
-        <wisdom>+0</wisdom>
-        <charisma>+0</charisma>
-      </abilityScores>
-    </subrace>
-    <subrace raceName="high elf">
-      <subraceInfo>
-        <description>Your subrace is this bad.</description>
-        <uniqueTraits>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-        </uniqueTraits>
-      </subraceInfo>
-      <abilityScores>
-        <strength>+0</strength>
-        <dexterity>+0</dexterity>
-        <constitution>+0</constitution>
-        <intelligence>+0</intelligence>
-        <wisdom>+0</wisdom>
-        <charisma>+0</charisma>
-      </abilityScores>
-    </subrace> -->
   </race>
   <race raceName="human" source="PHB">
     <raceInfo>
@@ -490,7 +353,8 @@ When opened, this music box plays a single song at a moderate volume. The box st
       <alignment>Humans tend toward no particular align-ment. The best and the worst are found among them.</alignment>
       <size brief="Medium">Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.</size>
       <speed brief="30">Your base walking speed is 30 feet.</speed>
-      <language>You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.</language>
+      <!-- reeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+      <language brief="Common" amount="2">You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.</language>
       <uniqueTraits>
       </uniqueTraits>
     </raceInfo>
@@ -524,29 +388,6 @@ When opened, this music box plays a single song at a moderate volume. The box st
         <wisdom>+0</wisdom>
         <charisma>+0</charisma>
       </abilityScores>
-    </subrace>
-    <subrace raceName="high elf">
-      <subraceInfo>
-        <description>Your subrace is this bad.</description>
-        <uniqueTraits>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-          <trait name="traitName">
-          </trait>
-        </uniqueTraits>
-      </subraceInfo>
-      <abilityScores>
-        <strength>+0</strength>
-        <dexterity>+0</dexterity>
-        <constitution>+0</constitution>
-        <intelligence>+0</intelligence>
-        <wisdom>+0</wisdom>
-        <charisma>+0</charisma>
-      </abilityScores>
     </subrace>-->
   </race>
   <race raceName="tiefling" source="PHB">
@@ -556,13 +397,11 @@ When opened, this music box plays a single song at a moderate volume. The box st
       <alignment>Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment.</alignment>
       <size brief="Medium">Tieflings are about the same size and build as humans. Your size is Medium.</size>
       <speed brief="30">Your base walking speed is 30 feet.</speed>
-      <language>You can speak, read, and write Common and Infernal.</language>
+      <language brief="Common, Infernal" amount="2">You can speak, read, and write Common and Infernal.</language>
       <uniqueTraits>
         <trait name="Darkvision">Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</trait>
         <trait name="Hellish Resistance">You have resistance to fire damage.</trait>
         <trait name="Infernal Legacy">You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the darkness spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells.</trait>
-        <trait name="traitName">
-        </trait>
       </uniqueTraits>
     </raceInfo>
     <abilityScores>

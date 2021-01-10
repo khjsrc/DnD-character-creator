@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+    <language name="Abyssal" type="Exotic" script="Infernal"><language/>
+    <language name="Celestial" type="Exotic" script="Celestial"><language/>
+    <language name="Common" type="Standard" script="Common"><language/>
+    <language name="Deep Speech" type="Exotic" script="None"><language/>
+    <language name="Draconic" type="Exotic" script="Infernal">Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.<language/>
+    <language name="Druidic" type="Secret" script="Unknown">Druidic is the secret language of druids. It can be spoken or used to leave hidden messages. Creatures who know this language automatically spot such a message. Others spot the message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.<language/>
+    <language name="Dwarvish" type="Standard" script="Dwarvish">Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.<language/>
+    <language name="Elvish" type="Standard" script="Elvish">Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.<language/>
+    <language name="Giant" type="Standard" script="Dwarvish"><language/>
+    <language name="Gnomish" type="Standard" script="Dwarvish">The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.<language/>
+    <language name="Goblin" type="Standard" script="Dwarvish"><language/>
+    <language name="Halfling" type="Standard" script="Common">The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.<language/>
+    <language name="Infernal" type="Exotic" script="Infernal"><language/>
+    <language name="Orc" type="Standard" script="Dwarvish">Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.<language/>
+    <language name="Primordial" type="Exotic" script="Dwarvish">Primordial is a guttural language, filled with harsh syllables and hard consonants. This language is a family which includes the following dialects: Aquan, Auran, Ignan, Terran. Creatures that speak different dialects of the same language can communicate with one another.<language/>
+    <language name="Sylvan" type="Exotic" script="Elvish"><language/>
+    <language name="Thieves' Cant" type="Secret" script="Unknown">Thieves' cant is a secret mix of dialect, jargon, and code that allows messages to be hidden in seemingly normal conversation. Only a creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.<language/>
+    <language name="Undercommon" type="Exotic" script="Elvish"><language/>
+</languages>

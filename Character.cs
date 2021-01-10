@@ -15,9 +15,11 @@ namespace CharacterSheet
         private string _characterName, _className, _raceName, _background, _alignment;
         int _armorClass, _initiative, _speed;
         private int _currentHP, _baseHP, _maxHP;
+        private string _proficiencies, _size;
 
         private bool _increaseHpRandomly;
 
+        private List<string> _languages;
         private List<string> _traits;
         private List<string> _savingThrows;
         private List<string> _learnedSkills;
@@ -25,29 +27,36 @@ namespace CharacterSheet
         private Abilities _abilities;
 
         #region properties
-        public string Owner{
+        public string Owner
+        {
             get;
             private set;
         }
-        public int InitiativeBonus{
+        public int InitiativeBonus
+        {
             get;
             private set;
         }
-        public int PassiveWisdom{
-            get{
+        public int PassiveWisdom
+        {
+            get
+            {
                 int passiveWisdomValue = _abilities.GetAbilityModifier("wis");
-                if(_learnedSkills.Contains("Perception")) passiveWisdomValue += ClassCatalog.GetProficiencyBonus(_className, Level);
+                if (_learnedSkills.Contains("Perception")) passiveWisdomValue += ClassCatalog.GetProficiencyBonus(_className, Level);
                 return passiveWisdomValue;
             }
-            private set{
+            private set
+            {
 
             }
         }
-        public int Level{
+        public int Level
+        {
             get;
             private set;
         }
-        public int Experience{
+        public int Experience
+        {
             get;
             private set;
         }
@@ -59,52 +68,92 @@ namespace CharacterSheet
         /// <param name="name">Name of the character.</param>
         /// <param name="className">Class of the character.</param>
         /// <param name="raceName">Race of the character.</param>
-        /// <param name="randomStats">Generate stats randomly or deliberately. 
+        /// <param name="statsAssignment">Generate stats randomly or deliberately. 
         /// Randomly: roll d6 4 times, drop the lowest result and add the rest 3 together, repeat for all abilities.
         /// Deliberately: assign the default values to the abilities (15,14,13,12,10,8)</param>
         /// <param name="statsOrder">Pass an array of stats in the order of importance for you. 
         /// By default the order is: str, dex, con, int, wis, cha.</param>
-        public Character(string name, string className, string raceName, bool randomStats = true, string[] statsOrder = null, bool increaseHpRandomly = true)
+        /// <param name="additionalLanguage">A language to learn if your race bonus allows that.</param>
+        public Character(string name, string className, string raceName, StatsAssignment statsAssignment = StatsAssignment.FullRandom, string[] statsOrder = null, bool increaseHpRandomly = true, string additionalLanguage = "draconic")
         {
-            if (statsOrder == null) statsOrder = new string[] { "str", "dex", "con", "int", "wis", "cha" };
-            
-            _characterName = name;
-            _className = ClassCatalog.GetClassFullName(className);
-            _raceName = RaceCatalog.GetRaceFullName(raceName);
             _increaseHpRandomly = increaseHpRandomly;
+            _characterName = name;
+            
+            _abilities = new Abilities();
+            _learnedSkills = new List<string>();
+            _savingThrows = new List<string>();
+            _languages = new List<string>();
 
             Level = 1;
             Experience = 0;
 
-            _abilities = new Abilities();
+            _className = ClassCatalog.GetClassFullName(className);
+
+            _raceName = RaceCatalog.GetRaceFullName(raceName);
+            _speed = RaceCatalog.GetSpeed(raceName);
+            _size = RaceCatalog.GetSize(raceName);
             _traits = RaceCatalog.GetRaceTraitNames(raceName);
-            _learnedSkills = new List<string>();
-            _savingThrows = new List<string>();
+            _languages = RaceCatalog.GetKnownLanguages(raceName).Replace(", ", ",").Split(',').ToList();
             
-            if(randomStats) _abilities.GenerateAbilityScoresRandomly(statsOrder);
-            else _abilities.GenerateAbilityScoresDeliberately(statsOrder);
-            
+            if (RaceCatalog.DoesNeedToLearnLanguage(raceName))
+            {
+                LearnLanguage(additionalLanguage);
+            }
+
+            switch (statsAssignment)
+            {
+                case StatsAssignment.FullRandom:
+                    {
+                        _abilities.GenerateAbilityScoresRandomly();
+                        break;
+                    }
+                case StatsAssignment.SemiRandom:
+                    {
+                        if (statsOrder == null) statsOrder = new string[] { "str", "dex", "con", "int", "wis", "cha" };
+                        _abilities.GenerateAbilityScoresRandomly(statsOrder);
+                        break;
+                    }
+                case StatsAssignment.Deliberately:
+                    {
+                        if (statsOrder == null) statsOrder = new string[] { "str", "dex", "con", "int", "wis", "cha" };
+                        _abilities.GenerateAbilityScoresDeliberately(statsOrder);
+                        break;
+                    }
+                case StatsAssignment.PointsBased:
+                    {
+                        //not implemented yet
+                        break;
+                    }
+                default:
+                    {
+                        _abilities.GenerateAbilityScoresRandomly();
+                        break;
+                    }
+            }
+
             foreach (KeyValuePair<string, int> abilityIncrease in RaceCatalog.GetAbilityScoreBonuses(_raceName)) //make a separate method that would do this?
             {
-                _abilities.IncreaseAbilityScore(abilityIncrease.Key, abilityIncrease.Value);
+                _abilities.ChangeAbilityScore(abilityIncrease.Key, abilityIncrease.Value);
             }
             FillSavingThrows();
-            
+
             _baseHP = ClassCatalog.GetStartingHP(_className) + _abilities.GetAbilityModifier("con");
             _currentHP = _baseHP;
             _maxHP = _baseHP;
-            
+
             LevelledUp += OnLevelUp;
             ExperienceGained += OnExperienceGained;
         }
 
-        public Dictionary<string, int> GetSkills(){
+        public Dictionary<string, int> GetSkills()
+        {
             Dictionary<string, int> dict = new Dictionary<string, int>();
             string[] skills = SkillCatalog.GetSkills();
-            foreach(string skill in skills){
+            foreach (string skill in skills)
+            {
                 string relatedAbility = SkillCatalog.GetSkillRelatedAbility(skill);
                 var skillBonus = _abilities.GetAbilityModifier(relatedAbility);
-                if(_learnedSkills.Contains(skill)) skillBonus += ClassCatalog.GetProficiencyBonus(_className, Level);
+                if (_learnedSkills.Contains(skill)) skillBonus += ClassCatalog.GetProficiencyBonus(_className, Level);
                 dict.Add(skill, skillBonus);
             }
             return dict;
@@ -120,9 +169,10 @@ namespace CharacterSheet
             return abilModifier;
         }
 
-        public int GetSavingThrowBonus(string abilityName){
+        public int GetSavingThrowBonus(string abilityName)
+        {
             int savingThrow = _abilities.GetAbilityModifier(abilityName);
-            if(_savingThrows.Contains(abilityName.ToLower())) savingThrow += ClassCatalog.GetProficiencyBonus(_className, Level);
+            if (_savingThrows.Contains(abilityName.ToLower())) savingThrow += ClassCatalog.GetProficiencyBonus(_className, Level);
             return savingThrow;
         }
 
@@ -139,6 +189,11 @@ namespace CharacterSheet
             else _learnedSkills.Add(skillName);
         }
 
+        private void LearnLanguage(string languageName)
+        {
+            if(false == _languages.Contains(languageName)) _languages.Add(LanguageCatalog.GetLanguageFullName(languageName));
+        }
+
         public void FillStartingSkills(IEnumerable<string> skills)
         {
             //skills that the character is proficient with will have an additional scaling based on the character's proficiency, i.e. Athletics as a learned skill will scale off with Strength modifier and the proficiency modifier.
@@ -150,7 +205,7 @@ namespace CharacterSheet
             foreach (var skill in skills)
             {
                 string skillFullName = SkillCatalog.GetSkillFullName(skill);
-                if(skillFullName == null) throw new Exception($"The specified skill - {skill} - does not exist.");
+                if (skillFullName == null) throw new Exception($"The specified skill - {skill} - does not exist.");
                 if (counter <= maxStartingSkills && startingSkills.ToLower().Contains(skillFullName.ToLower()))
                 {
                     counter++;
@@ -162,14 +217,16 @@ namespace CharacterSheet
         private void FillSavingThrows()
         {
             string profThrows = ClassCatalog.GetSavingThrows(_className).ToLower();
-            foreach(var ability in profThrows.Replace(", ", ",").Split(',')){
+            foreach (var ability in profThrows.Replace(", ", ",").Split(','))
+            {
                 _savingThrows.Add(ability);
             }
         }
 
-        private int GetPassiveWisdom(){
+        private int GetPassiveWisdom()
+        {
             int passiveWisdomValue = _abilities.GetAbilityModifier("wisdom");
-            if(_learnedSkills.Contains("Perception")) passiveWisdomValue += ClassCatalog.GetProficiencyBonus(_className, Level);
+            if (_learnedSkills.Contains("Perception")) passiveWisdomValue += ClassCatalog.GetProficiencyBonus(_className, Level);
             return passiveWisdomValue;
         }
 
@@ -200,9 +257,11 @@ namespace CharacterSheet
                     Int32.TryParse(diceForHPIncrease.Substring(diceForHPIncrease.IndexOf('d') + 1), out int diceNumber);
                     for (int i = 0; i < amountOfRolls; i++)
                     {
+                        int constitutionModifier = _abilities.GetAbilityModifier("con");
+
                         int hpIncrease = new Random().Next(1, diceNumber + 1);
                         _baseHP += hpIncrease;
-                        _maxHP = _baseHP + Level * _abilities.GetAbilityModifier("con");
+                        _maxHP = _baseHP + Level * (constitutionModifier < 0 ? 0 : constitutionModifier);
 
 
                         _currentHP = _maxHP; //might need to remove it due to certain misterious circumstances when hp must stay low
@@ -218,13 +277,38 @@ namespace CharacterSheet
                 Regex digit = new Regex(@"(\d+)");
                 if (Int32.TryParse(digit.Match(hpIncreaseValue).Value, out int hpIncrease))
                 {
+                    int constitutionModifier = _abilities.GetAbilityModifier("con");
+
                     _baseHP += hpIncrease;
-                    _maxHP = _baseHP + Level * _abilities.GetAbilityModifier("con");
+                    _maxHP = _baseHP + Level * (constitutionModifier < 0 ? 0 : constitutionModifier);
 
                     _currentHP = _maxHP; //might need to remove it due to certain misterious circumstances when hp must stay low
                 }
                 else throw new Exception("you fucked up with the HP increase values in the xml file.");
             }
         }
+    }
+
+    /// <summary>
+    /// Way of assigning the character's stats.
+    /// </summary>
+    public enum StatsAssignment
+    {
+        /// <summary>
+        /// The stats assign randomly, following the rule "4d6, drop the lowest, sum up the results"
+        /// </summary>
+        FullRandom,
+        /// <summary>
+        /// The stats are assigned according to the given order, descending. Follows the rule "4d6, drop the lowest, sum up the results"
+        /// </summary>
+        SemiRandom,
+        /// <summary>
+        /// The stats are assigned according to the given order, descending. The stat scores in this case are: { 15, 14, 13, 12, 10, 8 }
+        /// </summary>
+        Deliberately,
+        /// <summary>
+        /// Not implemented yet.
+        /// </summary>
+        PointsBased
     }
 }

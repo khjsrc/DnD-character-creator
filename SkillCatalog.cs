@@ -18,7 +18,7 @@ namespace CharacterSheet
                 where ele.Attribute("name") != null
                 where ele.Attribute("name").Value.ToLower().Contains(skillName)
                 select ele).FirstOrDefault();
-            if(skill == null) throw new SkillNotFoundException($"The specified skill - {skillName} - is not found.");
+            if(skill == null) throw new NullReferenceException($"The specified skill - {skillName} - is not found.");
             return skill;
         }
 
@@ -42,16 +42,5 @@ namespace CharacterSheet
         public static string GetSkillRelatedAbility(string skillName){
             return GetSkillXElement(skillName)?.Attribute("ability").Value;
         }
-    }
-
-    [System.Serializable]
-    public class SkillNotFoundException : System.Exception
-    {
-        public SkillNotFoundException() { }
-        public SkillNotFoundException(string message) : base(message) { }
-        public SkillNotFoundException(string message, System.Exception inner) : base(message, inner) { }
-        protected SkillNotFoundException(
-            System.Runtime.Serialization.SerializationInfo info,
-            System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
     }
 }

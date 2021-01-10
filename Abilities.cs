@@ -51,41 +51,81 @@ namespace CharacterSheet
             }
         }
 
-        private string GetAbilityMatchingName(string name){
+        private string GetAbilityMatchingName(string name)
+        {
             return _abilityScores.Where(x => x.Key.ToLower().Contains(name.ToLower())).FirstOrDefault().Key;
         }
 
-        internal void IncreaseAbilityScore(string name, int amount)
+        internal void ChangeAbilityScore(string name, int amount)
         { //probably should restrict the usage of this and also, normally an ability can not go higher than 20
             _abilityScores[_abilityScores.Where(k => k.Key.Contains(name)).FirstOrDefault().Key] += amount;
         }
 
-        //1. roll d6 4 times, drop the lowest result and add the rest 3 together, repeat for all abilities
-        //2. or assign the default values to the abilities (15,14,13,12,10,8)
+        internal void GenerateAbilityScoresRandomly()
+        {
+            int[] results = new int[6];
+            for (int j = 0; j < results.Length; j++)
+            {
+                int[] diceRolls = new int[4];
+                Random rng = new Random();
+                for (int i = 0; i < diceRolls.Length; i++)
+                {
+                    int roll = rng.Next(1, 7);
+                    diceRolls[i] = roll;
+                }
+                int lowest = 0;
+                for (int i = 0; i < diceRolls.Length; i++)
+                {
+                    if (diceRolls[i] < diceRolls[lowest])
+                    {
+                        lowest = i;
+                    }
+                }
+                diceRolls[lowest] = 0;
+
+                int sum = 0;
+                foreach (int roll in diceRolls)
+                {
+                    sum += roll;
+                }
+
+                results[j] = sum;
+            }
+
+            for (int i = 0; i < results.Length; i++)
+            {
+                _abilityScores[_abilityScores.Keys.ToArray()[i]] = results[i];
+            }
+        }
+
+        /// <summary>
+        /// Roll d6 4 times, drop the lowest result and add the rest 3 together, then assign the results according to the abilityScoresOrder.
+        /// </summary>
+        /// <param name="abilityScoresOrder">Stats in order of importance, the first stat gets the highest value.</param>
         internal void GenerateAbilityScoresRandomly(IEnumerable<string> abilityScoresOrder)
         {
             int[] results = new int[6];
             for (int j = 0; j < results.Length; j++)
             {
-                int[] temp = new int[4];
+                int[] diceRolls = new int[4];
                 Random rng = new Random();
-                for (int i = 0; i < temp.Length; i++)
+                for (int i = 0; i < diceRolls.Length; i++)
                 {
                     int roll = rng.Next(1, 7);
-                    temp[i] = roll;
+                    diceRolls[i] = roll;
                 }
                 int lowest = 0;
-                for (int i = 0; i < temp.Length; i++)
+                for (int i = 0; i < diceRolls.Length; i++)
                 {
-                    if (temp[i] < temp[lowest])
+                    if (diceRolls[i] < diceRolls[lowest])
                     {
                         lowest = i;
                     }
                 }
-                temp[lowest] = 0;
+                diceRolls[lowest] = 0;
 
                 int sum = 0;
-                foreach (int roll in temp)
+                foreach (int roll in diceRolls)
                 {
                     sum += roll;
                 }
@@ -109,8 +149,8 @@ namespace CharacterSheet
                 }
             }
 
-            List<string> abs = new List<string>(abilityScoresOrder);
-            for (int i = 0; i < abs.Count; i++)
+            string[] abs = abilityScoresOrder.ToArray();
+            for (int i = 0; i < abs.Length; i++)
             {
                 var ability = _abilityScores.FirstOrDefault(ability =>
                 {
@@ -120,6 +160,10 @@ namespace CharacterSheet
             }
         }
 
+        /// <summary>
+        /// Assign the pre-determined values to the stats
+        /// </summary>
+        /// <param name="abilityScoresOrder">Stats in order of importance, the first stat gets the highest value.</param>
         internal void GenerateAbilityScoresDeliberately(IEnumerable<string> abilityScoresOrder)
         {
             int[] scores = { 15, 14, 13, 12, 10, 8 };

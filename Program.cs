@@ -198,24 +198,21 @@ namespace CharacterSheet
             // racesdotxml.Save("CharacterRaces.xml");
             #endregion
 
-            Character a = new Character("Cookie Monster", "barb", "mountain dwarf", statsOrder: new string[] { "str", "dex", "con", "wis", "int", "cha" });
+            Character a = new Character("Cookie Monster", "barb", "tiefling", StatsAssignment.FullRandom);
             Character b = new Character(
                 name: "Johnny Wicked",
-                className: "rogue",
+                className: "bard",
                 raceName: "lightfoot",
-                statsOrder: new string[] { "dex", "int", "cha", "con", "wis", "str" }
+                statsAssignment: StatsAssignment.SemiRandom,
+                statsOrder: new string[] { "dex", "int", "cha", "con", "str", "wis"}
             );
 
             a.FillStartingSkills(new string[] { "Religion", "perception", "animal" });
-            a.LevelledUp.Invoke("program.cs", EventArgs.Empty);
-            a.LevelledUp.Invoke("program.cs", EventArgs.Empty);
-            a.LevelledUp.Invoke("program.cs", EventArgs.Empty);
-            a.LevelledUp.Invoke("program.cs", EventArgs.Empty);
-            a.LevelledUp.Invoke("program.cs", EventArgs.Empty);
 
             b.FillStartingSkills(new string[] {"Deception", "Intimidation", "Perception", "acro"});
             for (int i = 0; i < 10; i++)
             {
+                a.LevelledUp.Invoke("something", EventArgs.Empty);
                 b.LevelledUp.Invoke("program.cs", EventArgs.Empty);
             }
 

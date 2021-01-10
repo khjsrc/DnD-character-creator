@@ -9,16 +9,40 @@ namespace CharacterSheet
     {//this all is a fucking mess
         private static readonly string _racesXmlFileName = "CharacterRaces.xml";
 
-        public static string GetRaceFullName(string name)
+        public static string GetKnownLanguages(string raceName)
         {
-            var raceXElement = GetRaceXElement(name);
+            return GetRaceXElement(raceName)?.Element("raceInfo").Element("language").Attribute("brief").Value;
+        }
+
+        public static bool DoesNeedToLearnLanguage(string raceName)
+        {
+            int learnedLanguagesAmount = GetKnownLanguages(raceName).Replace(", ", ",").Split(',').Length;
+            Int32.TryParse(GetRaceXElement(raceName)?.Element("raceInfo").Element("language").Attribute("amount").Value, out int amountOfLanguagesToLearn);
+            if (learnedLanguagesAmount < amountOfLanguagesToLearn) return true;
+            else return false;
+        }
+
+        public static int GetSpeed(string raceName)
+        {
+            if (false == Int32.TryParse(GetRaceXElement(raceName)?.Element("raceInfo").Element("speed").Attribute("brief").Value, out int result)) throw new ArgumentException($"Couldn't find the speed stat of the specified race - {raceName}");
+            return result;
+        }
+
+        public static string GetSize(string raceName)
+        {
+            return GetRaceXElement(raceName)?.Element("raceInfo").Element("size").Attribute("brief").Value;
+        }
+
+        public static string GetRaceFullName(string raceName)
+        {
+            var raceXElement = GetRaceXElement(raceName);
             if (raceXElement.Element("subrace") != null) return raceXElement?.Element("subrace").Attribute("raceName").Value;
             else return raceXElement?.Attribute("raceName").Value;
         }
         
-        public static string GetRaceInfo(string name)
+        public static string GetRaceInfo(string raceName)
         {
-            var race = GetRaceXElement(name);
+            var race = GetRaceXElement(raceName);
             var descElements =
                 from desc in race.Descendants("raceInfo").Descendants() //something is off here, rework later
                 where desc.Name != "uniqueTraits"
@@ -51,14 +75,14 @@ namespace CharacterSheet
             }
         }
 
-        public static List<string> GetRaceTraitNames(string name)
+        public static List<string> GetRaceTraitNames(string raceName)
         {
             XDocument xDoc = XDocument.Load(_racesXmlFileName);
 
             var desiredRaces =
                 from element in xDoc.Root.Descendants()
                 where element.Attribute("raceName") != null
-                where element.Attribute("raceName").Value.ToLower() == name.ToLower()
+                where element.Attribute("raceName").Value.ToLower() == raceName.ToLower()
                 select element;
 
             // gogo gadget get the traits' names list
@@ -95,13 +119,13 @@ namespace CharacterSheet
             }
         }
 
-        public static XElement GetRaceXElement(string name)
+        public static XElement GetRaceXElement(string raceName)
         {
             XDocument xDoc = XDocument.Load(_racesXmlFileName);
             var matchingRaces =
                 from element in xDoc.Root.Descendants()
                 where element.Attribute("raceName") != null
-                where element.Attribute("raceName").Value.ToLower() == name.ToLower()
+                where element.Attribute("raceName").Value.ToLower().Contains(raceName.ToLower())
                 select element;
 
 
@@ -113,7 +137,7 @@ namespace CharacterSheet
                 {
                     var otherSubraces = 
                         from subrace in firstMatch.Parent.Descendants("subrace")
-                        where subrace.Attribute("raceName").Value.ToLower() != name.ToLower()
+                        where subrace.Attribute("raceName").Value.ToLower() != raceName.ToLower()
                         select subrace;
                     
                     otherSubraces.Remove();
