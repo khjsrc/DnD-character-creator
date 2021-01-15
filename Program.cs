@@ -213,8 +213,11 @@ namespace CharacterSheet
             for (int i = 0; i < 10; i++)
             {
                 a.LevelledUp.Invoke("something", EventArgs.Empty);
-                b.LevelledUp.Invoke("program.cs", EventArgs.Empty);
+                b.LevelledUp.Invoke(null, EventArgs.Empty);
             }
+
+            var temp1 = ClassCatalog.GetClassFeatures("cleric");
+            var temp2 = ClassCatalog.GetClassFeatures("cleric", 9);
 
             Console.ReadLine();
         }

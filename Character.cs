@@ -73,6 +73,7 @@ namespace CharacterSheet
         /// Deliberately: assign the default values to the abilities (15,14,13,12,10,8)</param>
         /// <param name="statsOrder">Pass an array of stats in the order of importance for you. 
         /// By default the order is: str, dex, con, int, wis, cha.</param>
+        /// <param name="increaseHpRandomly">Decide whether you want to roll a dice or add a fixed amount of hp every time you level up.</param>
         /// <param name="additionalLanguage">A language to learn if your race bonus allows that.</param>
         public Character(string name, string className, string raceName, StatsAssignment statsAssignment = StatsAssignment.FullRandom, string[] statsOrder = null, bool increaseHpRandomly = true, string additionalLanguage = "draconic")
         {
@@ -97,7 +98,7 @@ namespace CharacterSheet
             
             if (RaceCatalog.DoesNeedToLearnLanguage(raceName))
             {
-                LearnLanguage(additionalLanguage);
+                LearnStartingLanguage(additionalLanguage);
             }
 
             switch (statsAssignment)
@@ -183,10 +184,18 @@ namespace CharacterSheet
 
         private void LearnSkill(string skillName)
         {
-            //apparently, the skills can be learned and here i need to check if the requested skill is not learned yet and then add it to the list of learned skills
+            //apparently, the skills can be learned and here i need to check if the requested skill is not learned yet and then add it to the list of learned skills-
             skillName = SkillCatalog.GetSkillFullName(skillName);
             if (_learnedSkills.Contains(skillName)) throw new Exception($"The specified skill - {skillName} - is already well known to you.");
             else _learnedSkills.Add(skillName);
+        }
+
+        private void LearnStartingLanguage(string languageName)
+        {
+            if (LanguageCatalog.GetLanguageType(languageName).ToLower() == "common")
+            {
+                LearnLanguage(languageName);
+            }
         }
 
         private void LearnLanguage(string languageName)
