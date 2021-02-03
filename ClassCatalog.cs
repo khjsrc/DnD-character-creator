@@ -22,6 +22,17 @@ namespace CharacterSheet
             return classEle;
         }
 
+        private static XElement GetClassXElement(CharacterClasses characterClass)
+        {
+            XDocument xdoc = XDocument.Load(_classesXmlFileName);
+            var classEle =
+                (from e in xdoc.Descendants("class")
+                 where e.Attribute("name") != null
+                 where e.Attribute("name").Value == characterClass.ToString().ToLower()
+                select e).FirstOrDefault();
+            return classEle;
+        }
+
         private static XElement GetArchetypeXElement(string archetypeName)
         {
             XDocument xdoc = XDocument.Load(_classesXmlFileName);
@@ -68,7 +79,8 @@ namespace CharacterSheet
             else return null;
         }
 
-        public static string GetSavingThrows(string className){
+        public static string GetSavingThrows(string className)
+        {
             return GetClassXElement(className)?.Element("proficiencies").Element("savingThrows").Value;
         }
 
@@ -77,7 +89,8 @@ namespace CharacterSheet
             return GetClassXElement(className)?.Element("proficiencies").Element("startingSkills").Value;
         }
 
-        public static int GetStartingSkillsAmount(string className){
+        public static int GetStartingSkillsAmount(string className)
+        {
             return Convert.ToInt32(GetClassXElement(className)?.Element("proficiencies").Element("startingSkills").Attribute("amount").Value);
         }
 
@@ -101,11 +114,13 @@ namespace CharacterSheet
             // string deliberateHpIncrease = deliberateHpIncreaseRegex.Match(hpIncrease).Value;
         }
 
-        public static string GetLevelUpHPIncrease(string className){
+        public static string GetLevelUpHPIncrease(string className)
+        {
             return GetClassXElement(className)?.Element("hitPointsRules").Element("higherLevelsHP").Value;
         }
 
-        public static int GetProficiencyBonus(string className, int level){
+        public static int GetProficiencyBonus(string className, int level)
+        {
             //a simple formula will suffice for now because i haven't found any exceptions that would require to do it differently
             return 2 + (level - 1) / 4;
         }
@@ -143,6 +158,62 @@ namespace CharacterSheet
                 return result;
             }
             else return null;
+        }
+
+        public static List<string> GetClassLevelPlaceholders(string className, int level)
+        {
+            List<string> result = new List<string>();
+            var breakdown = GetClassXElement(className)?.Element("levelsBreakdown");
+            if (breakdown != null)
+            {
+                var levelElement =
+                    (from ele in breakdown.Descendants("level")
+                     where ele.Attribute("number") != null
+                     where ele.Attribute("number").Value == level.ToString()
+                     select ele).FirstOrDefault();
+
+                foreach (XElement xEle in levelElement.Descendants())
+                {
+                    string item = string.Empty;
+                    item += xEle.Name + "/";
+                    foreach (XAttribute xAtt in xEle.Attributes())
+                    {
+                        item += xAtt.Name + ":" + xAtt.Value + "/";
+                    }
+                    item += "description:" + xEle.Value;
+
+                    result.Add(item);
+                }
+            }
+            return result;
+        }
+
+        public static List<string> GetClassLevelPlaceholders(CharacterClasses characterClass, int level)
+        {
+            List<string> result = new List<string>();
+            var breakdown = GetClassXElement(characterClass)?.Element("levelsBreakdown");
+            if (breakdown != null)
+            {
+                var levelElement =
+                    (from ele in breakdown.Descendants("level")
+                     where ele.Attribute("number") != null
+                     where ele.Attribute("number").Value == level.ToString()
+                     select ele).FirstOrDefault();
+
+                foreach (XElement xEle in levelElement.Descendants())
+                {
+                    string item = string.Empty;
+                    item += xEle.Name + "/";
+                    foreach (XAttribute xAtt in xEle.Attributes())
+                    {
+                        item += xAtt.Name + ":" + xAtt.Value + "/";
+                    }
+                    item += "description:" + xEle.Value;
+
+                    result.Add(item);
+                }
+            }
+            return result;
         }
 
         public static List<string> GetClassArchetypes(string className)
@@ -190,5 +261,73 @@ namespace CharacterSheet
             if (featureDesc != null) return featureDesc.Value;
             else return null;
         }
+
+        #region what the actual fuck?
+        public static string GetBarbarianRageInfo(int level)
+        {
+            var barbarian = GetClassXElement("barbarian");
+            var rageInfo =
+                (from levelEle in barbarian.Descendants("level")
+                 where levelEle.Attribute("number") != null
+                 where levelEle.Attribute("number").Value == level.ToString()
+                 select levelEle.Element("rage")).FirstOrDefault();
+            return $"Amount of rages: {rageInfo.Attribute("amount").Value}. Bonus damage: {rageInfo.Attribute("bonusDamage").Value}";
+        }
+        #endregion
+    }
+
+    /// <summary>
+    /// The list of all available character classes.
+    /// </summary>
+    public enum CharacterClasses
+    {
+        /// <summary>
+        /// mighty warrior, can rage
+        /// </summary>
+        Barbarian,
+        /// <summary>
+        /// mighty warrior, can sing
+        /// </summary>
+        Bard,
+        /// <summary>
+        /// mighty warri... no, wait, it's a caster, can use cantrips
+        /// </summary>
+        Cleric,
+        /// <summary>
+        /// mighty caster, can become a mighty warrior
+        /// </summary>
+        Druid,
+        /// <summary>
+        /// mighty warrior, cannot become a mighty caster
+        /// </summary>
+        Fighter,
+        /// <summary>
+        /// mighty fister, loves fisting enemies
+        /// </summary>
+        Monk,
+        /// <summary>
+        /// mighty warrior, can pray
+        /// </summary>
+        Paladin,
+        /// <summary>
+        /// mighty bowstring puller, can pull strings
+        /// </summary>
+        Ranger,
+        /// <summary>
+        /// stealthy warrior, can poke knives into enemies' kidneys
+        /// </summary>
+        Rogue,
+        /// <summary>
+        /// mighty caster, will never become a mighty warrior
+        /// </summary>
+        Sorcerer,
+        /// <summary>
+        /// mighty caster, can seal pacts
+        /// </summary>
+        Warlock,
+        /// <summary>
+        /// mighty caster, probably can do wizardry
+        /// </summary>
+        Wizard
     }
 }

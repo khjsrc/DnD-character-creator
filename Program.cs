@@ -198,28 +198,25 @@ namespace CharacterSheet
             // racesdotxml.Save("CharacterRaces.xml");
             #endregion
 
-            Character a = new Character("Cookie Monster", "barb", "tiefling", StatsAssignment.FullRandom);
+            Character a = new Character("Cookie Monster", "cleric", "tiefling", StatsAssignment.FullRandom);
             Character b = new Character(
                 name: "Johnny Wicked",
-                className: "bard",
+                className: "druid",
                 raceName: "lightfoot",
-                statsAssignment: StatsAssignment.SemiRandom,
-                statsOrder: new string[] { "dex", "int", "cha", "con", "str", "wis"}
+                statsAssignment: StatsAssignment.FullRandom
             );
 
-            a.FillStartingSkills(new string[] { "Religion", "perception", "animal" });
-
-            b.FillStartingSkills(new string[] {"Deception", "Intimidation", "Perception", "acro"});
-            for (int i = 0; i < 10; i++)
-            {
-                a.LevelledUp.Invoke("something", EventArgs.Empty);
-                b.LevelledUp.Invoke(null, EventArgs.Empty);
-            }
-
             var temp1 = ClassCatalog.GetClassFeatures("cleric");
-            var temp2 = ClassCatalog.GetClassFeatures("cleric", 9);
+            var temp2 = ClassCatalog.GetBarbarianRageInfo(8);
 
-            Console.ReadLine();
+            // System.Xml.Serialization.XmlSerializer xmlSerializer = new System.Xml.Serialization.XmlSerializer(typeof(Character));
+            // var path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "//serializedCharacter.xml";
+            // System.IO.FileStream stream = System.IO.File.Create(path);
+
+            // xmlSerializer.Serialize(stream, a);
+            // stream.Close();
+
+            System.Console.WriteLine("end");
         }
     }
 }

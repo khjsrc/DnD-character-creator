@@ -7,10 +7,10 @@ namespace CharacterSheet
 {
     // add import/export methods that will do the import/export of a character to xml format
     [Serializable]
-    class Character
+    public class Character
     {
-        private EventHandler ExperienceGained;
-        public EventHandler LevelledUp;
+        private event EventHandler ExperienceGained;
+        public event EventHandler LevelIncreased;
 
         private string _characterName, _className, _raceName, _background, _alignment;
         int _armorClass, _initiative, _speed;
@@ -30,12 +30,12 @@ namespace CharacterSheet
         public string Owner
         {
             get;
-            private set;
+            set;
         }
         public int InitiativeBonus
         {
             get;
-            private set;
+            set;
         }
         public int PassiveWisdom
         {
@@ -45,7 +45,7 @@ namespace CharacterSheet
                 if (_learnedSkills.Contains("Perception")) passiveWisdomValue += ClassCatalog.GetProficiencyBonus(_className, Level);
                 return passiveWisdomValue;
             }
-            private set
+            set
             {
 
             }
@@ -53,14 +53,19 @@ namespace CharacterSheet
         public int Level
         {
             get;
-            private set;
+            set;
         }
         public int Experience
         {
             get;
-            private set;
+            set;
         }
         #endregion
+
+        public Character()
+        {
+
+        }
 
         /// <summary>
         /// Creates a character list for Dungeons and Dragons.
@@ -79,7 +84,7 @@ namespace CharacterSheet
         {
             _increaseHpRandomly = increaseHpRandomly;
             _characterName = name;
-            
+
             _abilities = new Abilities();
             _learnedSkills = new List<string>();
             _savingThrows = new List<string>();
@@ -95,7 +100,7 @@ namespace CharacterSheet
             _size = RaceCatalog.GetSize(raceName);
             _traits = RaceCatalog.GetRaceTraitNames(raceName);
             _languages = RaceCatalog.GetKnownLanguages(raceName).Replace(", ", ",").Split(',').ToList();
-            
+
             if (RaceCatalog.DoesNeedToLearnLanguage(raceName))
             {
                 LearnStartingLanguage(additionalLanguage);
@@ -142,7 +147,7 @@ namespace CharacterSheet
             _currentHP = _baseHP;
             _maxHP = _baseHP;
 
-            LevelledUp += OnLevelUp;
+            LevelIncreased += OnLevelIncreased;
             ExperienceGained += OnExperienceGained;
         }
 
@@ -200,7 +205,7 @@ namespace CharacterSheet
 
         private void LearnLanguage(string languageName)
         {
-            if(false == _languages.Contains(languageName)) _languages.Add(LanguageCatalog.GetLanguageFullName(languageName));
+            if (false == _languages.Contains(languageName)) _languages.Add(LanguageCatalog.GetLanguageFullName(languageName));
         }
 
         public void FillStartingSkills(IEnumerable<string> skills)
@@ -241,7 +246,13 @@ namespace CharacterSheet
 
         public void GiveExperience(int exp)
         {
-            ExperienceGained(exp, EventArgs.Empty);
+            LevelIncreased(exp, EventArgs.Empty);
+            //ExperienceGained(exp, EventArgs.Empty);
+        }
+
+        private void IncreaseLevel()
+        {
+            
         }
 
         private void OnExperienceGained(object o, EventArgs e)
@@ -254,7 +265,7 @@ namespace CharacterSheet
             // }
         }
 
-        private void OnLevelUp(object o, EventArgs e)
+        private void OnLevelIncreased(object o, EventArgs e)
         {
             Level += 1;
             if (_increaseHpRandomly)
