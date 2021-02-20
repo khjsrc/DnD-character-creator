@@ -32,6 +32,38 @@ namespace CharacterSheet
             get;
             set;
         }
+        public string CharacterName{
+            get{
+                return _characterName;
+            }
+            set{
+
+            }
+        }
+        public string ClassName{
+            get{
+                return _className;
+            }
+            set{
+
+            }
+        }
+        public string RaceName{
+            get{
+                return _raceName;
+            }
+            set{
+
+            }
+        }
+        public string Proficiencies{
+            get{
+                return _proficiencies;
+            }
+            set{
+                
+            }
+        }
         public int InitiativeBonus
         {
             get;
@@ -68,7 +100,7 @@ namespace CharacterSheet
         }
 
         /// <summary>
-        /// Creates a character list for Dungeons and Dragons.
+        /// Creates a character list for Dungeons and Dragons game.
         /// </summary>
         /// <param name="name">Name of the character.</param>
         /// <param name="className">Class of the character.</param>
@@ -94,6 +126,7 @@ namespace CharacterSheet
             Experience = 0;
 
             _className = ClassCatalog.GetClassFullName(className);
+            _proficiencies = ClassCatalog.GetProficiencies(className);
 
             _raceName = RaceCatalog.GetRaceFullName(raceName);
             _speed = RaceCatalog.GetSpeed(raceName);
@@ -151,6 +184,10 @@ namespace CharacterSheet
             ExperienceGained += OnExperienceGained;
         }
 
+        /// <summary>
+        /// Returns a full list of known skills.
+        /// </summary>
+        /// <returns>¯\_(ツ)_/¯</returns>
         public Dictionary<string, int> GetSkills()
         {
             Dictionary<string, int> dict = new Dictionary<string, int>();
@@ -307,28 +344,5 @@ namespace CharacterSheet
                 else throw new Exception("you fucked up with the HP increase values in the xml file.");
             }
         }
-    }
-
-    /// <summary>
-    /// Way of assigning the character's stats.
-    /// </summary>
-    public enum StatsAssignment
-    {
-        /// <summary>
-        /// The stats assign randomly, following the rule "4d6, drop the lowest, sum up the results"
-        /// </summary>
-        FullRandom,
-        /// <summary>
-        /// The stats are assigned according to the given order, descending. Follows the rule "4d6, drop the lowest, sum up the results"
-        /// </summary>
-        SemiRandom,
-        /// <summary>
-        /// The stats are assigned according to the given order, descending. The stat scores in this case are: { 15, 14, 13, 12, 10, 8 }
-        /// </summary>
-        Deliberately,
-        /// <summary>
-        /// Not implemented yet.
-        /// </summary>
-        PointsBased
     }
 }

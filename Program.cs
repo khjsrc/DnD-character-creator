@@ -198,16 +198,24 @@ namespace CharacterSheet
             // racesdotxml.Save("CharacterRaces.xml");
             #endregion
 
-            Character a = new Character("Cookie Monster", "cleric", "tiefling", StatsAssignment.FullRandom);
+            Character a = new Character("Cookie Monster", "cleric", "tiefling");
             Character b = new Character(
                 name: "Johnny Wicked",
                 className: "druid",
-                raceName: "lightfoot",
-                statsAssignment: StatsAssignment.FullRandom
+                raceName: "lightfoot"
             );
 
             var temp1 = ClassCatalog.GetClassFeatures("cleric");
             var temp2 = ClassCatalog.GetBarbarianRageInfo(8);
+            a.GetSkills();
+            System.Console.WriteLine($"Select {ClassCatalog.GetStartingSkillsAmount(a.ClassName)} : {ClassCatalog.GetStartingSkills(a.ClassName)}");
+            string skills = Console.ReadLine();
+            a.FillStartingSkills(skills.Replace(", ", ",").Split(','));
+            System.Console.WriteLine($"Select {ClassCatalog.GetStartingSkillsAmount(b.ClassName)} : {ClassCatalog.GetStartingSkills(b.ClassName)}");
+            skills = Console.ReadLine();
+            b.FillStartingSkills(skills.Replace(", ", ",").Split(','));
+
+            System.Console.WriteLine(a.Proficiencies);
 
             // System.Xml.Serialization.XmlSerializer xmlSerializer = new System.Xml.Serialization.XmlSerializer(typeof(Character));
             // var path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "//serializedCharacter.xml";
@@ -215,6 +223,12 @@ namespace CharacterSheet
 
             // xmlSerializer.Serialize(stream, a);
             // stream.Close();
+
+            foreach(var t in System.Enum.GetValues(typeof (CharacterRaces))){
+                System.Console.WriteLine($"{t.ToString().PadRight(20)} | {(int)t} | {((RaceType)((int)t & (int)RaceType.CoreWithoutSubraces)).ToString().PadRight(20)} | id {(int)t & 0b00_1111_1111}");
+            }
+
+            var temp = RaceCatalog.GetRaceXElement(CharacterRaces.HillDwarf);
 
             System.Console.WriteLine("end");
         }

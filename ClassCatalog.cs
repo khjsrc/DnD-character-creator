@@ -28,7 +28,7 @@ namespace CharacterSheet
             var classEle =
                 (from e in xdoc.Descendants("class")
                  where e.Attribute("name") != null
-                 where e.Attribute("name").Value == characterClass.ToString().ToLower()
+                 where e.Attribute("name").Value.ToLower() == characterClass.ToString().ToLower()
                 select e).FirstOrDefault();
             return classEle;
         }
@@ -72,6 +72,7 @@ namespace CharacterSheet
                 string result = string.Empty;
                 foreach (XElement ele in profsElements)
                 {
+                    if(ele.Name == "savingThrows" || ele.Name == "startingSkills") continue;
                     result += ele.Name + ": " + ele.Value + '\n';
                 }
                 return result;
@@ -274,60 +275,5 @@ namespace CharacterSheet
             return $"Amount of rages: {rageInfo.Attribute("amount").Value}. Bonus damage: {rageInfo.Attribute("bonusDamage").Value}";
         }
         #endregion
-    }
-
-    /// <summary>
-    /// The list of all available character classes.
-    /// </summary>
-    public enum CharacterClasses
-    {
-        /// <summary>
-        /// mighty warrior, can rage
-        /// </summary>
-        Barbarian,
-        /// <summary>
-        /// mighty warrior, can sing
-        /// </summary>
-        Bard,
-        /// <summary>
-        /// mighty warri... no, wait, it's a caster, can use cantrips
-        /// </summary>
-        Cleric,
-        /// <summary>
-        /// mighty caster, can become a mighty warrior
-        /// </summary>
-        Druid,
-        /// <summary>
-        /// mighty warrior, cannot become a mighty caster
-        /// </summary>
-        Fighter,
-        /// <summary>
-        /// mighty fister, loves fisting enemies
-        /// </summary>
-        Monk,
-        /// <summary>
-        /// mighty warrior, can pray
-        /// </summary>
-        Paladin,
-        /// <summary>
-        /// mighty bowstring puller, can pull strings
-        /// </summary>
-        Ranger,
-        /// <summary>
-        /// stealthy warrior, can poke knives into enemies' kidneys
-        /// </summary>
-        Rogue,
-        /// <summary>
-        /// mighty caster, will never become a mighty warrior
-        /// </summary>
-        Sorcerer,
-        /// <summary>
-        /// mighty caster, can seal pacts
-        /// </summary>
-        Warlock,
-        /// <summary>
-        /// mighty caster, probably can do wizardry
-        /// </summary>
-        Wizard
     }
 }

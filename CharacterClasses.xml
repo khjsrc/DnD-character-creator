@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!-- tags="optional" for some of bard's features and probably for other classes as well -->
 <characterClasses>
-  <class name="barbarian" id="1">
+  <class name="Barbarian" id="1">
     <description>...soon the flames will fade, and only barbarian will remain...</description>
     <proficiencies>
       <armor>light armor, medium armor, shields</armor>
@@ -16,7 +16,7 @@
 3. explorer's pack and four javelins
 Alternatively, you may start with 2d4*10 gp to buy your own equipment.</startingEquipment>
     <hitPointsRules>
-	  <hitDice>1d8</hitDice>
+      <hitDice>1d8</hitDice>
       <initialHP>12 + your Constitution modifier</initialHP>
       <higherLevelsHP>1d12(or 7) + your Constitution modifier per Barbarian level after 1st</higherLevelsHP>
     </hitPointsRules>
@@ -355,7 +355,7 @@ While you're raging, having 0 hit points doesn't knock you unconscious. You stil
       </archetype>
     </archetypes>
   </class>
-  <class name="bard" id="2">
+  <class name="Bard" id="2">
     <description>...soon the flames will fade, and only bard will remain...</description>
     <proficiencies>
       <armor>light armor</armor>
@@ -372,7 +372,7 @@ Leather armor and a dagger.
 Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
 </startingEquipment>
     <hitPointsRules>
-	  <hitDice>1d8</hitDice>
+      <hitDice>1d8</hitDice>
       <initialHP>8 + your Constitution modifier</initialHP>
       <higherLevelsHP>1d8(or 5) + your Constitution modifier per bard level after 1st</higherLevelsHP>
     </hitPointsRules>
@@ -689,7 +689,7 @@ Once you use this feature, you can't use it again until you finish a long rest.<
       </archetype>
     </archetypes>
   </class>
-  <class name="cleric" id="3">
+  <class name="Cleric" id="3">
     <description>...soon the flames will fade, and only cleric will remain...</description>
     <proficiencies>
       <armor>light armor, medium armor, shields</armor>
@@ -707,7 +707,7 @@ Once you use this feature, you can't use it again until you finish a long rest.<
 Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
 </startingEquipment>
     <hitPointsRules>
-	  <hitDice>1d8</hitDice>
+      <hitDice>1d8</hitDice>
       <initialHP>8 + your Constitution modifier</initialHP>
       <higherLevelsHP>1d8(or 5) + your Constitution modifier per cleric level after 1st</higherLevelsHP>
     </hitPointsRules>
@@ -1265,7 +1265,7 @@ Cleric Level	Spells
       </archetype>
     </archetypes>
   </class>
-  <class name="druid" id="4">
+  <class name="Druid" id="4">
     <description>...soon the flames will fade, and only druid will remain...</description>
     <proficiencies>
       <armor>light armor, medium armor, shields (druids will not wear armor or use shields made of metal)</armor>
@@ -1281,7 +1281,7 @@ Cleric Level	Spells
 Alternatively, you may start with 2d4 * 10 gp to buy your own equipment.
 </startingEquipment>
     <hitPointsRules>
-	  <hitDice>1d8</hitDice>
+      <hitDice>1d8</hitDice>
       <initialHP>8 + your Constitution modifier</initialHP>
       <higherLevelsHP>1d8(or 5) + your Constitution modifier per druid level after 1st</higherLevelsHP>
     </hitPointsRules>
@@ -1719,7 +1719,7 @@ Once you use this feature, you can't use it again until you finish a long rest.<
       </archetype>
     </archetypes>
   </class>
-  <class name="fighter" id="5">
+  <class name="Fighter" id="5">
     <description>A human in clanging plate armor holds her shield before her as she runs toward the massed goblins. An elf behind her, clad in studded leather armor, peppers the goblins with arrows loosed from his exquisite bow. The half-orc nearby shouts orders, helping the two combatants coordinate their assault to the best advantage.
 
 A dwarf in chain mail interposes his shield between the ogre's club and his companion, knocking the deadly blow aside. His companion, a half-elf in scale armor, swings two scimitars in a blinding whirl as she circles the ogre, looking for a blind spot in its defenses.
@@ -2308,109 +2308,224 @@ Once you use this feature, you can't use it again until you finish a long rest.<
       </archetype>
     </archetypes>
   </class>
-  <class name="monk" id="6">
+  <class name="Monk" id="6">
     <description>...soon the flames will fade, and only monk will remain...</description>
     <proficiencies>
-      <armor>placeholder</armor>
-      <weapons>placeholder</weapons>
-      <tools>placeholder</tools>
-      <savingThrows>placeholder</savingThrows>
-      <startingSkills amount="2">placeholder</startingSkills>
+      <armor>none</armor>
+      <weapons>simple weapons, shortswords</weapons>
+      <tools>any one type of artisan's tools or any one musical instrument of your choice</tools>
+      <savingThrows>Strength, Dexterity</savingThrows>
+      <startingSkills amount="2">Acrobatics, Athletics, History, Insight, Religion, Stealth</startingSkills>
     </proficiencies>
     <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
-1. 
-2. 
-3. 
-</startingEquipment>
+1. (a) a shortsword or (b) any simple weapon
+2. (a) a dngeoneer's pack or (b) an explorer's pack
+3. 10 darts
+Alternatively, you may start with 5d4 gp to buy your own equipment.
+    </startingEquipment>
     <hitPointsRules>
-	  <hitDice>1d8</hitDice>
-      <initialHP>6-12 + your Constitution modifier</initialHP>
-      <higherLevelsHP>1d6-12(or x) + your Constitution modifier per monk level after 1st</higherLevelsHP>
+      <hitDice>1d8</hitDice>
+      <initialHP>8 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d8(or 5) + your Constitution modifier per monk level after 1st</higherLevelsHP>
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Unarmored Defense">Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</feature>
+        <feature name="Martial Arts">Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two-handed or heavy property.
+
+You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield.
+
+    **·** You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.
+    **·** You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.
+    **·** When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.
+
+Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama).</feature>
       </level>
       <level number="2">
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ki">Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.
+
+You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.
+
+When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.
+
+Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:
+
+    **Ki save DC** = 8 + your proficiency bonus + your Wisdom modifier
+
+**Flurry of Blows**
+Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.
+
+**Patient Defense**
+You can spend 1 ki point to take the Dodge action as a bonus action on your turn.
+
+**Step of the Wind**
+You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</feature>
+        <feature name="Dedicated Weapon">You train yourself to use a variety of weapons as monk weapons, not just simple melee weapons and shortswords. Whenever you finish a short or long rest, you can touch one weapon, focus your ki on it, and then count that weapon as a monk weapon until you use this feature again.
+
+The chosen weapon must meet these criteria:
+
+    **·** The weapon must be a simple or martial weapon.
+    **·** You must be proficient with it.
+    **·** It must lack the heavy and special properties.</feature>
+        <feature name="Unarmored Movement">Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in the Monk table.
+
+At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</feature>
       </level>
       <level number="3">
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Deflect Missiles">Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.
+
+If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack (range 20/60 feet) with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack.</feature>
+        <feature name="Monastic Tradition">When you reach 3rd level, you commit yourself to a monastic tradition, chosen from the list of available traditions. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.</feature>
+        <feature name="Ki-Fueled Attack">If you spend 1 ki point or more as part of your action on your turn, you can make one attack with an unarmed strike or a monk weapon as a bonus action before the end of the turn.</feature>
       </level>
       <level number="4">
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+        <feature name="Slow Fall">Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</feature>
+        <feature name="Quickened Healing">As an action, you can spend 2 ki points and roll a Martial Arts die. You regain a number of hit points equal to the number rolled plus your proficiency bonus.</feature>
       </level>
       <level number="5">
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Extra Attack">Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</feature>
+        <feature name="Stunning Strike">Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</feature>
+        <feature name="Focused Aim">When you miss with an attack roll, you can spend 1 to 3 ki points to increase your attack roll by 2 for each of these ki points you spend, potentially turning the miss into a hit.</feature>
       </level>
       <level number="6">
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ki-Empowered Strikes">Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</feature>
+        <feature name="Monastic Tradition feature">At 6th level, you gain one feature granted by your Monastic Tradition.</feature>
       </level>
       <level number="7">
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Evasion">At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</feature>
+        <feature name="Stillness of Mind">Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</feature>
       </level>
       <level number="8">
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="9">
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Unarmored Movement Improvement">At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</feature>
       </level>
       <level number="10">
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Purity of Body">At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison.</feature>
       </level>
       <level number="11">
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Monastic Tradition feature">At 11th level, you gain one feature granted by your Monastic Tradition.</feature>
       </level>
       <level number="12">
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="13">
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Tongue of the Sun and Moon">Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</feature>
       </level>
       <level number="14">
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Diamond Soul">Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.
+
+Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</feature>
       </level>
       <level number="15">
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Timeless Body">At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water.</feature>
       </level>
       <level number="16">
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="17">
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Monastic Tradition feature">At 17th level, you gain one feature granted by your Monastic Tradition.</feature>
       </level>
       <level number="18">
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Empty Body">Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
+
+Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can't take any other creatures with you.</feature>
       </level>
       <level number="19">
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="20">
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Perfect Self">At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points.</feature>
       </level>
     </levelsBreakdown>
     <archetypes>
-      <archetype name="Path of the Ape">
+      <archetype name="Way of the Astral Self">
+      	<description>A monk who follows the Way of the Astral Self believes their body is an illusion. They see their ki as a representation of their true form, an astral self. This astral self has the capacity to be a force of order or disorder, with some monasteries training students to use their power to protect the weak and other instructing aspirants in how to manifest their rue selves in service to the mighty.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Way of the placeholder">
+        <description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Way of the placeholder">
+        <description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Way of the placeholder">
+        <description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Way of the placeholder">
+        <description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Way of the placeholder">
+        <description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Way of the placeholder">
       	<description>placeholder</description>
         <archetypeFeatures>
           <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
@@ -2419,7 +2534,7 @@ Once you use this feature, you can't use it again until you finish a long rest.<
           <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Path of the Ape">
+      <archetype name="Way of the placeholder">
       	<description>placeholder</description>
         <archetypeFeatures>
           <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
@@ -2428,16 +2543,7 @@ Once you use this feature, you can't use it again until you finish a long rest.<
           <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Path of the Ape">
-      	<description>placeholder</description>
-        <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-        </archetypeFeatures>
-      </archetype>
-      <archetype name="Path of the Ape">
+      <archetype name="Way of the placeholder">
       	<description>placeholder</description>
         <archetypeFeatures>
           <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
@@ -2448,7 +2554,7 @@ Once you use this feature, you can't use it again until you finish a long rest.<
       </archetype>
     </archetypes>
   </class>
-  <class name="paladin" id="7">
+  <class name="Paladin" id="7">
     <description>...soon the flames will fade, and only paladin will remain...</description>
     <proficiencies>
       <armor>placeholder</armor>
@@ -2463,7 +2569,7 @@ Once you use this feature, you can't use it again until you finish a long rest.<
 3. 
 </startingEquipment>
     <hitPointsRules>
-	  <hitDice>1d8</hitDice>
+      <hitDice>1d8</hitDice>
       <initialHP>6-12 + your Constitution modifier</initialHP>
       <higherLevelsHP>1d6-12(or x) + your Constitution modifier per paladin level after 1st</higherLevelsHP>
     </hitPointsRules>
@@ -2588,7 +2694,7 @@ Once you use this feature, you can't use it again until you finish a long rest.<
       </archetype>
     </archetypes>
   </class>
-  <class name="ranger" id="8">
+  <class name="Ranger" id="8">
     <description>...soon the flames will fade, and only ranger will remain...</description>
     <proficiencies>
       <armor>placeholder</armor>
@@ -2603,7 +2709,7 @@ Once you use this feature, you can't use it again until you finish a long rest.<
 3. 
 </startingEquipment>
     <hitPointsRules>
-	  <hitDice>1d8</hitDice>
+      <hitDice>1d8</hitDice>
       <initialHP>6-12 + your Constitution modifier</initialHP>
       <higherLevelsHP>1d6-12(or x) + your Constitution modifier per ranger level after 1st</higherLevelsHP>
     </hitPointsRules>
@@ -2728,7 +2834,7 @@ Once you use this feature, you can't use it again until you finish a long rest.<
       </archetype>
     </archetypes>
   </class>
-  <class name="rogue" id="9">
+  <class name="Rogue" id="9">
     <description>...soon the flames will fade, and only rogue will remain...</description>
     <proficiencies>
       <armor>light armor</armor>
@@ -2745,7 +2851,7 @@ Leather armor, two daggers, and thieves' tools.
 Alternatively, you may start with 4d4 * 10 gp to buy your own equipment.
 </startingEquipment>
     <hitPointsRules>
-	  <hitDice>1d8</hitDice>
+      <hitDice>1d8</hitDice>
       <initialHP>8 + your Constitution modifier</initialHP>
       <higherLevelsHP>1d8(or 5) + your Constitution modifier per rogue level after 1st</higherLevelsHP>
     </hitPointsRules>
@@ -3056,7 +3162,7 @@ In addition, when you make a running jump, the distance you cover increases by a
       </archetype>
     </archetypes>
   </class>
-  <class name="sorcerer" id="10">
+  <class name="Sorcerer" id="10">
     <description>...soon the flames will fade, and only sorcerer will remain...</description>
     <proficiencies>
       <armor>placeholder</armor>
@@ -3071,7 +3177,7 @@ In addition, when you make a running jump, the distance you cover increases by a
 3. 
 </startingEquipment>
     <hitPointsRules>
-	  <hitDice>1d8</hitDice>
+      <hitDice>1d8</hitDice>
       <initialHP>6-12 + your Constitution modifier</initialHP>
       <higherLevelsHP>1d6-12(or x) + your Constitution modifier per sorcerer level after 1st</higherLevelsHP>
     </hitPointsRules>
@@ -3196,7 +3302,7 @@ In addition, when you make a running jump, the distance you cover increases by a
       </archetype>
     </archetypes>
   </class>
-  <class name="warlock" id="11">
+  <class name="Warlock" id="11">
     <description>With a pseudodragon curled on his shoulder, a young elf in golden robes smiles warmly, weaving a magical charm into his honeyed words and bending the palace sentinel to his will.
 
 As flames spring to life in her hands, a wizened human whispers the secret name of her demonic patron, infusing her spell with fiendish magic.
@@ -3217,7 +3323,7 @@ Warlocks are seekers of the knowledge that lies hidden in the fabric of the mult
 3. 
 </startingEquipment>
     <hitPointsRules>
-	  <hitDice>1d8</hitDice>
+      <hitDice>1d8</hitDice>
       <initialHP>6-12 + your Constitution modifier</initialHP>
       <higherLevelsHP>1d6-12(or x) + your Constitution modifier per warlock level after 1st</higherLevelsHP>
     </hitPointsRules>
@@ -3342,7 +3448,7 @@ Warlocks are seekers of the knowledge that lies hidden in the fabric of the mult
       </archetype>
     </archetypes>
   </class>
-  <class name="wizard" id="12">
+  <class name="Wizard" id="12">
     <description>...soon the flames will fade, and only wizard will remain...</description>
     <proficiencies>
       <armor>placeholder</armor>
@@ -3357,7 +3463,7 @@ Warlocks are seekers of the knowledge that lies hidden in the fabric of the mult
 3. 
 </startingEquipment>
     <hitPointsRules>
-	  <hitDice>1d8</hitDice>
+      <hitDice>1d8</hitDice>
       <initialHP>6-12 + your Constitution modifier</initialHP>
       <higherLevelsHP>1d6-12(or x) + your Constitution modifier per wizard level after 1st</higherLevelsHP>
     </hitPointsRules>

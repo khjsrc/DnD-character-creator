@@ -149,6 +149,36 @@ namespace CharacterSheet
             else return null;
         }
 
+        public static XElement GetRaceXElement(CharacterRaces characterRace)
+        {
+            XDocument xDoc = XDocument.Load(_racesXmlFileName);
+            var matchingRaces =
+                from element in xDoc.Root.Descendants()
+                where element.Attribute("ID") != null
+                where element.Attribute("ID").Value == ((int)characterRace).ToString()
+                select element;
+
+
+            if (matchingRaces.Count() != 0)
+            {
+                var firstMatch = matchingRaces.First();
+                
+                if (firstMatch.Name == "subrace")
+                {
+                    var otherSubraces = 
+                        from subrace in firstMatch.Parent.Descendants("subrace")
+                        where subrace.Attribute("ID").Value != ((int)characterRace).ToString()
+                        select subrace;
+                    
+                    otherSubraces.Remove();
+
+                    return firstMatch.Parent;
+                }
+                else return firstMatch;
+            }
+            else return null;
+        }
+
         public static Dictionary<string, int> GetAbilityScoreBonuses(string raceName)
         {
             XElement raceElement = GetRaceXElement(raceName);
