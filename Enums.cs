@@ -98,7 +98,7 @@ namespace CharacterSheet
         Elf = 0b10_0000_0101,
         HighElf = 0b01_0000_0110,
         WoodElf = 0b01_0000_0111,
-        Drow = 0b11_0000_1000,
+        Drow = 0b01_0000_1000,
         /// <summary>
         /// Not a subclass, hence can't be picked.
         /// </summary>
