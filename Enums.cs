@@ -28,7 +28,7 @@ namespace CharacterSheet
     /// <summary>
     /// The list of all available character classes.
     /// </summary>
-    public enum CharacterClasses
+    public enum CharacterClass
     {
         /// <summary>
         /// mighty warrior, can rage
@@ -83,7 +83,7 @@ namespace CharacterSheet
     /// <summary>
     /// The list of all available races. 0b01 - subrace, 0b10 - core race w/ subraces, 0b11 - core race w/o subraces
     /// </summary>
-    enum CharacterRaces
+    enum CharacterRace
     {
         Dragonborn = 0b11_0000_0001,
         /// <summary>

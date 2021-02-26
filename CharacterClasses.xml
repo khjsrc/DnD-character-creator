@@ -22,7 +22,9 @@ Alternatively, you may start with 2d4*10 gp to buy your own equipment.</starting
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
-        <rage amount="2" bonusDamage="2"/>
+        <uniqueResource>
+          <resource name="Rage" amount="2" effect="Bonus Damage" bonus="2"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Rage">In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.
 While raging, you gain the following benefits if you aren't wearing heavy armor:
@@ -39,117 +41,155 @@ Once you have raged the maximum number of times for your barbarian level, you mu
         <feature name="Unarmored Defence">While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</feature>
       </level>
       <level number="2">
-        <rage amount="2" bonusDamage="2"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="2" effect="Bonus Damage" bonus="2"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Danger Sense">At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated.</feature>
         <feature name="Reckless Attack">Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</feature>
       </level>
       <level number="3">
-        <rage amount="2" bonusDamage="2"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="2" effect="Bonus Damage" bonus="2"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Primal Path">At 3rd level, you choose a path that shapes the nature of your rage from the list of available paths. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</feature>
       </level>
       <level number="4">
-        <rage amount="3" bonusDamage="2"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="3" effect="Bonus Damage" bonus="2"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="5">
-        <rage amount="3" bonusDamage="2"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="3" effect="Bonus Damage" bonus="2"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Extra Attack">Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</feature>
         <feature name="Fast Movement">Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor.</feature>
       </level>
       <level number="6">
-        <rage amount="4" bonusDamage="2"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="4" effect="Bonus Damage" bonus="2"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Path Feature">At 6th level, you gain a feature from your Primal Path.</feature>
       </level>
       <level number="7">
-        <rage amount="4" bonusDamage="2"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="4" effect="Bonus Damage" bonus="2"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Feral Instinct">By 7th level, your instincts are so honed that you have advantage on initiative rolls.
 
 Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.</feature>
       </level>
       <level number="8">
-        <rage amount="4" bonusDamage="2"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="4" effect="Bonus Damage" bonus="2"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM uses the optional Feats, you can instead take a feat.</feature>
       </level>
       <level number="9">
-        <rage amount="4" bonusDamage="3"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="4" effect="Bonus Damage" bonus="3"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Brutal Critical (1 dice)">Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.
 
 This increases to two additional dice at 13th level and three additional dice at 17th level.</feature>
       </level>
       <level number="10">
-        <rage amount="4" bonusDamage="3"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="4" effect="Bonus Damage" bonus="3"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Path Feature">At 10th level, you gain a feature from your Primal Path.</feature>
       </level>
       <level number="11">
-        <rage amount="4" bonusDamage="3"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="4" effect="Bonus Damage" bonus="3"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Relentless Rage">Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.
 
 Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</feature>
       </level>
       <level number="12">
-        <rage amount="5" bonusDamage="3"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="5" effect="Bonus Damage" bonus="3"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM uses the optional Feats, you can instead take a feat.</feature>
       </level>
       <level number="13">
-        <rage amount="5" bonusDamage="3"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="5" effect="Bonus Damage" bonus="3"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Brutal Critical (2 dice)">At 13th level, you can roll two additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.
 
 This increases to three additional dice at 17th level.</feature>
       </level>
       <level number="14">
-        <rage amount="5" bonusDamage="3"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="5" effect="Bonus Damage" bonus="3"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Path Feature">At 14th level, you gain a feature from your Primal Path.</feature>
       </level>
       <level number="15">
-        <rage amount="5" bonusDamage="3"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="5" effect="Bonus Damage" bonus="3"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Persistent Rage">Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.</feature>
       </level>
       <level number="16">
-        <rage amount="5" bonusDamage="4"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="5" effect="Bonus Damage" bonus="4"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM uses the optional Feats, you can instead take a feat.</feature>
       </level>
       <level number="17">
-        <rage amount="6" bonusDamage="4"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="6" effect="Bonus Damage" bonus="4"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Brutal Critical (3 dice)">At 17th level, you can roll three additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.</feature>
       </level>
       <level number="18">
-        <rage amount="6" bonusDamage="4"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="6" effect="Bonus Damage" bonus="4"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Indomitable Might">Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.</feature>
       </level>
       <level number="19">
-        <rage amount="6" bonusDamage="4"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="6" effect="Bonus Damage" bonus="4"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM uses the optional Feats, you can instead take a feat.</feature>
       </level>
       <level number="20">
-        <rage amount="unlimited" bonusDamage="4"></rage>
+        <uniqueResource>
+          <resource name="Rage" amount="unlimited" effect="Bonus Damage" bonus="4"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Primal Champion">At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.</feature>
       </level>
@@ -378,6 +418,9 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Bardic Inspiration">You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.
 
@@ -417,6 +460,9 @@ You can cast any bard spell you know as a ritual if that spell has the ritual ta
 You can use a musical instrument as a spellcasting focus for your bard spells.</feature>
       </level>
       <level number="2">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Jack of all Trades">Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</feature>
         <feature name="Song of Rest (d6)">Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures regains an extra 1d6 hit points.
@@ -425,6 +471,9 @@ The extra hit points increase when you reach certain levels in this class: to 1d
         <feature name="Magical Inspiration" tags="optional">If a creature has a Bardic Inspiration die from you and casts a spell that restores hit points or deals damage, the creature can roll that die and choose a target affected by the spell. Add the number rolled as a bonus to the hit points regained or the damage dealt. The Bardic Inspiration die is then lost.</feature>
       </level>
       <level number="3">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Bard College">At 3rd level, you delve into the advanced techniques of a bard college of your choice from the list of available colleges. Your choice grants you features at 3rd level and again at 6th and 14th level.</feature>
         <feature name="Expertise">At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
@@ -432,6 +481,9 @@ The extra hit points increase when you reach certain levels in this class: to 1d
 At 10th level, you can choose another two skill proficiencies to gain this benefit.</feature>
       </level>
       <level number="4">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
@@ -442,30 +494,48 @@ If your DM allows the use of feats, you may instead take a feat.</feature>
     **·** Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the bard spell list.</feature>
       </level>
       <level number="5">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Bardic Inspiration (d8)">At 5th level, your Bardic Inspiration die changes to a d8.</feature>
         <feature name="Font of Inspiration">Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</feature>
       </level>
       <level number="6">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Countercharm">At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required).</feature>
         <feature name="Bard College feature">At 6th level, you gain a feature from your Bard College.</feature>
       </level>
       <level number="7">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="8">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="9">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Song of Rest (d8)">At 9th level, the extra hit points gained from Song of Rest increases to 1d8.</feature>
       </level>
       <level number="10">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Bardic Inspiration (d10)">At 10th level, your Bardic Inspiration die changes to a d10.</feature>
         <feature name="Expertise">At 10th level, you can choose another two skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</feature>
@@ -476,51 +546,81 @@ The chosen spells count as bard spells for you and are included in the number in
 You learn two additional spells from any classes at 14th level and again at 18th level.</feature>
       </level>
       <level number="11">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="12">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="13">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Song of Rest (d10)">At 13th level, the extra hit points gained from Song of Rest increases to 1d10.</feature>
       </level>
       <level number="14">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Magical Secrets">placeholder</feature>
         <feature name="Bard College feature">At 14th level, you gain a feature from your Bard College.</feature>
       </level>
       <level number="15">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Bardic Inspiration (d12)">At 15th level, your Bardic Inspiration die changes to a d12.</feature>
       </level>
       <level number="16">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="17">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Song of Rest (d12)">At 17th level, the extra hit points gained from Song of Rest increases to 1d12.</feature>
       </level>
       <level number="18">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Magical Secrets">At 18th level, choose two additional spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.
 
 The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.</feature>
       </level>
       <level number="19">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="20">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Superior Inspiration">At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</feature>
       </level>
@@ -713,6 +813,9 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Spellcasting">As a conduit for divine power, you can cast cleric spells. See chapter 10 for the general rules of spellcasting and chapter 11 for a selection of cleric spells.
 
@@ -748,6 +851,9 @@ Each domain has a list of spells—its domain spells—that you gain at the cler
 If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you.</feature>
       </level>
       <level number="2">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Channel Divinity (1/rest)">At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.
 
@@ -765,10 +871,16 @@ A turned creature must spend its turns trying to move as far away from you as it
         <feature name="Divine Domain feature">At 2nd level, you gain a feature from your Divine Domain.</feature>
       </level>
       <level number="3">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="4">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
@@ -776,19 +888,31 @@ If your DM allows the use of feats, you may instead take a feat.</feature>
         <feature name="Cantrip Versatility" tags="optional">Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the cleric spell list.</feature>
       </level>
       <level number="5">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Destroy Undead (CR 1/2)">Starting at 5th level, when an undead of CR 1/2 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</feature>
       </level>
       <level number="6">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Channel Divinity (2/rest)">Beginning at 6th level, you can use your Channel Divinity twice between rests.</feature>
         <feature name="Divine Domain feature">At 6nd level, you gain a feature from your Divine Domain.</feature>
       </level>
       <level number="7">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="8">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
@@ -797,10 +921,16 @@ If your DM allows the use of feats, you may instead take a feat.</feature>
         <feature name="Divine Domain feature">At 8nd level, you gain a feature from your Divine Domain.</feature>
       </level>
       <level number="9">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="10">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Divine Intervention">Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.
 
@@ -809,49 +939,79 @@ Imploring your deity's aid requires you to use your action. Describe the assista
 At 20th level, your call for intervention succeeds automatically, no roll required.</feature>
       </level>
       <level number="11">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Destroy Undead (CR 2)">Starting at 11th level, when an undead of CR 2 or lower or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</feature>
       </level>
       <level number="12">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="13">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="14">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Destroy Undead (CR 3)">Starting at 14th level, when an undead of CR 3 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</feature>
       </level>
       <level number="15">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="16">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="17">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Destroy Undead (CR 4)">Starting at 17th level, when an undead of CR 4 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</feature>
         <feature name="Divine Domain feature">At 17nd level, you gain a feature from your Divine Domain.</feature>
       </level>
       <level number="18">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Channel Divinity (3/rest)">Beginning at 18th level, you can use your Channel Divinity three times between rests.</feature>
       </level>
       <level number="19">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="20">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Divine Intervention Improvement">At 20th level, your call for intervention succeeds automatically, no roll required.</feature>
       </level>
@@ -1287,6 +1447,9 @@ Alternatively, you may start with 2d4 * 10 gp to buy your own equipment.
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Druidic">You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.</feature>
         <feature name="Spellcasting">Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will. See chapter 10 of Player's Handbook for the general rules of spellcasting and chapter 11 of Player's Handbook for the druid spell list.
@@ -1318,6 +1481,9 @@ You can cast a druid spell as a ritual if that spell has the ritual tag and you 
 You can use a druidic focus as a spellcasting focus for your druid spells.</feature>
       </level>
       <level number="2">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Wild Shape">Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.
 
@@ -1347,10 +1513,16 @@ When you cast the spell in this way, the familiar is a fey instead of a beast, a
         <feature name="Druid Circle">At 2nd level, you choose to identify with a circle of druids from the list of available circles. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</feature>
       </level>
       <level number="3">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="4">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Wild Shape Improvement">At 4th level, your Wild Shape improves as shown on the Beast Shapes table.</feature>
         <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
@@ -1359,18 +1531,30 @@ If your DM allows the use of feats, you may instead take a feat.</feature>
         <feature name="Cantrip Versatility">Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the druid spell list.</feature>
       </level>
       <level number="5">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="6">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Druid Circle feature">At 6th level, you gain a feature granted by your Druid Circle.</feature>
       </level>
       <level number="7">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="8">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Wild Shape Improvement">At 8th level, your Wild Shape improves as shown on the Beast Shapes table.</feature>
         <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
@@ -1378,57 +1562,93 @@ If your DM allows the use of feats, you may instead take a feat.</feature>
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="9">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="10">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Druid Circle feature">At 10th level, you gain a feature granted by your Druid Circle feature.</feature>
       </level>
       <level number="11">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="12">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="13">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="14">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Druid Circle feature">At 14th level, you gain a feature granted by your Druid Circle feature.</feature>
       </level>
       <level number="15">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="16">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="17">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <!-- <feature name="">You get nothing at this level.</feature> -->
       </level>
       <level number="18">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Timeless Body">Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.</feature>
         <feature name="Beast Spells">Beginning at 18th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren't able to provide material components.</feature>
       </level>
       <level number="19">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="20">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Archdruid">At 20th level, you can use your Wild Shape an unlimited number of times.
 
@@ -1748,6 +1968,9 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Fighting Style">You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.
 
@@ -1795,16 +2018,25 @@ At the start of each of your turns, you can deal 1d4 bludgeoning damage to one c
 Once you use this feature, you must finish a short or long rest before you can use it again.</feature>
       </level>
       <level number="2">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Action Surge">Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action.
 
 Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</feature>
       </level>
       <level number="3">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Martial Archetype">At 3rd level, you choose an archetype from the list available that you strive to emulate in your combat styles and techniques. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.</feature>
       </level>
       <level number="4">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
@@ -1815,83 +2047,131 @@ If your DM allows the use of feats, you may instead take a feat.</feature>
     · If you know any maneuvers from the Battle Master archetype, you can replace one maneuver you know with a different maneuver.</feature>
       </level>
       <level number="5">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Extra Attack">Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
 The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</feature>
       </level>
       <level number="6">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 6th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="7">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Martial Archetype feature">At 7th level, you gain a feature granted by your Martial Archetype.</feature>
       </level>
       <level number="8">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="9">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Indomitable">Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.
 
 You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.</feature>
       </level>
       <level number="10">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Martial Archetype feature">At 10th level, you gain a feature granted by your Martial Archetype.</feature>
       </level>
       <level number="11">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Extra Attack (2)">At 11th level, you can attack three times whenever you take the Attack action on your turn.</feature>
       </level>
       <level number="12">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="13">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Indomitable (two uses)">At 13th level, you can use Indomitable twice between long rests.</feature>
       </level>
       <level number="14">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 14th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="15">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Martial Archetype feature">At 15th level, you gain a feature granted by your Martial Archetype.</feature>
       </level>
       <level number="16">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="17">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Action Surge (two uses)">At 17th level, you can use Action Surge twice before a rest, but only once on the same turn.</feature>
         <feature name="Infomitable (three uses)">At 17th level, you can use Indomitable three times between long rests.</feature>
       </level>
       <level number="18">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Martial Archetype feature">At 18th level, you gain a feature granted by your Martial Archetype.</feature>
       </level>
       <level number="19">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="20">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Extra Attack (3)">At 20th level, you can attack four times whenever you take the Attack action on your turn.</feature>
       </level>
@@ -2330,6 +2610,9 @@ Alternatively, you may start with 5d4 gp to buy your own equipment.
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
+        <uniqueResource>
+          <resource name="Ki" amount="0"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Unarmored Defense">Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</feature>
         <feature name="Martial Arts">Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two-handed or heavy property.
@@ -2343,6 +2626,9 @@ You gain the following benefits while you are unarmed or wielding only monk weap
 Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama).</feature>
       </level>
       <level number="2">
+        <uniqueResource>
+          <resource name="Ki" amount="2"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Ki">Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.
 
@@ -2374,6 +2660,9 @@ The chosen weapon must meet these criteria:
 At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</feature>
       </level>
       <level number="3">
+        <uniqueResource>
+          <resource name="Ki" amount="3"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Deflect Missiles">Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.
 
@@ -2382,6 +2671,9 @@ If you reduce the damage to 0, you can catch the missile if it is small enough f
         <feature name="Ki-Fueled Attack">If you spend 1 ki point or more as part of your action on your turn, you can make one attack with an unarmed strike or a monk weapon as a bonus action before the end of the turn.</feature>
       </level>
       <level number="4">
+        <uniqueResource>
+          <resource name="Ki" amount="4"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
@@ -2390,267 +2682,602 @@ If your DM allows the use of feats, you may instead take a feat.</feature>
         <feature name="Quickened Healing">As an action, you can spend 2 ki points and roll a Martial Arts die. You regain a number of hit points equal to the number rolled plus your proficiency bonus.</feature>
       </level>
       <level number="5">
+        <uniqueResource>
+          <resource name="Ki" amount="5"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Extra Attack">Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</feature>
         <feature name="Stunning Strike">Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</feature>
         <feature name="Focused Aim">When you miss with an attack roll, you can spend 1 to 3 ki points to increase your attack roll by 2 for each of these ki points you spend, potentially turning the miss into a hit.</feature>
       </level>
       <level number="6">
+        <uniqueResource>
+          <resource name="Ki" amount="6"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Ki-Empowered Strikes">Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</feature>
         <feature name="Monastic Tradition feature">At 6th level, you gain one feature granted by your Monastic Tradition.</feature>
       </level>
       <level number="7">
+        <uniqueResource>
+          <resource name="Ki" amount="7"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Evasion">At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</feature>
         <feature name="Stillness of Mind">Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</feature>
       </level>
       <level number="8">
+        <uniqueResource>
+          <resource name="Ki" amount="8"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="9">
+        <uniqueResource>
+          <resource name="Ki" amount="9"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Unarmored Movement Improvement">At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</feature>
       </level>
       <level number="10">
+        <uniqueResource>
+          <resource name="Ki" amount="10"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Purity of Body">At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison.</feature>
       </level>
       <level number="11">
+        <uniqueResource>
+          <resource name="Ki" amount="11"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Monastic Tradition feature">At 11th level, you gain one feature granted by your Monastic Tradition.</feature>
       </level>
       <level number="12">
+        <uniqueResource>
+          <resource name="Ki" amount="12"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="13">
+        <uniqueResource>
+          <resource name="Ki" amount="13"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Tongue of the Sun and Moon">Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</feature>
       </level>
       <level number="14">
+        <uniqueResource>
+          <resource name="Ki" amount="14"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Diamond Soul">Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.
 
 Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</feature>
       </level>
       <level number="15">
+        <uniqueResource>
+          <resource name="Ki" amount="15"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Timeless Body">At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water.</feature>
       </level>
       <level number="16">
+        <uniqueResource>
+          <resource name="Ki" amount="16"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="17">
+        <uniqueResource>
+          <resource name="Ki" amount="17"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Monastic Tradition feature">At 17th level, you gain one feature granted by your Monastic Tradition.</feature>
       </level>
       <level number="18">
+        <uniqueResource>
+          <resource name="Ki" amount="18"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Empty Body">Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
 
 Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can't take any other creatures with you.</feature>
       </level>
       <level number="19">
+        <uniqueResource>
+          <resource name="Ki" amount="19"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="20">
+        <uniqueResource>
+          <resource name="Ki" amount="20"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Perfect Self">At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points.</feature>
       </level>
     </levelsBreakdown>
     <archetypes>
       <archetype name="Way of the Astral Self">
-      	<description>A monk who follows the Way of the Astral Self believes their body is an illusion. They see their ki as a representation of their true form, an astral self. This astral self has the capacity to be a force of order or disorder, with some monasteries training students to use their power to protect the weak and other instructing aspirants in how to manifest their rue selves in service to the mighty.</description>
+      	<description>A monk who follows the Way of the Astral Self believes their body is an illusion. They see their ki as a representation of their true form, an astral self. This astral self has the capacity to be a force of order or disorder, with some monasteries training students to use their power to protect the weak and other instructing aspirants in how to manifest their rue selves in service to the mighty.
+
+**Forms of Your Astral Self**
+
+The astral self is a translucent embodiment of the monk's soul. As a result, an astral self can reflect aspects of a monk's background, ideals, flaws, and bonds, and an astral self doesn't necessarily look anything like the monk. For example, the astral self of a lanky human might be reminiscent of a minotaur-the strength of which the monk feels within. Similarly, an orc monk might manifest gossamer arms and a delicate visage, representing the gentle beauty of the orc's soul. Each astral self is unique, and some of the monks of this monastic tradition are known more for the appearance of their astral self than for their physical appearance.
+
+When choosing this path, consider the quirks that define your monk. Are you obsessed with something? Are you driven by justice or a selfish desire? Any of these motivations could manifest in the form of your astral self.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Arms of the Astral Self">Your mastery of your ki allows you to summon a portion of your astral self. As a bonus action, you can spend 1 ki point to summon the arms of your astral self. When you do so, each creature of your choice that you can see within 10 feet of you must succeed on a Dexterity saving throw or take force damage equal to two rolls of your Martial Arts die.
+
+For 10 minutes, these spectral arms hover near your shoulders or surround your arms (your choice). You determine the arms' appearance, and they vanish early if you are incapacitated or die.
+
+While the spectral arms are present, you gain the following benefits:
+
+    **·** You can use your Wisdom modifier in place of your Strength modifier when making Strength checks and Strength saving throws.
+    **·** You can use the spectral arms to make unarmed strikes.
+    **·** When you make an unarmed strike with the arms on your turn, your reach for it is 5 feet greater than normal.
+    **·** The unarmed strikes you make with the arms can use your Wisdom modifier in place of your Strength or Dexterity modifier for the attack and damage rolls, and their damage type is force.</archetypeFeature>
+          <archetypeFeature level="6" name="Visage of the Astral Self">You can summon the visage of your astral self. As a bonus action, or as part of the bonus action you take to activate Arms of the Astral Self, you can spend 1 ki point to summon this visage for 10 minutes. It vanishes early if you are incapacitated or die.
+
+The spectral visage covers your face like a helmet or mask. You determine its appearance.
+
+While the spectral visage is present, you gain the following benefits.
+**Astral Sight.** You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
+**Wisdom of the Spirit.** You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks.
+**Word of the Spirit.** When you speak, you can direct your words to a creature of your choice that you can see within 60 feet of you, making it so only that creature can hear you. Alternatively, you can amplify your voice so that all creatures within 600 feet can hear you.</archetypeFeature>
+          <archetypeFeature level="11" name="Body of the Astral Self">When you have both your astral arms and visage summoned, you can cause the body of your astral self to appear (no action required). This spectral body covers your physical form like a suit of armor, connecting with the arms and visage. You determine its appearance.
+
+While the spectral body is present, you gain the following benefits.
+**Deflect Energy.** When you take acid, cold, fire, force, lightning, or thunder damage, you can use your reaction to deflect it. When you do so, the damage you take is reduced by 1d10 + your Wisdom modifier (minimum reduction of 1).
+**Empowered Arms.** Once on each of your turns when you hit a target with the Arms of the Astral Self, you can deal extra damage to the target equal to your Martial Arts die.</archetypeFeature>
+          <archetypeFeature level="17" name="Awakened Astral Self">Your connection to your astral self is complete, allowing you to unleash its full potential. As a bonus action, you can spend 5 ki points to summon the arms, visage, and body of your astral self and awaken it for 10 minutes. This awakening ends early if you are incapacitated or die.
+
+While your astral self is awakened, you gain the following benefits.
+**Armor of the Spirit.** You gain a +2 bonus to Armor Class.
+**Astral Barrage.** Whenever you use the Extra Attack feature to attack twice, you can instead attack three times if all the attacks are made with your astral arms.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Way of the placeholder">
-        <description>placeholder</description>
+      <archetype name="Way of the Drunken Master">
+        <description>The Way of the Drunken Master teaches its students to move with the jerky, unpredictable movements of a drunkard. A drunken master sways, tottering on unsteady feet, to present what seems like an incompetent combatant who proves frustrating to engage. The drunken master's erratic stumbles conceal a carefully executed dance of blocks, parries, advances, attacks, and retreats.
+
+A drunken master often enjoys playing the fool to bring gladness to the despondent or to demonstrate humility to the arrogant, but when battle is joined, the drunken master can be a maddening, masterful foe.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Bonus Proficiencies">When you choose this tradition at 3rd level, you gain proficiency in the Performance skill if you don't already have it. Your martial arts technique mixes combat training with the precision of a dancer and the antics of a jester. You also gain proficiency with brewer's supplies if you don't already have it.</archetypeFeature>
+          <archetypeFeature level="3" name="Drunken Technique">At 3rd level, you learn how to twist and turn quickly as part of your Flurry of Blows. Whenever you use Flurry of Blows, you gain the benefit of the Disengage action, and your walking speed increases by 10 feet until the end of the current turn.</archetypeFeature>
+          <archetypeFeature level="6" name="Tipsy Sway">Starting at 6th level, you can move in sudden, swaying ways. You gain the following benefits.
+**Leap to Your Feet.** When you're prone, you can stand up by spending 5 feet of movement, rather than half your speed.
+**Redirect Attack.** When a creature misses you with a melee attack roll, you can spend 1 ki point as a reaction to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of you.</archetypeFeature>
+          <archetypeFeature level="11" name="Drunkard's Luck">Starting at 11th level, you always seem to get a lucky bounce at the right moment. When you make an ability check, an attack roll, or a saving throw and have disadvantage on the roll, you can spend 2 ki points to cancel the disadvantage for that roll.</archetypeFeature>
+          <archetypeFeature level="17" name="Intoxicated Frenzy">At 17th level, you gain the ability to make an overwhelming number of attacks against a group of enemies. When you use your Flurry of Blows, you can make up to three additional attacks with it (up to a total of five Flurry of Blows attacks), provided that each Flurry of Blows attack targets a different creature this turn.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Way of the placeholder">
-        <description>placeholder</description>
+      <archetype name="Way of the Four Elements">
+        <description>You follow a monastic tradition that teaches you to harness the elements. When you focus your ki, you can align yourself with the forces of creation and bend the four elements to your will, using them as an extension of your body. Some members of this tradition dedicate themselves to a single element, but others weave the elements together.
+
+Many monks of this tradition tattoo their bodies with representations of their ki powers, commonly imagined as coiling dragons, but also as phoenixes, fish, plants, mountains, and cresting waves.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Disciple of the Elements">You learn magical disciplines that harness the power of the four elements. A discipline requires you to spend ki points each time you use it.
+
+You know the Elemental Attunement discipline and one other elemental discipline of your choice. You learn one additional elemental discipline of your choice at 6th, 11th, and 17th level.
+
+Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.
+**Casting Elemental Spells.** Some elemental disciplines allow you to cast spells. See chapter 10 of the Player's Handbook for the general rules of spellcasting. To cast one of these spells, you use its casting time and other rules, but you don't need to provide material components for it.
+
+Once you reach 5th level in this class, you can spend additional ki points to increase the level of an elemental discipline spell that you cast, provided that the spell has an enhanced effect at a higher level, as burning hands does. The spell's level increases by 1 for each additional ki point you spend. For example, if you are a 5th-level monk and use Sweeping Cinder Strike to cast burning hands, you can spend 3 ki points to cast it as a 2nd-level spell (the discipline's base cost of 2 ki points plus 1).
+
+The maximum number of ki points you can spend to cast a spell in this way (including its base ki point cost and any additional ki points you spend to increase its level) is determined by your monk level, as shown in the Spells and Ki Points table. At 5th level, you may spend up to 3 ki points; this increases to 4 ki points at 9th level, 5 at 13th level, and 6 at 17th level.
+**Spells and Ki Points**
+Monk Levels   Maximum Ki Points for a Spell
+5th-8th       3
+9th-12th      4
+13th-16th     5
+17th-20th     6</archetypeFeature>
+          <archetypeFeature level="3" name="Elemental Disciplines">The elemental disciplines are presented in alphabetical order. If a discipline requires a level, you must be the level in this class to learn the discipline.
+**Breath of Winter (17th Level Required).** You can spend 6 ki points to cast cone of cold.
+**Clench of the North Wind (6th Level Required).** You can spend 3 ki points to cast hold person.
+**Elemental Attunement.** You can use your action to briefly control elemental forces within 30 feet of you, causing one of the following effects of your choice:
+
+    **·** Create a harmless, instantaneous sensory effect related to air, earth, fire, or water, such as a shower of sparks, a puff of wind, a spray of light mist, or a gentle rumbling of stone.
+    **·** Instantaneously light or snuff out a candle, a torch, or a small campfire.
+    **·** Chill or warm up to 1 pound of nonliving material for up to 1 hour.
+    **·** Cause earth, fire, water, or mist that can fit within a 1-foot cube to shape itself into a crude form you designate for 1 minute.
+
+
+**Eternal Mountain Defense (17th Level Required).** You can spend 5 ki points to cast stoneskin, targeting yourself.
+**Fangs of the Fire Snake.** When you use the Attack action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet. Your reach with your unarmed strikes increases by 10 feet for that action, as well as the rest of the turn. A hit with such an attack deals fire damage instead of bludgeoning damage, and if you spend 1 ki point when the attack hits, it also deals an extra 1d10 fire damage.
+**Fist of Four Thunders.** You can spend 2 ki points to cast thunderwave.
+**Flames of the Phoenix (11th Level Required).** You can spend 4 ki points to cast fireball.
+**Gong of the Summit (6th Level Required).** You can spend 3 ki points to cast shatter.
+**Mist Stance (11th Level Required).** You can spend 4 ki points to cast gaseous form, targeting yourself.
+**Ride the Wind (11th Level Required).** You can spend 4 ki points to cast fly, targeting yourself.
+**River of Hungry Flame (17th Level Required).** You can spend 5 ki points to cast wall of fire.
+**Rush of the Gale Spirits.** You can spend 2 ki points to cast gust of wind.
+**Shape the Flowing River.** As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high. raise or lower the square's elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can't shape the ice to trap or injure a creature in the area.
+
+
+**Sweeping Cinder Strike.** You can spend 2 ki points to cast burning hands.
+**Unbroken Air.** You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don't push it or knock it prone.
+**Water Whip.** You can spend 2 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don't pull it or knock it prone.
+**Wave of Rolling Earth (17th Level Required).** You can spend 6 ki points to cast wall of stone.</archetypeFeature>
+          <archetypeFeature level="6" name="Extra Elemental Discipline">You learn one additional elemental discipline of your choice. You should know 2 elemental disciplines, as well as Elemental Attunement.
+
+Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.</archetypeFeature>
+          <archetypeFeature level="11" name="Extra Elemental Discipline">You learn one additional elemental discipline of your choice. You should know 3 elemental disciplines, as well as Elemental Attunement.
+
+Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.</archetypeFeature>
+          <archetypeFeature level="17" name="Extra Elemental Discipline">You learn one additional elemental discipline of your choice. You should know 4 elemental disciplines, as well as Elemental Attunement.
+
+Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Way of the placeholder">
-        <description>placeholder</description>
+      <archetype name="Way of the Kensei">
+        <description>Monks of the Way of the Kensei train relentlessly with their weapons, to the point where the weapon becomes an extension of the body. Founded on a mastery of sword fighting, the tradition has expanded to include many different weapons.
+
+A kensei sees a weapon in much the same way a calligrapher or painter regards a pen or brush. Whatever the weapon, the kensei views it as a tool used to express the beauty and precision of the martial arts. That such mastery makes a kensei a peerless warrior is but a side effect of intense devotion, practice, and study.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Path of the Kensei">When you choose this tradition at 3rd level, your special martial arts training leads you to master the use of certain weapons. This path also includes instruction in the deft strokes of calligraphy or painting. You gain the following benefits.
+**Kensei Weapons.** Choose two types of weapons to be your kensei weapons: one melee weapon and one ranged weapon. Each of these weapons can be any simple or martial weapon that lacks the heavy and special properties. The longbow is also a valid choice. You gain proficiency with these weapons if you don't already have it. Weapons of the chosen types are monk weapons for you. Many of this tradition's features work only with your kensei weapons. When you reach 6th, 11th, and 17th level in this class, you can choose another type of weapon—either melee or ranged—to be a kensei weapon for you, following the criteria above.
+**Agile Parry.** If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn, while the weapon is in your hand and you aren't incapacitated.
+**Kensei's Shot.** You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon takes an extra 1d4 damage of the weapon's type. You retain this benefit until the end of the current turn.
+**Way of the Brush.** You gain proficiency with your choice of calligrapher's supplies or painter's supplies.</archetypeFeature>
+          <archetypeFeature level="6" name="One with the Blade">At 6th level, you extend your ki into your kensei weapons, granting you the following benefits.
+**Magic Kensei Weapons.** Your attacks with your kensei weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+**Deft Strike.** When you hit a target with a kensei weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature only once on each of your turns.</archetypeFeature>
+          <archetypeFeature level="11" name="Sharpen the Blade">At 11th level, you gain the ability to augment your weapons further with your ki. As a bonus action, you can expend up to 3 ki points to grant one kensei weapon you touch a bonus to attack and damage rolls when you attack with it. The bonus equals the number of ki points you spent. This bonus lasts for 1 minute or until you use this feature again. This feature has no effect on a magic weapon that already has a bonus to attack and damage rolls.</archetypeFeature>
+          <archetypeFeature level="17" name="Unerring Accuracy">At 17th level, your mastery of weapons grants you extraordinary accuracy. If you miss with an attack roll using a monk weapon on your turn, you can reroll it. You can use this feature only once on each of your turns.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Way of the placeholder">
-        <description>placeholder</description>
+      <archetype name="Way of the Long Death">
+        <description>Monks of the Way of the Long Death are obsessed with the meaning and mechanics of dying. They capture creatures and prepare elaborate experiments to capture, record, and understand the moments of their demise. They use this knowledge to guide their understanding of martial arts, yielding a deadly fighting style.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Touch of Death">Starting when you choose this tradition at 3rd level, your study of death allows you to extract vitality from another creature as it nears its demise. When you reduce a creature within 5 feet of you to 0 hit points, you gain temporary hit points equal to your Wisdom modifier + your monk level (minimum of 1 temporary hit point).</archetypeFeature>
+          <archetypeFeature level="6" name="Hour of Reaping">At 6th level, you gain the ability to unsettle or terrify those around you as an action, for your soul has been touched by the shadow of death. When you take this action, each creature within 30 feet of you that can see you must succeed on a Wisdom saving throw or be frightened of you until the end of your next turn.</archetypeFeature>
+          <archetypeFeature level="11" name="Mastery of Death">Beginning at 11th level, you use your familiarity with death to escape its grasp. When you are reduced to 0 hit points, you can expend 1 ki point (no action required) to have 1 hit point instead.</archetypeFeature>
+          <archetypeFeature level="17" name="Touch of the Long Death">Starting at 17th level, your touch can channel the energy of death into a creature. As an action, you touch one creature within 5 feet of you, and you expend 1 to 10 ki points. The target must make a Constitution saving throw, and it takes 2d10 necrotic damage per ki point spent on a failed save, or half as much damage on a successful one.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Way of the placeholder">
-        <description>placeholder</description>
+      <archetype name="Way of the Mercy">
+        <description>Monks of the Way of Mercy learn to manipulate the life force of others to bring aid to those in need. They are wandering physicians to the poor and hurt. However, to those beyond their help, they bring a swift end as an act of mercy.
+
+Those who follow the Way of Mercy might be members of a religious order, administering to the needy and making grim choices rooted in reality rather than idealism. Some might be gentle-voiced healers, beloved by their communities, while others might be masked bringers of macabre mercies.
+
+The walkers of this way usually don robes with deep cowls, and they often conceal their faces with masks, presenting themselves as the faceless bringers of life and death.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Implements of Mercy">You gain proficiency in the Insight and Medicine skills, and you gain proficiency with the herbalism kit.
+
+You also gain a special mask, which you often wear when using the features of this subclass. You determine its appearance, or generate it randomly by rolling on the Merciful Mask table.
+**Merciful Mask**
+d6  Mask Appearance
+1   Raven
+2   Blank and white
+3   Crying visage
+4   Laughing visage
+5   Skull
+6   Butterfly</archetypeFeature>
+          <archetypeFeature level="3" name="Hand of Healing">Your mystical touch can mend wounds. As an action, you can spend 1 ki point to touch a creature and restore a number of hit points equal to a roll of your Martial Arts die + your Wisdom modifier.
+
+When you use your Flurry of Blows, you can replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing.</archetypeFeature>
+          <archetypeFeature level="3" name="Hand of Harm">You use your ki to inflict wounds. When you hit a creature with an unarmed strike, you can spend 1 ki point to deal extra necrotic damage equal to one roll of your Martial Arts die + your Wisdom modifier. You can use this feature only once per turn.</archetypeFeature>
+          <archetypeFeature level="6" name="Physician's Touch">You can administer even greater cures with a touch, and if you feel it's necessary, you can use your knowledge to cause harm.
+
+When you use Hand of Healing on a creature, you can also end one disease or one of the following conditions affecting the creature: blinded, deafened, paralyzed, poisoned, or stunned.
+
+When you use Hand of Harm on a creature, you can subject that creature to the poisoned condition until the end of your next turn.</archetypeFeature>
+          <archetypeFeature level="11" name="Flurry of Healing and Harm">You can now mete out a flurry of comfort and hurt. When you use Flurry of Blows, you can now replace each of the unarmed strikes with a use of your Hand of Healing, without spending ki points for the healing.
+
+In addition, when you make an unarmed strike with Flurry of Blows, you can use Hand of Harm with that strike without spending the ki point for Hand of Harm. You can still use Hand of Harm only once per turn.</archetypeFeature>
+          <archetypeFeature level="17" name="Hand of Ultimate Mercy">Your mastery of life energy opens the door to the ultimate mercy. As an action, you can touch the corpse of a creature that died within the past 24 hours and expend 5 ki points. The creature then returns to life, regaining a number of hit points equal to 4d10 + your Wisdom modifier. If the creature died while subject to any of the following conditions, it revives with them removed: blinded, deafened, paralyzed, poisoned, and stunned.
+
+Once you use this feature, you can't use it again until you finish a long rest.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Way of the placeholder">
-      	<description>placeholder</description>
+      <archetype name="Way of the Open Hand">
+      	<description>Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Open Hand Technique">You can manipulate your enemy's ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target.
+
+    **·** It must succeed on a Dexterity saving throw or be knocked prone.
+    **·** It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.
+    **·** It can't take reactions until the end of your next turn.</archetypeFeature>
+          <archetypeFeature level="6" name="Wholeness of Body">You gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.</archetypeFeature>
+          <archetypeFeature level="11" name="Tranquility">Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.</archetypeFeature>
+          <archetypeFeature level="17" name="Quivering Palm">You gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.
+
+You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Way of the placeholder">
-      	<description>placeholder</description>
+      <archetype name="Way of Shadow">
+      	<description>Monks of the Way of Shadow follow a tradition that values stealth and subterfuge. These monks might be called ninjas or shadowdancers, and they serve as spies and assassins. Sometimes the members of a ninja monastery are family members, forming a clan sworn to secrecy about their arts and missions. Other monasteries are more like thieves' guilds, hiring out their services to nobles, rich merchants, or anyone else who can pay their fees. Regardless of their methods, the heads of these monasteries expect the unquestioning obedience of their students.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Shadow Arts">You can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don't already know it.</archetypeFeature>
+          <archetypeFeature level="6" name="Shadow Step">You gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</archetypeFeature>
+          <archetypeFeature level="11" name="Cloak of Shadows">By 11th level, you have learned to become one with the shadows. When you are in an area of dim light or darkness, you can use your action to become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light.</archetypeFeature>
+          <archetypeFeature level="17" name="Opportunist">At 17th level, you can exploit a creature's momentary distraction when it is hit by an attack. Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your reaction to make a melee attack against that creature.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Way of the placeholder">
-      	<description>placeholder</description>
+      <archetype name="Way of the Sun Soul">
+      	<description>Monks of the Way of the Sun Soul learn to channel their life energy into searing bolts of light. They teach that meditation can unlock the ability to unleash the indomitable light shed by the soul of every living creature.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Radiant Sun Bolt">Starting when you choose this tradition at 3rd level, you can hurl searing bolts of magical radiance.
+
+You gain a new attack option that you can use with the Attack action. This special attack is a ranged spell attack with a range of 30 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls. Its damage is radiant, and its damage die is a d4. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.
+
+When you take the Attack action on your turn and use this special attack as part of it, you can spend 1 ki point to make the special attack twice as a bonus action.
+
+When you gain the Extra Attack feature, this special attack can be used for any of the attacks you make as part of the Attack action.</archetypeFeature>
+          <archetypeFeature level="6" name="Searing Arc Strike">At 6th level, you gain the ability to channel your ki into searing waves of energy. Immediately after you take the Attack action on your turn, you can spend 2 ki points to cast the burning hands spell as a bonus action.
+
+You can spend additional ki points to cast burning hands as a higher-level spell. Each additional ki point you spend increases the spell's level by 1. The maximum number of ki points (2 plus any additional points) that you can spend on the spell equals half your monk level.</archetypeFeature>
+          <archetypeFeature level="11" name="Searing Sunburst">At 11th level, you gain the ability to create an orb of light that erupts into a devastating explosion. As an action, you magically create an orb and hurl it at a point you choose within 150 feet, where it erupts into a sphere of radiant light for a brief but deadly instant.
+
+Each creature in that 20-foot-radius sphere must succeed on a Constitution saving throw or take 2d6 radiant damage. A creature doesn't need to make the save if the creature is behind total cover that is opaque.
+
+You can increase the sphere's damage by spending ki points. Each point you spend, to a maximum of 3, increases the damage by 2d6.</archetypeFeature>
+          <archetypeFeature level="17" name="Sun Shield">At 17th level, you become wreathed in a luminous, magical aura. You shed bright light in a 30-foot radius and dim light for an additional 30 feet. You can extinguish or restore the light as a bonus action.
+
+If a creature hits you with a melee attack while this light shines, you can use your reaction to deal radiant damage to the creature. The radiant damage equals 5 + your Wisdom modifier.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
     </archetypes>
   </class>
   <class name="Paladin" id="7">
-    <description>...soon the flames will fade, and only paladin will remain...</description>
+    <description>Clad in plate armor that gleams in the sunlight despite the dust and grime of long travel, a human lays down her sword and shield and places her hands on a mortally wounded man. Divine radiance shines from her hands, the man's wounds knit closed, and his eyes open wide with amazement.
+
+A dwarf crouches behind an outcrop, his black cloak making him nearly invisible in the night, and watches an orc war band celebrating its recent victory. Silently, he stalks into their midst and whispers an oath, and two orcs are dead before they even realize he is there.
+
+Silver hair shining in a shaft of light that seems to illuminate only him, an elf laughs with exultation. His spear flashes like his eyes as he jabs again and again at a twisted giant, until at last his light overcomes its hideous darkness.
+
+Whatever their origin and their mission, paladins are united by their oaths to stand against the forces of evil. Whether sworn before a god's altar and the witness of a priest, in a sacred glade before nature spirits and fey beings, or in a moment of desperation and grief with the dead as the only witness, a paladin's oath is a powerful bond. It is a source of power that turns a devout warrior into a blessed champion.</description>
     <proficiencies>
-      <armor>placeholder</armor>
-      <weapons>placeholder</weapons>
-      <tools>placeholder</tools>
-      <savingThrows>placeholder</savingThrows>
-      <startingSkills amount="2">placeholder</startingSkills>
+      <armor>light armor, medium armor, heavy armor, shields</armor>
+      <weapons>simple weapons, martial weapons</weapons>
+      <tools>none</tools>
+      <savingThrows>Wisdom, Charisma</savingThrows>
+      <startingSkills amount="2">Athletics, Insight, Intimidation, Medicine, Persuasion, Religion</startingSkills>
     </proficiencies>
     <startingEquipment>You start with the following Equipment, in addition to the Equipment granted by your background:
-1. 
-2. 
-3. 
+1. (a) a martial weapon and a shield or (b) two martial weapons
+2. (a) five javelins or (b) any simple melee weapon
+3. (a) a priest's pack or (b) an explorer's pack
+4. Chain mail and a holy symbol
+Alternatively, you may start with 5d4*10 gp to buy your own equipment.
 </startingEquipment>
     <hitPointsRules>
-      <hitDice>1d8</hitDice>
-      <initialHP>6-12 + your Constitution modifier</initialHP>
-      <higherLevelsHP>1d6-12(or x) + your Constitution modifier per paladin level after 1st</higherLevelsHP>
+      <hitDice>1d10</hitDice>
+      <initialHP>10 + your Constitution modifier</initialHP>
+      <higherLevelsHP>1d10(or 6) + your Constitution modifier per paladin level after 1st</higherLevelsHP>
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="2">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="3">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="4">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="5">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="6">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="7">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="8">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="9">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="10">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="11">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="12">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="13">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="14">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="15">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="16">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="17">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="1"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="18">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="1"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="19">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="20">
+        <uniqueResource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
@@ -2715,82 +3342,142 @@ If your DM allows the use of feats, you may instead take a feat.</feature>
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="2">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="3">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="4">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="5">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="6">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="7">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="8">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="9">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="10">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="11">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="12">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="13">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="14">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="15">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="16">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="17">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="18">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="19">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="20">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
@@ -2857,6 +3544,9 @@ Alternatively, you may start with 4d4 * 10 gp to buy your own equipment.
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Expertise">At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
 
@@ -2871,90 +3561,147 @@ The amount of the extra damage increases as you gain levels in this class, as sh
 In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</feature>
       </level>
       <level number="2">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Cunning Action">Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</feature>
       </level>
       <level number="3">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Roguish Archetype">At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities from the list of available archetypes. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.</feature>
       </level>
       <level number="4">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="5">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Uncanny Dodge">Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</feature>
       </level>
       <level number="6">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Expertise">At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain the benefit of Expertise.</feature>
       </level>
       <level number="7">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Evasion">Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</feature>
       </level>
       <level number="8">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="9">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Roguish Archetype Feature">At 9th level, you gain a feature granted by your Roguish Archetype.</feature>
       </level>
       <level number="10">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 10th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="11">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Reliable Talent">By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</feature>
       </level>
       <level number="12">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="13">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Roguish Archetype Feature">At 13th level, you gain a feature granted by your Roguish Archetype.</feature>
       </level>
       <level number="14">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Blindsense">Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.</feature>
       </level>
       <level number="15">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Slippery Mind">By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.</feature>
       </level>
       <level number="16">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="17">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Roguish Archetype Feature">At 17th level, you gain a feature granted by your Roguish Archetype.</feature>
       </level>
       <level number="18">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Elusive">Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.</feature>
       </level>
       <level number="19">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="20">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="Stroke of Luck">At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.
 
@@ -3183,82 +3930,142 @@ In addition, when you make a running jump, the distance you cover increases by a
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="2">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="3">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="4">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="5">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="6">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="7">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="8">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="9">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="10">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="11">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="12">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="13">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="14">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="15">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="16">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="17">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="18">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="19">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="20">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
@@ -3329,82 +4136,142 @@ Warlocks are seekers of the knowledge that lies hidden in the fabric of the mult
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="2">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="3">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="4">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="5">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="6">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="7">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="8">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="9">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="10">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="11">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="12">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="13">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="14">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="15">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="16">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="17">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="18">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="19">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="20">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
@@ -3469,82 +4336,142 @@ Warlocks are seekers of the knowledge that lies hidden in the fabric of the mult
     </hitPointsRules>
     <levelsBreakdown>
       <level number="1">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="2">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="3">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="4">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="5">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="6">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="7">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="8">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="9">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="10">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="11">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="12">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="13">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="14">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="15">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="16">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="17">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="18">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="19">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>
       <level number="20">
+        <uniqueResource>
+          <resource name="none"></resource>
+        </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
         <feature name="placeholder">placeholder</feature>
       </level>

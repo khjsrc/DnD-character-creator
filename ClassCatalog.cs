@@ -22,7 +22,7 @@ namespace CharacterSheet
             return classEle;
         }
 
-        private static XElement GetClassXElement(CharacterClasses characterClass)
+        private static XElement GetClassXElement(CharacterClass characterClass)
         {
             XDocument xdoc = XDocument.Load(_classesXmlFileName);
             var classEle =
@@ -140,6 +140,20 @@ namespace CharacterSheet
             else return null;
         }
 
+        public static List<string> GetClassFeatures(CharacterClass characterClass)
+        {
+            var features = GetClassXElement(characterClass)?.Element("levelsBreakdown").Descendants("feature");
+            if (features != null)
+            {
+                var featureNames =
+                    from e in features
+                    where e.Attribute("name") != null
+                    select e.Attribute("name").Value;
+                return featureNames.ToList();
+            }
+            else return null;
+        }
+
         public static List<string> GetClassFeatures(string className, int level)
         {
             var breakdown = GetClassXElement(className)?.Element("levelsBreakdown");
@@ -161,7 +175,28 @@ namespace CharacterSheet
             else return null;
         }
 
-        public static List<string> GetClassLevelPlaceholders(string className, int level)
+        public static List<string> GetClassFeatures(CharacterClass characterClass, int level)
+        {
+            var breakdown = GetClassXElement(characterClass)?.Element("levelsBreakdown");
+            if (breakdown != null)
+            {
+                var features =
+                    from e in breakdown.Elements("level")
+                    where e.Attribute("number") != null
+                    where e.Attribute("number").Value == level.ToString()
+                    select e.Elements("feature");
+
+                List<string> result = new List<string>();
+                foreach (var e in features.FirstOrDefault())
+                {
+                    result.Add(e.Attribute("name").Value);
+                }
+                return result;
+            }
+            else return null;
+        }
+
+        public static List<string> GetClassLevelPlaceholders(string className, int level) //rename it according to the things it must return
         {
             List<string> result = new List<string>();
             var breakdown = GetClassXElement(className)?.Element("levelsBreakdown");
@@ -189,7 +224,7 @@ namespace CharacterSheet
             return result;
         }
 
-        public static List<string> GetClassLevelPlaceholders(CharacterClasses characterClass, int level)
+        public static List<string> GetClassLevelPlaceholders(CharacterClass characterClass, int level) //rename it according to the things it must return
         {
             List<string> result = new List<string>();
             var breakdown = GetClassXElement(characterClass)?.Element("levelsBreakdown");
@@ -220,6 +255,20 @@ namespace CharacterSheet
         public static List<string> GetClassArchetypes(string className)
         {
             var requestedClass = GetClassXElement(className);
+            if (requestedClass != null)
+            {
+                var archetypes =
+                   from e in requestedClass.Descendants("archetype")
+                   where e.Attribute("name") != null
+                   select e.Attribute("name").Value;
+                return archetypes.ToList();
+            }
+            else return null;
+        }
+
+        public static List<string> GetClassArchetypes(CharacterClass characterClass)
+        {
+            var requestedClass = GetClassXElement(characterClass);
             if (requestedClass != null)
             {
                 var archetypes =
@@ -264,15 +313,15 @@ namespace CharacterSheet
         }
 
         #region what the actual fuck?
-        public static string GetBarbarianRageInfo(int level)
+        public static string GetClassUniqueResource(CharacterClass characterClass, int level)
         {
-            var barbarian = GetClassXElement("barbarian");
-            var rageInfo =
+            var barbarian = GetClassXElement(characterClass);
+            var resource =
                 (from levelEle in barbarian.Descendants("level")
                  where levelEle.Attribute("number") != null
                  where levelEle.Attribute("number").Value == level.ToString()
-                 select levelEle.Element("rage")).FirstOrDefault();
-            return $"Amount of rages: {rageInfo.Attribute("amount").Value}. Bonus damage: {rageInfo.Attribute("bonusDamage").Value}";
+                 select levelEle.Element("uniqueResource")).FirstOrDefault();
+            return $"Name: {resource.Attribute("name").Value}. Amount: {resource.Attribute("amount").Value}. Effect: {resource.Attribute("effect").Value}. Bonus: {resource.Attribute("bonus").Value}";
         }
         #endregion
     }

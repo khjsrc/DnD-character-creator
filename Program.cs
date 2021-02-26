@@ -206,14 +206,8 @@ namespace CharacterSheet
             );
 
             var temp1 = ClassCatalog.GetClassFeatures("cleric");
-            var temp2 = ClassCatalog.GetBarbarianRageInfo(8);
-            a.GetSkills();
-            System.Console.WriteLine($"Select {ClassCatalog.GetStartingSkillsAmount(a.ClassName)} : {ClassCatalog.GetStartingSkills(a.ClassName)}");
-            string skills = Console.ReadLine();
-            a.FillStartingSkills(skills.Replace(", ", ",").Split(','));
-            System.Console.WriteLine($"Select {ClassCatalog.GetStartingSkillsAmount(b.ClassName)} : {ClassCatalog.GetStartingSkills(b.ClassName)}");
-            skills = Console.ReadLine();
-            b.FillStartingSkills(skills.Replace(", ", ",").Split(','));
+            var temp2 = ClassCatalog.GetClassUniqueResource(CharacterClass.Barbarian, 19);
+            var temp3 = ClassCatalog.GetClassLevelPlaceholders(CharacterClass.Cleric, 10);
 
             System.Console.WriteLine(a.Proficiencies);
 
@@ -224,11 +218,11 @@ namespace CharacterSheet
             // xmlSerializer.Serialize(stream, a);
             // stream.Close();
 
-            foreach(var t in System.Enum.GetValues(typeof (CharacterRaces))){
-                System.Console.WriteLine($"{t.ToString().PadRight(20)} | {(int)t} | {((RaceType)((int)t & (int)RaceType.CoreWithoutSubraces)).ToString().PadRight(20)} | id {(int)t & 0b00_1111_1111}");
+            foreach(var t in System.Enum.GetValues(typeof (CharacterRace))){
+                System.Console.WriteLine($"{t.ToString().PadRight(20)} | {(int)t} | {((RaceType)((int)t & 0b11_0000_0000)).ToString().PadRight(20)} | {(int)t & 0b00_1111_1111}");
             }
 
-            var temp = RaceCatalog.GetRaceXElement(CharacterRaces.HillDwarf);
+            System.Console.WriteLine(ClassCatalog.GetFeatureDescription("implements of mercy"));
 
             System.Console.WriteLine("end");
         }

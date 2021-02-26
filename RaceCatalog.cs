@@ -149,7 +149,7 @@ namespace CharacterSheet
             else return null;
         }
 
-        public static XElement GetRaceXElement(CharacterRaces characterRace)
+        public static XElement GetRaceXElement(CharacterRace characterRace)
         {
             XDocument xDoc = XDocument.Load(_racesXmlFileName);
             var matchingRaces =
