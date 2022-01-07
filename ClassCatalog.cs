@@ -317,17 +317,17 @@ namespace CharacterSheet
         {
             string toReturn = string.Empty;
             var barbarian = GetClassXElement(characterClass);
-            var resource =
+            var resources =
                 (from levelEle in barbarian.Descendants("level")
                  where levelEle.Attribute("number") != null
                  where levelEle.Attribute("number").Value == level.ToString()
-                 select levelEle.Element("uniqueResource")).FirstOrDefault();
-            foreach(var res in resource.Descendants()){
-                toReturn += "Name: " + res.Attribute("name").Value + " | ";
-                toReturn += "Effect: " + res.Attribute("effect").Value + " +" + res.Attribute("bonus").Value + " | ";
-                toReturn += "Amount: " + res.Attribute("amount").Value;
+                 select levelEle.Element("uniqueResource")).Descendants();
+            string result = string.Empty;
+            foreach (var resource in resources)
+            {
+                result += $"Name: {resource.Attribute("name").Value}. Amount: {resource.Attribute("amount").Value}. Effect: {resource.Attribute("effect").Value}. Bonus: {resource.Attribute("bonus").Value}" + '\n';
             }
-            return toReturn;
+            return result.TrimEnd('\n');
         }
         #endregion
     }
