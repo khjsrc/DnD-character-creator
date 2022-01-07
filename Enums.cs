@@ -81,7 +81,7 @@ namespace CharacterSheet
     }
 
     /// <summary>
-    /// The list of all available races. 0b01 - subrace, 0b10 - core race w/ subraces, 0b11 - core race w/o subraces
+    /// The list of all available races. 0b01 - subrace, 0b10 - core race w/ subraces, 0b11 - core race w/o subraces, the rest is just an ID.
     /// </summary>
     enum CharacterRace
     {
@@ -125,14 +125,14 @@ namespace CharacterSheet
         /// <summary>
         /// Equal to 0b11_0000_0000
         /// </summary>
-        CoreWithoutSubraces = 768,
+        CoreWithoutSubraces = 0b11_0000_0000,
         /// <summary>
         /// Equal to 0b10_0000_0000
         /// </summary>
-        CoreWithSubraces = 512,
+        CoreWithSubraces = 0b10_0000_0000,
         /// <summary>
         /// Equal to 0b01_0000_0000
         /// </summary>
-        Subrace = 256
+        Subrace = 0b01_0000_0000
     }
 }

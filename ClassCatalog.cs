@@ -315,13 +315,19 @@ namespace CharacterSheet
         #region what the actual fuck?
         public static string GetClassUniqueResource(CharacterClass characterClass, int level)
         {
+            string toReturn = string.Empty;
             var barbarian = GetClassXElement(characterClass);
             var resource =
                 (from levelEle in barbarian.Descendants("level")
                  where levelEle.Attribute("number") != null
                  where levelEle.Attribute("number").Value == level.ToString()
                  select levelEle.Element("uniqueResource")).FirstOrDefault();
-            return $"Name: {resource.Attribute("name").Value}. Amount: {resource.Attribute("amount").Value}. Effect: {resource.Attribute("effect").Value}. Bonus: {resource.Attribute("bonus").Value}";
+            foreach(var res in resource.Descendants()){
+                toReturn += "Name: " + res.Attribute("name").Value + " | ";
+                toReturn += "Effect: " + res.Attribute("effect").Value + " +" + res.Attribute("bonus").Value + " | ";
+                toReturn += "Amount: " + res.Attribute("amount").Value;
+            }
+            return toReturn;
         }
         #endregion
     }

@@ -3736,7 +3736,44 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Favored Enemy">Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.
+
+Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.
+
+You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.
+
+When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.
+
+You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</feature>
+        <feature name="Favored Foe">*1st-level ranger optional feature, which replaces the Favored Enemy feature and works with the Foe Slayer feature*
+
+When you hit a creature with an attack roll, you can call on your mystical bond with nature to mark the target as your favored enemy for 1 minute or until you lose your concentration (as if you were concentrating on a spell).
+
+The first time on each of your turns that you hit the favored enemy and deal damage to it, including when you mark it, you can increase that damage by 1d4.
+
+You can use this feature to mark a favored enemy a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+
+This feature's extra damage increases when you reach certain levels in this class: to 1d6 at 6th level and to 1d8 at 14th level.</feature>
+        <feature name="Natural Explorer">You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.
+
+While traveling for an hour or more in your favored terrain, you gain the following benefits:
+
+    **·** Difficult terrain doesn't slow your group's travel.
+    **·** Your group can't become lost except by magical means.
+    **·** Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.
+    **·** If you are traveling alone, you can move stealthily at a normal pace.
+    **·** When you forage, you find twice as much food as you normally would.
+    **·** While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.
+
+You choose additional favored terrain types at 6th and 10th level.</feature>
+        <feature name="Deft Explorer">*1st-level ranger optional feature, which replaces the Natural Explorer feature*
+
+You are an unsurpassed explorer and survivor, both in the wilderness and in dealing with others on your travels. You gain the Canny benefit below, and you gain an additional benefit below when you reach 6th level and 10th level in this class.
+
+**Canny**
+Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill.
+
+You can also speak, read, and write two additional languages of your choice.</feature>
       </level>
       <level number="2">
         <uniqueResource>
@@ -3748,7 +3785,53 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Fighting Style">At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.
+
+**Archery**
+You gain a +2 bonus to attack rolls you make with ranged weapons.
+
+**Blind Fighting**
+You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.
+
+**Defense**
+While you are wearing armor, you gain a +1 bonus to AC.
+
+**Druidic Warrior**
+You learn two cantrips of your choice from the druid spell list. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the druid spell list.
+
+**Dueling**
+When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
+
+**Thrown Weapon Fighting**
+You can draw a weapon that has the thrown property as part of the attack you make with the weapon.
+
+In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.
+
+**Two-Weapon Fighting**
+When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</feature>
+        <feature name="Spellcasting">By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10 for the general rules of spellcasting and chapter 11 for the ranger spell list.
+
+**Spell Slots**
+The Ranger table shows how many spell slots you have to cast your ranger spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+
+For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot.
+
+**Spells Known of 1st Level and Higher**
+You know two 1st-level spells of your choice from the ranger spell list.
+
+The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.
+
+Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots.
+
+**Spellcasting Ability**
+Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.
+
+**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
+
+**Spell attack modifier** = your proficiency bonus + your Wisdom modifier</feature>
+        <feature name="Spellcasting Focus">*2nd-level ranger optional feature*
+
+You can use a druidic focus as a spellcasting focus for your ranger spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals.</feature>
       </level>
       <level number="3">
         <uniqueResource>
@@ -3760,7 +3843,21 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ranger Archetype">At 3rd level, you choose an archetype that you strive to emulate from the list of available archetypes. Your choice grants features at 3rd level, and again at 7th, 11th, and 15th level.</feature>
+        <feature name="Primeval Awareness">Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number.</feature>
+        <feature name="Primal Awareness">*3rd-level ranger optional feature, which replaces the Primeval Awareness feature*
+
+You can focus your awareness through the interconnections of nature: you learn additional spells when you reach certain levels in this class if you don't already know them, as shown in the Primal Awareness Spells table. These spells don't count against the number of ranger spells you know.
+
+Primal Awareness Spells
+Ranger Level  Spell
+3rd           speak with animals
+5th           beast sense
+9th           speak with plants
+13th          locate creature
+17th          commune with nature
+
+You can cast each of these spells once without expending a spell slot. Once you cast a spell in this way, you can't do so again until you finish a long rest.</feature>
       </level>
       <level number="4">
         <uniqueResource>
@@ -3772,7 +3869,12 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+        <feature name="Martial Versatility">*4th-level ranger optional feature*
+
+Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.</feature>
       </level>
       <level number="5">
         <uniqueResource>
@@ -3784,7 +3886,7 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Extra Attack">Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</feature>
       </level>
       <level number="6">
         <uniqueResource>
@@ -3796,7 +3898,13 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Favored Enemy and Natural Explorer Improvements">At 6th level, you gain an additional favored terrain.
+
+At 6th level, you choose one additional favored enemy, as well as an associated language. Your choice should reflect the types of monsters you have encountered on your adventures.</feature>
+        <feature name="Deft Explorer Improvement">You gain an additional benefit when you reach 6th level in this class.
+
+**Roving**
+Your walking speed increases by 5, and you gain a climbing speed and a swimming speed equal to your walking speed.</feature>
       </level>
       <level number="7">
         <uniqueResource>
@@ -3808,7 +3916,7 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ranger Archetype feature">At 7th level, you gain a feature granted to you by your Ranger Archetype.</feature>
       </level>
       <level number="8">
         <uniqueResource>
@@ -3820,7 +3928,12 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+        <feature name="Land's Stride">Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
+
+In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</feature>
       </level>
       <level number="9">
         <uniqueResource>
@@ -3832,7 +3945,6 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
       </level>
       <level number="10">
         <uniqueResource>
@@ -3844,7 +3956,21 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Hide in Plain Sight">Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.
+
+Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit.</feature>
+        <feature name="Nature's Veil">*10th-level ranger optional feature, which replaces the Hide in Plain Sight feature*
+
+You draw on the powers of nature to hide yourself from view briefly. As a bonus action, you can magically become invisible, along with any equipment you are wearing or carrying, until the start of your next turn.
+
+You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</feature>
+        <feature name="Natural Explorer Improvement">You gain an additional favored terrain.</feature>
+        <feature name="Deft Explorer Improvement">*You gain an additional benefit when you reach 10th level in this class.*
+
+**Tireless**
+As an action, you can give yourself a number of temporary hit points equal to 1d8 + your Wisdom modifier (minimum of 1 temporary hit point). You can use this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+
+In addition, whenever you finish a short rest, your exhaustion level, if any, is decreased by 1.</feature>
       </level>
       <level number="11">
         <uniqueResource>
@@ -3856,7 +3982,7 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ranger Archetype feature">At 11th level, you gain a feature granted to you by your Ranger Archetype.</feature>
       </level>
       <level number="12">
         <uniqueResource>
@@ -3868,7 +3994,9 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="13">
         <uniqueResource>
@@ -3880,7 +4008,6 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
       </level>
       <level number="14">
         <uniqueResource>
@@ -3892,7 +4019,8 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Vanish">Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail.</feature>
+        <feature name="Favored Enemy Improvement">At 14th level, you choose one additional favored enemy, as well as an associated language. Your choice should reflect the types of monsters you have encountered on your adventures.</feature>
       </level>
       <level number="15">
         <uniqueResource>
@@ -3904,7 +4032,7 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ranger Archetype feature">At 15th level, you gain a feature granted to you by your Ranger Archetype.</feature>
       </level>
       <level number="16">
         <uniqueResource>
@@ -3916,7 +4044,9 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="17">
         <uniqueResource>
@@ -3928,7 +4058,6 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="1"></resource>
         </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
       </level>
       <level number="18">
         <uniqueResource>
@@ -3940,7 +4069,7 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="1"></resource>
         </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Feral Senses">At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it. You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened.</feature>
       </level>
       <level number="19">
         <uniqueResource>
@@ -3952,7 +4081,9 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
         </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="20">
         <uniqueResource>
@@ -3964,44 +4095,201 @@ Alternatively, you may start with 5d4 * 10 gp to buy your own equipment.
           <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
         </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Foe Slayer">At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.</feature>
       </level>
     </levelsBreakdown>
     <archetypes>
-      <archetype name="Path of the Ape">
-      	<description>placeholder</description>
+      <archetype name="Beast Master">
+      	<description>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger work as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Ranger's Companion">You gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a beast that is no larger than Medium and that has a challenge rating of 1/4 or lower. Add your proficiency bonus to the beast's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals its normal maximum or four times your ranger level, whichever is higher. Like any creature, the beast can spend Hit Dice during a short rest.
+
+The beast obeys your commands as best as it can. It takes its turn on your initiative. On your turn, you can verbally command the beast where to move (no action required by you). You can use your action to verbally command it to take the Attack, Dash, Disengage, or Help action. If you don't issue a command, the beast takes the Dodge action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action.
+
+If you are incapacitated or absent, your beast companion acts on its own, focusing on protecting you and itself. It never requires your command to use its reaction, such as when making an opportunity attack.
+
+While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.
+
+If the beast dies, you can obtain another one by spending 8 hours magically bonding with another beast that isn't hostile to you, either the same type of beast as before or a different one.</archetypeFeature>
+          <archetypeFeature level="7" name="Exceptional Training">Beginning at 7th level, on any of your turns when your beast companion doesn't attack, you can use a bonus action to command the beast to take the Dash, Disengage, or Help action on its turn. In addition, the beast's attacks now count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</archetypeFeature>
+          <archetypeFeature level="11" name="Bestial Fury">Starting at 11th level, when you command your beast companion to take the Attack action, the beast can make two attacks, or it can take the Multiattack action if it has that action.</archetypeFeature>
+          <archetypeFeature level="15" name="Share Spells">Beginning at 15th level, when you cast a spell targeting yourself, you can also affect your beast companion with the spell if the beast is within 30 feet of you.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Path of the Ape">
-      	<description>placeholder</description>
+      <archetype name="Fey Wanderer">
+        <description>A fey mystique surrounds you, thanks to the boon of an archfey, the shining fruit you ate from a talking tree, the magic spring you swam in, or some other auspicious event. However you acquired your fey magic, you are now a Fey Wanderer, a ranger who represents both the mortal and the fey realms. As you wander the multiverse, your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Dreadful Strikes">You can augment your weapon strikes with mind-scarring magic, drawn from the gloomy hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 psychic damage to the target, which can take this extra damage only once per turn.
+
+The extra damage increases to 1d6 when you reach 11th level in this class.</archetypeFeature>
+          <archetypeFeature level="3" name="Fey Wanderer Magic">You learn an additional spell when you reach certain levels in this class, as shown in the Fey Wanderer Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.
+Fey Wanderer Spells
+Ranger Level  Spells
+3rd           charm person
+5th           misty step
+9th           dispel magic
+13th          dimension door
+17th          mislead
+
+You also possess a preternatural blessing from a fey ally or a place of fey power. Choose your blessing from the Feywild Gifts table or determine it randomly.
+Feywild Gifts
+d6  Gift
+1   Illusory butterflies flutter around you while you take a short or long rest.
+2   Fresh, seasonal flowers sprout from your hair each dawn.
+3   You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice.
+4   Your shadow dances while no one is looking directly at it.
+5   Horns or antlers sprout from your head.
+6   Your skin and hair change color to match the season at each dawn.</archetypeFeature>
+          <archetypeFeature level="3" name="Otherworldly Glamour">Your fey qualities give you a supernatural charm. As a result, whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).
+
+In addition, you gain proficiency in one of the following skills of your choice: Deception, Performance, or Persuasion.</archetypeFeature>
+          <archetypeFeature level="7" name="Beguiling Twist">The magic of the Feywild guards your mind. You have advantage on saving throws against being charmed or frightened.
+
+In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw against being charmed or frightened, you can use your reaction to force a different creature you can see within 120 feet of you to make a Wisdom saving throw against your spell save DC. If the save fails, the target is charmed or frightened by you (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save.</archetypeFeature>
+          <archetypeFeature level="11" name="Fey Reinforcements">The royal courts of the Feywild have blessed you with the assistance of fey beings: you know summon fey. It doesn't count against the number of ranger spells you know, and you can cast it without a material component. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.
+
+Whenever you start casting the spell, you can modify it so that it doesn't require concentration. If you do so, the spell's duration becomes 1 minute for that casting.</archetypeFeature>
+          <archetypeFeature level="15" name="Misty Wanderer">You can slip in and out of the Feywild to move in a blink of an eye: you can cast misty step without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.
+
+In addition, whenever you cast misty step, you can bring along one willing creature you can see within 5 feet of you. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>      
+      <archetype name="Gloom Stalker">
+        <description>Gloom Stalkers are at home in the darkest places: deep under the earth, in gloomy alleyways, in primeval forests, and wherever else the light dims. Most folk enter such places with trepidation, but a Gloom Stalker ventures boldly into the darkness, seeking to ambush threats before they can reach the broader world. Such rangers are often found in the Underdark, but they will go any place where evil lurks in the shadows.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Gloom Stalker Magic">Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Gloom Stalker Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.
+Gloom Stalker Spells
+Ranger Level    Spells
+3rd             disguise self
+5th             rope trick
+9th             fear
+13th            greater invisibility
+17th            seeming</archetypeFeature>
+          <archetypeFeature level="3" name="Dread Ambusher">At the start of your first turn of each combat, your walking speed increases by 10 feet, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 1d8 damage of the weapon's damage type.</archetypeFeature>
+          <archetypeFeature level="3" name="Umbral Sight">At 3rd level, you gain darkvision out to a range of 60 feet. If you already have darkvision from your race, its range increases by 30 feet.
+
+You are also adept at evading creatures that rely on darkvision. While in darkness, you are invisible to any creature that relies on darkvision to see you in that darkness.</archetypeFeature>
+          <archetypeFeature level="7" name="Iron Mind">By 7th level, you have honed your ability to resist the mind-altering powers of your prey. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).</archetypeFeature>
+          <archetypeFeature level="11" name="Stalker's Flurry">At 11th level, you learn to attack with such unexpected speed that you can turn a miss into another strike. Once on each of your turns when you miss with a weapon attack, you can make another weapon attack as part of the same action.</archetypeFeature>
+          <archetypeFeature level="15" name="Shadowy Dodge">Starting at 15th level, you can dodge in unforeseen ways, with wisps of supernatural shadow around you. Whenever a creature makes an attack roll against you and doesn't have advantage on the roll, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the attack roll.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>      
+      <archetype name="Horizon Walker">
+        <description>Horizon Walkers guard the world against threats that originate from other planes or that seek to ravage the mortal realm with otherworldly magic. They seek out planar portals and keep watch over them, venturing to the Inner Planes and the Outer Planes as needed to pursue their foes. These rangers are also friends to any forces in the multiverse—especially benevolent dragons, fey, and elementals—that work to preserve life and the order of the planes.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Horizon Walker Magic">Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Horizon Walker Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.
+Horizon Walker Spells
+anger Level   Spells
+3rd           protection from evil and good
+5th           misty step
+9th           haste
+13th          banishment
+17th          teleportation circle</archetypeFeature>
+          <archetypeFeature level="3" name="Detect Portal">At 3rd level, you gain the ability to magically sense the presence of a planar portal. As an action, you detect the distance and direction to the closest planar portal within 1 mile of you.
+
+Once you use this feature, you can't use it again until you finish a short or long rest.
+
+See the "Planar Travel" section in chapter 2 of the Dungeon Master's Guide for examples of planar portals.</archetypeFeature>
+          <archetypeFeature level="3" name="Planar Warrior">At 3rd level, you learn to draw on the energy of the multiverse to augment your attacks.
+
+As a bonus action, choose one creature you can see within 30 feet of you. The next time you hit that creature on this turn with a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes an extra 1d8 force damage from the attack. When you reach 11th level in this class, the extra damage increases to 2d8.</archetypeFeature>
+          <archetypeFeature level="7" name="Ethereal Step">At 7th level, you learn to step through the Ethereal Plane. As a bonus action, you can cast the etherealness spell with this feature, without expending a spell slot, but the spell ends at the end of the current turn.
+
+Once you use this feature, you can't use it again until you finish a short or long rest.</archetypeFeature>
+          <archetypeFeature level="11" name="Distant Strike">At 11th level, you gain the ability to pass between the planes in the blink of an eye. When you take the Attack action, you can teleport up to 10 feet before each attack to an unoccupied space you can see.
+
+If you attack at least two different creatures with the action, you can make one additional attack with it against a third creature.</archetypeFeature>
+          <archetypeFeature level="15" name="Spectral Defense">At 15th level, your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. When you take damage from an attack, you can use your reaction to give yourself resistance to all of that attack's damage on this turn.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Path of the Ape">
-      	<description>placeholder</description>
+      <archetype name="Hunter">
+      	<description>Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Hunter's Pity">At 3rd level, you gain one of the following features of your choice.
+***Colossus Slayer.*** Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn.
+***Giant Killer.*** When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.
+***Horde Breaker.*** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</archetypeFeature>
+          <archetypeFeature level="7" name="Defensive Tactics">At 7th level, you gain one of the following features of your choice.
+***Escape the Horde.*** Opportunity attacks against you are made with disadvantage.
+***Multiattack Defense.*** When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
+***Steel Will.*** You have advantage on saving throws against being frightened.</archetypeFeature>
+          <archetypeFeature level="11" name="Multiattack">At 11th level, you gain one of the following features of your choice.
+***Volley.*** You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.
+***Whirlwind Attack.*** You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</archetypeFeature>
+          <archetypeFeature level="15" name="Superior Hunter's Defense">At 15th level, you gain one of the following features of your choice.
+***Evasion.*** You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
+***Stand Against the Tide.*** When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.
+***Uncanny Dodge.*** When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Path of the Ape">
-      	<description>placeholder</description>
+      <archetype name="Monster Slayer">
+      	<description>You have dedicated yourself to hunting down creatures of the night and wielders of grim magic. A Monster Slayer seeks out vampires, dragons, evil fey, fiends, and other magical threats. Trained in supernatural techniques to overcome such monsters, slayers are experts at unearthing and defeating mighty, mystical foes.</description>
         <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="3" name="Monster Slayer Magic">Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Monster Slayer Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.
+Monster Slayer Spells
+Ranger Level  Spells
+3rd           protection from evil and good
+5th           zone of truth
+9th           magic circle
+13th          banishment
+17th          hold monster</archetypeFeature>
+          <archetypeFeature level="3" name="Hunter's Sense">At 3rd level, you gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities.
+
+You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest.</archetypeFeature>
+          <archetypeFeature level="3" name="Slayer's Pity">Starting at 3rd level, you can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon.
+
+This benefit lasts until you finish a short or long rest. It ends early if you designate a different creature.</archetypeFeature>
+          <archetypeFeature level="7" name="Supernatural Defense">At 7th level, you gain extra resilience against your prey's assaults on your mind and body. Whenever the target of your Slayer's Prey forces you to make a saving throw and whenever you make an ability check to escape that target's grapple, add 1d6 to your roll.</archetypeFeature>
+          <archetypeFeature level="11" name="Magic-User's Nemesis">At 11th level, you gain the ability to thwart someone else's magic. When you see a creature casting a spell or teleporting within 60 feet of you, you can use your reaction to try to magically foil it. The creature must succeed on a Wisdom saving throw against your spell save DC, or its spell or teleport fails and is wasted.
+
+Once you use this feature, you can't use it again until you finish a short or long rest.</archetypeFeature>
+          <archetypeFeature level="15" name="Slayer's Counter">At 15th level, you gain the ability to counterattack when your prey tries to sabotage you. If the target of your Slayer's Prey forces you to make a saving throw, you can use your reaction to make one weapon attack against the quarry. You make this attack immediately before making the saving throw. If your attack hits, your save automatically succeeds, in addition to the attack's normal effects.</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Swarmkeeper">
+      	<description>Feeling a deep connection to the environment around them, some rangers reach out through their magical connection to the world and bond with a swarm of nature spirits. The swarm becomes a potent force in battle, as well as helpful company for the ranger. Some Swarmkeepers are outcasts or hermits, keeping to themselves and their attendant swarms rather than dealing with the discomfort of others. Other Swarmkeepers enjoy building vibrant communities that work for the mutual benefit of all those they consider part of their swarm.</description>
+        <archetypeFeatures>
+          <archetypeFeature level="3" name="Gathered Swarm">A swarm of intangible nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you within your space. You determine its appearance, or you generate its appearance by rolling on the Swarm Appearance table.
+Swarm Appearance
+d4  Appearance
+1   Swarming insects
+2   Miniature twig blights
+3   Fluttering birds
+4   Playful pixies
+
+Once on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack:
+
+    **·** The attack's target takes 1d6 piercing damage from the swarm.
+    **·** The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 15 feet horizontally in a direction of your choice.
+    **·** You are moved by the swarm 5 feet horizontally in a direction of your choice.
+
+
+**It's Your Swarm**
+
+A Swarmkeeper's swarm and spells are reflections of the character's bond with nature spirits. Take the opportunity to describe the swarm and the ranger's magic in play. For example, when your ranger casts gaseous form, they might appear to melt into the swarm, instead of a cloud of mist, or the arcane eye spell could create an extension of your swarm that spies for you. Such descriptions don't change the effects of spells, but they are an exciting opportunity to explore your character's narrative through their class abilities. For more guidance on customizing spells, see the "Personalizing Spells" section in chapter 3.
+
+Also, remember that the swarm's appearance is yours to customize, and don't feel confined to a single appearance. Perhaps the spirits' look changes with the ranger's mood or with the seasons. You decide!</archetypeFeature>
+          <archetypeFeature level="3" name="Swarmkeeper Magic">You learn the mage hand cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.
+
+You also learn an additional spell of 1st level or higher when you reach certain levels in this class, as shown in the Swarmkeeper Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.
+Swarmkeeper Spells
+Ranger Level    Spells
+3rd             faerie fire
+5th             web
+9th             gaseous form
+13th            arcane eye
+17th            insect plague</archetypeFeature>
+          <archetypeFeature level="7" name="Writhing Tide">You can condense part of your swarm into a focused mass that lifts you up. As a bonus action, you gain a flying speed of 10 feet and can hover. This effect lasts for 1 minute or until you are incapacitated.
+
+You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</archetypeFeature>
+          <archetypeFeature level="11" name="Mighty Swarm">Your Gathered Swarm grows mightier in the following ways:
+
+    **·** The damage of Gathered Swarm increases to 1d8.
+    **·** If a creature fails its saving throw against being moved by Gathered Swarm, you can also cause the swarm to knock the creature prone.
+    **·** When you are moved by Gathered Swarm, it gives you half cover until the start of your next turn.</archetypeFeature>
+          <archetypeFeature level="15" name="Swarming Dispersal">You can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself resistance to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 30 feet of you, where you reappear with the swarm.
+
+You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</archetypeFeature>
         </archetypeFeatures>
       </archetype>
     </archetypes>
@@ -4416,147 +4704,513 @@ In addition, when you make a running jump, the distance you cover increases by a
     <levelsBreakdown>
       <level number="1">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="-"></resource>
+          <resource name="Cantrips Known" amount="4"></resource>
+          <resource name="Spells Known" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Spellcasting">An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the sorcerer spell list.
+
+**Cantrips**
+At 1st level, you know four cantrips of your choice from the sorcerer spell list. You learn an additional sorcerer cantrip of your choice at 4th level and another at 10th level.
+
+**Spell Slots**
+The Sorcerer table shows how many spell slots you have to cast your sorcerer spells of 1st level and higher. To cast one of these sorcerer spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+
+For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast burning hands using either slot.
+
+
+**Spells Known of 1st Level and Higher**
+You know two 1st-level spells of your choice from the sorcerer spell list.
+
+You learn an additional sorcerer spell of your choice at each level except 12th, 14th, 16th, 18th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.
+
+Additionally, when you gain a level in this class, you can choose one of the sorcerer spells you know and replace it with another spell from the sorcerer spell list, which also must be of a level for which you have spell slots.
+
+**Spellcasting Ability**
+Charisma is your spellcasting ability for your sorcerer spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one.
+
+**Spell save DC** = 8 + your proficiency bonus + your Charisma modifier
+
+**Spell attack modifier** = your proficiency bonus + your Charisma modifier
+
+**Spellcasting Focus**
+You can use an arcane focus as a spellcasting focus for your sorcerer spells.</feature>
+        <feature name="Sorcerous Origin">Choose a sorcerous origin, which describes the source of your innate magical power, from the list of available origins.
+
+Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.</feature>
       </level>
       <level number="2">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="2"></resource>
+          <resource name="Cantrips Known" amount="4"></resource>
+          <resource name="Spells Known" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Font of Magic">At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.
+
+**Sorcery Points**
+You have 2 sorcery points, and you gain one additional point every time you level up, to a maximum of 20 at level 20. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.
+
+**Flexible Casting**
+You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.
+
+***Creating Spell Slots.*** You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a long rest. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.
+Creating Spell Slots
+Spell Slot Level    Sorcery Point Cost
+1st                 2
+2nd                 3
+3rd                 5
+4th                 6
+5th                 7
+
+***Converting a Spell Slot to Sorcery Points.*** As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.</feature>
       </level>
       <level number="3">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="3"></resource>
+          <resource name="Cantrips Known" amount="4"></resource>
+          <resource name="Spells Known" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Metamagic">At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.
+
+You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.
+
+**Careful Spell**
+When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.
+
+**Distant Spell**
+When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.
+When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.
+
+**Empowered Spell**
+When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.
+You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.
+
+
+**Extended Spell**
+When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.
+
+**Heightened Spell**
+When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.
+
+**Quickened Spell**
+When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.
+
+**Subtle Spell**
+When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.
+
+**Twinned Spell**
+When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).
+
+To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, magic missile and scorching ray aren't eligible, but ray of frost and chromatic orb are.</feature>
+        <feature name="Metamagic Options">*3rd-level sorcerer optional feature*
+
+When you choose Metamagic options, you have access to the following additional options.
+
+**Seeking Spell**
+If you make an attack roll for a spell and miss, you can spend 2 sorcery points to reroll the d20, and you must use the new roll.
+You can use Seeking Spell even if you have already used a different Metamagic option during the casting of the spell.
+
+**Transmuted Spell**
+When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, thunder.</feature>
       </level>
       <level number="4">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="4"></resource>
+          <resource name="Cantrips Known" amount="5"></resource>
+          <resource name="Spells Known" amount="5"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+2</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
+        <feature name="Sorcerous Versatility">*4th-level sorcerer optional feature*
+
+Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing the magic within you flowing in new ways:
+
+    **·** Replace one of the options you chose for the Metamagic feature with a different Metamagic option available to you.
+    **·** Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the sorcerer spell list.</feature>
       </level>
       <level number="5">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="5"></resource>
+          <resource name="Cantrips Known" amount="5"></resource>
+          <resource name="Spells Known" amount="6"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Magical Guidance">*5th-level sorcerer optional feature*
+
+You can tap into your inner wellspring of magic to try to conjure success from failure. When you make an ability check that fails, you can spend 1 sorcery point to reroll the d20, and you must use the new roll, potentially turning the failure into a success.</feature>
       </level>
       <level number="6">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="6"></resource>
+          <resource name="Cantrips Known" amount="5"></resource>
+          <resource name="Spells Known" amount="7"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Sorcerous Origin feature">At 6th level, you gain a feature granted by your Sorcerous Origin.</feature>
       </level>
       <level number="7">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="7"></resource>
+          <resource name="Cantrips Known" amount="5"></resource>
+          <resource name="Spells Known" amount="8"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
       </level>
       <level number="8">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="8"></resource>
+          <resource name="Cantrips Known" amount="5"></resource>
+          <resource name="Spells Known" amount="9"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+3</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="9">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="9"></resource>
+          <resource name="Cantrips Known" amount="5"></resource>
+          <resource name="Spells Known" amount="10"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
       </level>
       <level number="10">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="10"></resource>
+          <resource name="Cantrips Known" amount="6"></resource>
+          <resource name="Spells Known" amount="11"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Metamagic">At 10th level, you learn an additional metamagic option.</feature>
       </level>
       <level number="11">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="11"></resource>
+          <resource name="Cantrips Known" amount="6"></resource>
+          <resource name="Spells Known" amount="12"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
       </level>
       <level number="12">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="12"></resource>
+          <resource name="Cantrips Known" amount="6"></resource>
+          <resource name="Spells Known" amount="12"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+4</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="13">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="13"></resource>
+          <resource name="Cantrips Known" amount="6"></resource>
+          <resource name="Spells Known" amount="13"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
       </level>
       <level number="14">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="14"></resource>
+          <resource name="Cantrips Known" amount="6"></resource>
+          <resource name="Spells Known" amount="13"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="-"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Sorcerous Origin feature">At 14th level, you gain a feature granted by your Sorcerous Origin.</feature>
       </level>
       <level number="15">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="15"></resource>
+          <resource name="Cantrips Known" amount="6"></resource>
+          <resource name="Spells Known" amount="14"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
       </level>
       <level number="16">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="16"></resource>
+          <resource name="Cantrips Known" amount="6"></resource>
+          <resource name="Spells Known" amount="14"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="-"></resource>
         </uniqueResource>
         <proficiencyBonus>+5</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="17">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="17"></resource>
+          <resource name="Cantrips Known" amount="6"></resource>
+          <resource name="Spells Known" amount="15"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="1"></resource>
         </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Metamagic">At 17th level, you learn an additional metamagic option.</feature>
       </level>
       <level number="18">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="18"></resource>
+          <resource name="Cantrips Known" amount="6"></resource>
+          <resource name="Spells Known" amount="15"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="1"></resource>
         </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Sorcerous Origin feature">At 18th level, you gain a feature granted by your Sorcerous Origin.</feature>
       </level>
       <level number="19">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="19"></resource>
+          <resource name="Cantrips Known" amount="6"></resource>
+          <resource name="Spells Known" amount="15"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="1"></resource>
         </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Ability Score Improvement">When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+
+If your DM allows the use of feats, you may instead take a feat.</feature>
       </level>
       <level number="20">
         <uniqueResource>
-          <resource name="none"></resource>
+          <resource name="Sorcery Points" amount="20"></resource>
+          <resource name="Cantrips Known" amount="6"></resource>
+          <resource name="Spells Known" amount="15"></resource>
+          <resource name="Spell Slot" spellLevel="1" amount="4"></resource>
+          <resource name="Spell Slot" spellLevel="2" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="3" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="4" amount="3"></resource>
+          <resource name="Spell Slot" spellLevel="5" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="6" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="7" amount="2"></resource>
+          <resource name="Spell Slot" spellLevel="8" amount="1"></resource>
+          <resource name="Spell Slot" spellLevel="9" amount="1"></resource>
         </uniqueResource>
         <proficiencyBonus>+6</proficiencyBonus>
-        <feature name="placeholder">placeholder</feature>
+        <feature name="Sorcerous Restoration">At 20th level, you regain 4 expended sorcery points whenever you finish a short rest.</feature>
       </level>
     </levelsBreakdown>
     <archetypes>
-      <archetype name="Path of the Ape">
+      <archetype name="Aberrant Mind">
+      	<description>An alien influence has wrapped its tendrils around your mind, giving you psionic power. You can now touch other minds with that power and alter the world around you by using it to control the magical energy of the multiverse. Will this power shine from you as a hopeful beacon to others? Or will you be a source of terror to those who feel the stab of your mind and witness the strange manifestations of your might?
+
+As an Aberrant Mind sorcerer, you decide how you acquired your powers. Were you born with them? Or did an event later in life leave you shining with psionic awareness? Consult the Aberrant Origins table for a possible origin of your power.
+Aberrant Origins
+d6    Origin
+1     You were exposed to the Far Realm's warping influence. You are convinced that a tentacle is now growing on you, but no one else can see it.
+2     A psychic wind from the Astral Plane carried psionic energy to you. When you use your powers, faint motes of light sparkle around you.
+3     You once suffered the dominating powers of an aboleth, leaving a psychic splinter in your mind.
+4     You were implanted with a mind flayer tadpole, but the ceremorphosis never completed. And now its psionic power is yours. When you use it, your flesh shines with a strange mucus.
+5     As a child, you had an imaginary friend that looked like a flumph or a strange platypus-like creature. One day, it gifted you with psionic powers, which have ended up being not so imaginary.
+6     Your nightmares whisper the truth to you: your psionic powers are not your own. You draw them from your parasitic twin!</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Clockwork Soul">
+        <description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Divine Soul">
+        <description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Draconic">
+        <description>placeholder</description>
+        <archetypeFeatures>
+          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
+        </archetypeFeatures>
+      </archetype>
+      <archetype name="Shadow">
       	<description>placeholder</description>
         <archetypeFeatures>
           <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
@@ -4565,7 +5219,7 @@ In addition, when you make a running jump, the distance you cover increases by a
           <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Path of the Ape">
+      <archetype name="Storm">
       	<description>placeholder</description>
         <archetypeFeatures>
           <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
@@ -4574,16 +5228,7 @@ In addition, when you make a running jump, the distance you cover increases by a
           <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
         </archetypeFeatures>
       </archetype>
-      <archetype name="Path of the Ape">
-      	<description>placeholder</description>
-        <archetypeFeatures>
-          <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-          <archetypeFeature level="1" name="featureName">descriptionOfTheSkill</archetypeFeature>
-        </archetypeFeatures>
-      </archetype>
-      <archetype name="Path of the Ape">
+      <archetype name="Wild">
       	<description>placeholder</description>
         <archetypeFeatures>
           <archetypeFeature level="0" name="featureName">descriptionOfTheSkill</archetypeFeature>

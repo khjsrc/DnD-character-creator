@@ -14,7 +14,7 @@ namespace CharacterSheet
             return GetRaceXElement(raceName)?.Element("raceInfo").Element("language").Attribute("brief").Value;
         }
 
-        public static bool DoesNeedToLearnLanguage(string raceName)
+        public static bool NeedsToLearnLanguage(string raceName)
         {
             int learnedLanguagesAmount = GetKnownLanguages(raceName).Replace(", ", ",").Split(',').Length;
             Int32.TryParse(GetRaceXElement(raceName)?.Element("raceInfo").Element("language").Attribute("amount").Value, out int amountOfLanguagesToLearn);
@@ -237,6 +237,31 @@ namespace CharacterSheet
             {
                 return true;
             }
+        }
+
+        //this and the things below are made while i was not in my mind, so either scratch that or rework
+        public static bool CanBePicked(string raceName){ 
+            string name = GetRaceFullName(raceName);
+            var enumObject = Enum.Parse(typeof(CharacterRace), name.Replace(" ", String.Empty));
+
+            int t = Convert.ToInt32(enumObject);
+            int r = t & (int)RaceType.CoreWithoutSubraces;
+
+            if((Convert.ToInt32(enumObject) & (int)RaceType.CoreWithSubraces) == 0){
+                return false;
+            }
+            else return true;
+        }
+
+        private static int GetRaceID(string raceName){
+            return 0;
+        }
+
+        private static int GetRaceType(string raceName){
+            string name = GetRaceFullName(raceName);
+            var enumObject = Enum.Parse(typeof(CharacterRace), name);
+
+            return 0;
         }
 
         // private static List<string> GetRacesBySource(string source){

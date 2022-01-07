@@ -224,6 +224,7 @@ namespace CharacterSheet
 
             System.Console.WriteLine(ClassCatalog.GetFeatureDescription("implements of mercy"));
 
+            System.Console.WriteLine(RaceCatalog.CanBePicked("gnome"));
             System.Console.WriteLine("end");
         }
     }

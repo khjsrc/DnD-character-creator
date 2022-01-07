@@ -134,7 +134,7 @@ namespace CharacterSheet
             _traits = RaceCatalog.GetRaceTraitNames(raceName);
             _languages = RaceCatalog.GetKnownLanguages(raceName).Replace(", ", ",").Split(',').ToList();
 
-            if (RaceCatalog.DoesNeedToLearnLanguage(raceName))
+            if (RaceCatalog.NeedsToLearnLanguage(raceName))
             {
                 LearnStartingLanguage(additionalLanguage);
             }
